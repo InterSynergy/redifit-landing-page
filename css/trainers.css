@@ -1,0 +1,57 @@
+/* Redifit landing — styles unique to the trainers page (dla-trenerow.html) */
+
+/* Hero proof numbers use an inline pair, not the dark proof bar from the home page */
+.hero-proof {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+}
+
+.hero-proof__item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+}
+
+.hero-proof__value {
+    font: 800 italic 30px/1 var(--font-sans);
+    color: #fff;
+}
+
+.hero-proof__label {
+    font: 600 italic 12px/1.35 var(--font-sans);
+    color: rgba(255, 255, 255, .82);
+}
+
+/* T4 — rules grid: 2-column feature grid + phone mockup, same shape as the home trainer teaser */
+#t-zasady .container > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    align-items: start;
+}
+
+#t-zasady .feature-grid {
+    grid-column: span 2;
+    min-width: 0;
+}
+
+#t-zasady .phone {
+    justify-self: center;
+}
+
+/* T-popyt — four demand-generating tools, reuses .feature-grid/.feature-card from styles.css */
+#t-popyt .container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+#t-popyt .intro {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 60ch;
+}

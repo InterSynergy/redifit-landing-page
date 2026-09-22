@@ -1,0 +1,378 @@
+/* Redifit landing — styles unique to the client home page (index.html) */
+
+/* S — kroki: three-step summary cards + link to the "how it works" page */
+#kroki .container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+#kroki .intro {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 60ch;
+}
+
+.step-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+    width: 100%;
+}
+
+.step-card {
+    background: #fff;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.step-card__label {
+    font: 800 italic var(--fs-eyebrow)/1 var(--font-sans);
+    text-transform: uppercase;
+    letter-spacing: .14em;
+    color: var(--color-red);
+}
+
+.step-card h3 {
+    font: 800 italic var(--fs-card-title)/1.3 var(--font-sans);
+    color: var(--color-dark);
+}
+
+.step-card p {
+    font: 400 italic var(--fs-card-body)/1.6 var(--font-sans);
+    color: var(--color-gray);
+}
+
+/* S — kategorie: placeholder category grid (no real names in the app's l10n yet) */
+#kategorie .container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+#kategorie .intro {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 60ch;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 12px;
+}
+
+.category-card {
+    border: 1px dashed var(--color-border-2);
+    background: var(--color-bg-alt);
+    border-radius: 8px;
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+}
+
+.category-card__icon {
+    width: 26px;
+    height: 26px;
+    border-radius: 6px;
+    background: var(--color-gray);
+    opacity: .8;
+}
+
+.category-card:first-child .category-card__icon {
+    background: var(--color-red);
+    opacity: .9;
+}
+
+.category-card p.name {
+    font: 700 italic 14px/1.4 var(--font-sans);
+    color: var(--color-dark);
+}
+
+.category-card p.needs {
+    font: 500 10px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace;
+    color: var(--color-gray);
+}
+
+.category-card--more {
+    border: 1px solid var(--color-border);
+    background: #fff;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.category-card--more p.name {
+    font: 800 italic 15px/1.3 var(--font-sans);
+    color: var(--color-red);
+}
+
+/* S — gdzie: full-width intro row + three location cards, reuses .feature-card */
+#gdzie .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    align-items: start;
+}
+
+#gdzie .intro {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 44ch;
+    grid-column: 1 / -1;
+}
+
+#gdzie .feature-card {
+    gap: 12px;
+}
+
+#gdzie .feature-card p.kicker {
+    font: 800 italic var(--fs-eyebrow)/1 var(--font-sans);
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    color: var(--color-red);
+}
+
+/* S — opinie: testimonial skeleton slots (deliberately empty, see memory notes) */
+#opinie .container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+#opinie .intro {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 60ch;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.testimonial-card {
+    background: #fff;
+    border: 1px dashed var(--color-border-2);
+    border-radius: 8px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-height: 220px;
+}
+
+.testimonial-card__stars {
+    font: 700 15px/1 var(--font-sans);
+    color: var(--color-border-2);
+    letter-spacing: .2em;
+}
+
+.testimonial-card__lines {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+}
+
+.testimonial-card__line {
+    display: block;
+    height: 11px;
+    border-radius: 3px;
+    background: #F0EEED;
+}
+
+.testimonial-card__line--short {
+    width: 65%;
+}
+
+.testimonial-card__who {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    border-top: 1px solid var(--color-border);
+    padding-top: 16px;
+}
+
+.testimonial-card__avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    flex: 0 0 auto;
+    background: repeating-linear-gradient(135deg, #E4E2E1 0 5px, #F5F5F5 5px 10px);
+}
+
+.testimonial-card__meta {
+    font: 500 10px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace;
+    color: var(--color-gray);
+}
+
+.testimonial-rating {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top: 1px solid var(--color-border);
+    padding-top: 32px;
+}
+
+.testimonial-rating__value {
+    font: 800 italic clamp(22px, 2.4vw, 30px)/1 var(--font-sans);
+    color: var(--color-dark);
+}
+
+.testimonial-rating__label {
+    font: 400 italic var(--fs-card-body)/1.6 var(--font-sans);
+    color: var(--color-gray);
+    max-width: 40ch;
+}
+
+/* S — jezyki: dark strip with three language chips */
+#jezyki {
+    background: var(--color-dark);
+    padding: 80px 24px;
+}
+
+#jezyki .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    align-items: center;
+}
+
+#jezyki .intro {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#jezyki h2 {
+    font: 800 italic clamp(22px, 2.6vw, 32px)/1.2 var(--font-sans);
+    color: #fff;
+    max-width: 26ch;
+}
+
+#jezyki .lead {
+    color: rgba(255, 255, 255, .88);
+    max-width: 50ch;
+}
+
+.lang-grid {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.lang-chip {
+    border: 1px solid rgba(255, 255, 255, .28);
+    border-radius: 8px;
+    padding: 20px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 110px;
+}
+
+.lang-chip__code {
+    font: 800 italic 22px/1 var(--font-sans);
+    color: #fff;
+}
+
+.lang-chip__name {
+    font: 600 italic 12px/1.4 var(--font-sans);
+    color: rgba(255, 255, 255, .7);
+}
+
+/* S — sciezki: two account-path cards */
+#sciezki .container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+#sciezki .intro {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 60ch;
+}
+
+.path-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.path-card {
+    border-radius: 8px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+    border: 1px solid var(--color-border);
+}
+
+.path-card--client {
+    background: var(--color-bg-alt);
+}
+
+.path-card--trainer {
+    background: #fff;
+    border-left: 4px solid var(--color-red);
+}
+
+.path-card__label {
+    font: 800 italic var(--fs-eyebrow)/1 var(--font-sans);
+    text-transform: uppercase;
+    letter-spacing: .12em;
+}
+
+.path-card--client .path-card__label {
+    color: var(--color-gray);
+}
+
+.path-card--trainer .path-card__label {
+    color: var(--color-red);
+}
+
+.path-card h3 {
+    font: 800 italic 20px/1.3 var(--font-sans);
+    color: var(--color-dark);
+}
+
+.path-card ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.path-card li {
+    font: 400 italic var(--fs-card-body)/1.6 var(--font-sans);
+}
+
+.path-card--client li {
+    color: var(--color-gray);
+}
+
+.path-card--trainer li {
+    color: var(--color-dark);
+}
+
+.path-card__actions {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    align-items: center;
+}

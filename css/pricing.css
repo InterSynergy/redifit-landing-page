@@ -1,0 +1,162 @@
+/* Redifit landing — styles unique to the pricing page (cennik.html) */
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+    align-items: start;
+}
+
+.price-card {
+    background: #fff;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.price-card__head {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.price-card__plan {
+    font: 800 italic var(--fs-eyebrow)/1 var(--font-sans);
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    color: var(--color-gray);
+}
+
+.price-card__amount {
+    font: 800 italic 44px/1.05 var(--font-sans);
+    color: var(--color-dark);
+}
+
+.price-card__amount span {
+    font: 600 italic 16px/1 var(--font-sans);
+    color: var(--color-gray);
+}
+
+.price-card__frame {
+    font: 400 italic var(--fs-card-body)/1.6 var(--font-sans);
+    color: var(--color-gray);
+}
+
+.price-card__incl {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-top: 1px solid var(--color-border);
+    padding-top: 24px;
+}
+
+.price-card__incl li {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    font: 400 italic var(--fs-card-body)/1.6 var(--font-sans);
+    color: var(--color-dark);
+}
+
+.price-card__incl li::before {
+    content: "";
+    flex: 0 0 auto;
+    width: 8px;
+    height: 8px;
+    border-radius: 2px;
+    background: var(--color-red);
+    margin-top: 8px;
+}
+
+.price-card__meta {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-top: 1px solid var(--color-border);
+    padding-top: 24px;
+}
+
+.price-card__meta-row {
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.price-card__meta-row dt {
+    font: 600 italic 14px/1.5 var(--font-sans);
+    color: var(--color-gray);
+}
+
+.price-card__meta-row dd {
+    font: 700 italic 14px/1.5 var(--font-sans);
+    color: var(--color-dark);
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.price-card__manage {
+    font: 400 italic var(--fs-card-body)/1.6 var(--font-sans);
+    color: var(--color-gray);
+    border-top: 1px solid var(--color-border);
+    padding-top: 24px;
+}
+
+.pricing-side {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.pricing-info-card {
+    border-radius: 8px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.pricing-info-card--muted {
+    background: var(--color-bg-alt);
+    border: 1px solid var(--color-border);
+}
+
+.pricing-info-card--white {
+    background: #fff;
+    border: 1px solid var(--color-border);
+    gap: 16px;
+}
+
+.pricing-info-card--dark {
+    background: var(--color-dark);
+    gap: 16px;
+}
+
+.pricing-info-card__label {
+    font: 800 italic var(--fs-eyebrow)/1 var(--font-sans);
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    color: var(--color-gray);
+}
+
+.pricing-info-card h2 {
+    font: 800 italic 20px/1.3 var(--font-sans);
+    color: var(--color-dark);
+}
+
+.pricing-info-card--dark h2 {
+    color: #fff;
+}
+
+.pricing-info-card p {
+    font: 400 italic var(--fs-card-body)/1.6 var(--font-sans);
+    color: var(--color-gray);
+}
+
+.pricing-info-card--dark p {
+    color: rgba(255, 255, 255, .88);
+}

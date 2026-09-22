@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Redifit для тренерів — клієнти, календар і платежі</title>
+<meta name="description" content="Знаходь нових клієнтів і проводь тренування в одному застосунку: профіль, календар, клієнти, онлайн-платежі та статистика. Для Android та iOS.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/styles.css">
+<link rel="stylesheet" href="../css/trainers.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header__bar container">
+    <a href="index.html" class="logo" aria-label="Redifit — головна сторінка">
+      <img class="logo-mark" src="../assets/logo.webp" alt="Redifit" />
+    </a>
+    <nav aria-label="Головна навігація" class="main-nav">
+      <a href="how-it-works.html">Як це працює</a>
+      <a href="dlya-treneriv.html" aria-current="page">Для тренерів</a>
+      <a href="pricing.html">Тарифи</a>
+      <a href="questions.html">Питання</a>
+      <a href="contact.html">Контакти</a>
+    </nav>
+    <div role="group" aria-label="Вибери мову" class="lang-switch"><a href="../dla-trenerow.html" aria-current="false">PL</a><a href="../en/for-trainers.html" aria-current="false">EN</a><a href="dlya-treneriv.html" aria-current="true">UK</a></div>
+    <a href="#pobierz" class="btn btn-primary">Завантаж застосунок</a>
+  </div>
+</header>
+<main>
+<section id="t-hero" class="hero">
+  <div class="hero__pattern" aria-hidden="true"></div>
+  <div class="hero__scrim" aria-hidden="true"></div>
+  <p class="hero__needs">[NEEDS] zdjęcie hero ≥ 1920×1080 — trener przy pracy, przyciemnienie 40%</p>
+  <div class="hero__grid">
+    <div class="hero__copy">
+      <div class="role-toggle">
+        <a href="index.html">Клієнт →</a>
+        <span aria-current="page">Тренер</span>
+      </div>
+      <p class="hero__eyebrow">ДЛЯ ТРЕНЕРІВ</p>
+      <h1 class="h1">Знаходь нових клієнтів. Проводь тренування в одному застосунку.</h1>
+      <p class="hero__sub">Redifit дає тренерові профіль, який бачать клієнти, календар бронювань, онлайн-платежі та статистику. Акаунт тренера створюєш у застосунку.</p>
+      <div class="hero__cta-row">
+        <a href="#pobierz" class="btn btn-lg btn-primary">Завантаж застосунок</a>
+        <div class="store-badges">
+          <img src="../assets/google-play.png" alt="Завантажити в Google Play" title="[LINK: Google Play — placeholder]" />
+          <img src="../assets/app-store.svg" alt="Завантажити в App Store" title="[LINK: App Store — placeholder]" />
+        </div>
+      </div>
+      <p class="hero__note">Реєстрація тренера відбувається в застосунку.</p>
+      <div class="hero-proof">
+        <div class="hero-proof__item">
+          <p class="hero-proof__value">250+</p>
+          <p class="hero-proof__label">тренерів у застосунку</p>
+          <span class="tag tag--sample">ТЕСТОВІ ДАНІ</span>
+        </div>
+        <div class="hero-proof__item">
+          <p class="hero-proof__value">3 400</p>
+          <p class="hero-proof__label">бронювань щомісяця</p>
+          <span class="tag tag--sample">ТЕСТОВІ ДАНІ</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero__media">
+      <figure class="phone phone--tilt-r">
+        <div class="phone__screen">
+          <span class="phone__tag">T-A</span>
+          <figcaption class="phone__caption">Kalendarz trenera (miesiąc) + lista treningów wybranego dnia</figcaption>
+          <span class="phone__needs">[NEEDS] screen z aplikacji albo Figma</span>
+        </div>
+      </figure>
+    </div>
+  </div>
+</section>
+<section id="t-dlaczego" class="section">
+  <div class="container" style="display:flex;flex-direction:column;gap:40px;">
+    <h2 class="h2">Уся організація роботи в одному місці</h2>
+    <div class="compare-grid">
+      <div class="compare-card compare-card--without">
+        <p class="compare-card__title">Сьогодні</p>
+        <ul>
+          <li><span>Клієнти, повідомлення й записи розкидані по телефону, нотатках і календарях.</span></li>
+          <li><span>Розрахунки та підсумки продажів ведеш окремо.</span></li>
+          <li><span>Про нових клієнтів дбаєш сам, поза тренуваннями.</span></li>
+        </ul>
+      </div>
+      <div class="compare-card compare-card--with">
+        <p class="compare-card__title">У Redifit</p>
+        <ul>
+          <li><span>Бронювання, клієнти й історія в одному календарі.</span></li>
+          <li><span>Онлайн-платежі, гаманець і звіти в тому самому застосунку.</span></li>
+          <li><span>Твій профіль бачать клієнти, які шукають тренера за категорією та місцем.</span></li>
+        </ul>
+      </div>
+    </div>
+    <p class="needs-block">[NEEDS: підтвердити колонку «Сьогодні» розмовами з тренерами]</p>
+  </div>
+</section>
+<section id="t-profil" class="section section-alt step-section">
+  <div class="container">
+    <div class="step-section__copy">
+      <h2 class="h2">Клієнти шукають тренерів. Нехай знайдуть тебе</h2>
+      <p class="lead">Твій профіль — перше, що бачить клієнт перед бронюванням. Заповни його в застосунку.</p>
+      <ul class="step-list"><li><span><strong>Біо та кваліфікація</strong> — назва профілю, спеціалізація, освіта, досвід, пройдені курси й навчання.</span></li><li><span><strong>Портфоліо</strong> — додавай фото з камери чи галереї та змінюй порядок перетягуванням.</span></li><li><span><strong>Відгуки</strong> — відповідай на відгуки клієнтів, відповідь можна згодом змінити.</span></li><li><span><strong>Видимість</strong> — клієнти знайдуть тебе в пошуку, на карті та в розділі «Тренери поблизу».</span></li></ul>
+      <p class="step-note" style="background:#fff;border:1px solid var(--color-border-2);">Налаштування послуг зберігаються в профілі, тож почни з біо.</p>
+    </div>
+    <div style="display:flex;justify-content:center;">
+      <figure class="phone phone--md">
+        <div class="phone__screen">
+          <span class="phone__tag">T-H</span>
+          <figcaption class="phone__caption">Bio i portfolio trenera</figcaption>
+          <span class="phone__needs">[NEEDS] screen z aplikacji albo Figma</span>
+        </div>
+      </figure>
+    </div>
+  </div>
+</section>
+<section id="t-zasady" class="section">
+  <div class="container" style="display:flex;flex-direction:column;gap:40px;">
+    <h2 class="h2">Послуги, ціни та доступність налаштовуєш сам</h2>
+    <div>
+      <div class="feature-grid"><div class="feature-card feature-card--muted">
+          <h3>Послуга</h3>
+          <p>Назва, опис, категорія, тривалість, ціна брутто та ставка ПДВ.</p>
+        </div><div class="feature-card feature-card--muted">
+          <h3>Місце</h3>
+          <p>Стаціонарно з позначкою на карті або з виїздом у радіусі кілометрів.</p>
+        </div><div class="feature-card feature-card--muted">
+          <h3>Доступність</h3>
+          <p>Робочі години, перерви, циклічність і проміжок між бронюваннями на дорогу чи підготовку.</p>
+        </div><div class="feature-card feature-card--muted">
+          <h3>Ліміти бронювання</h3>
+          <p>Наскільки далеко наперед клієнти можуть бронювати, за скільки часу та до коли можуть перенести.</p>
+        </div><div class="feature-card feature-card--muted">
+          <h3>Відпустки</h3>
+          <p>Діапазон дат з описом; у цей час не приймаєш бронювань. [NEEDS: підтвердити дію відпустки]</p>
+        </div><div class="feature-card feature-card--muted">
+          <h3>Happy hours</h3>
+          <p>Знижка у вибрані години, циклічно, дійсна до вказаної дати.</p>
+        </div><div class="feature-card feature-card--muted">
+          <h3>Способи оплати</h3>
+          <p>Позначаєш, що приймаєш: готівка, картка, BLIK, переказ.</p>
+        </div><div class="feature-card feature-card--muted">
+          <h3>Події</h3>
+          <p>Дата, години, локація, фото, рівень, ціна та ліміт учасників. Події проходять модерацію. [NEEDS: правила модерації]</p>
+        </div></div>
+      <figure class="phone phone--sm">
+        <div class="phone__screen">
+          <span class="phone__tag">T-C</span>
+          <figcaption class="phone__caption">Formularz usługi (nazwa, kategoria, czas, cena brutto, VAT)</figcaption>
+          <span class="phone__needs">[NEEDS] screen</span>
+        </div>
+      </figure>
+    </div>
+  </div>
+</section>
+<section id="t-popyt" class="section section-alt">
+  <div class="container">
+    <div class="intro">
+      <p class="eyebrow">Коли в календарі порожньо</p>
+      <h2 class="h2">Чотири інструменти, якими сам наповнюєш календар</h2>
+      <p class="lead">Усі вони в застосунку і не потребують додаткової реклами.</p>
+    </div>
+    <div class="feature-grid"><div class="feature-card">
+          <h3>Happy hours</h3>
+          <p>Знизь ціну в години, які важко заповнити. Знижка діє циклічно і закінчується в дату, яку вкажеш.</p>
+        </div><div class="feature-card">
+          <h3>Групові події</h3>
+          <p>Один термін, кілька учасників. Встановлюєш рівень, ціну і ліміт місць, додаєш галерею.</p>
+        </div><div class="feature-card">
+          <h3>SMS клієнтам</h3>
+          <p>Повідомлення всім або обраним зі списку, до 200 символів, надсилається з твого телефону.</p>
+        </div><div class="feature-card">
+          <h3>«Забронювати знову»</h3>
+          <p>З історії клієнта одним дотиком повертаєшся до тієї самої послуги — для обох сторін.</p>
+        </div></div>
+  </div>
+</section>
+<section id="t-praca" class="section section-alt step-section">
+  <div class="container">
+    <div class="phone-row">
+      <figure class="phone phone--sm">
+        <div class="phone__screen">
+          <span class="phone__tag">T-A</span>
+          <figcaption class="phone__caption">Kalendarz trenera: miesiąc i lista treningów dnia</figcaption>
+          <span class="phone__needs">[NEEDS] screen</span>
+        </div>
+      </figure>
+      <figure class="phone phone--sm phone--raised">
+        <div class="phone__screen">
+          <span class="phone__tag">T-D</span>
+          <figcaption class="phone__caption">Klienci + „Wyślij wiadomość: do wszystkich / do wybranych”</figcaption>
+          <span class="phone__needs">[NEEDS] screen</span>
+        </div>
+      </figure>
+    </div>
+    <div class="step-section__copy">
+      <h2 class="h2">Календар, клієнти й повідомлення в одному місці</h2>
+      <ul class="step-list"><li><span><strong>Календар</strong> — вигляд місяця й тижня та список тренувань вибраного дня.</span></li><li><span><strong>Бронювання</strong> — клієнт, телефон, примітка, вартість і спосіб оплати; редагуй, додай до календаря або запиши знову.</span></li><li><span><strong>Клієнти</strong> — список із пошуком та історією бронювань кожного.</span></li><li><span><strong>Повідомлення</strong> — усім або вибраним клієнтам (до 200 символів); надсилаєш із SMS-застосунку в телефоні.</span></li></ul>
+    </div>
+  </div>
+</section>
+<section id="t-platnosci" class="section step-section">
+  <div class="container">
+    <div class="step-section__copy">
+      <h2 class="h2">Платежі надходять на твій рахунок, а цифри — під рукою</h2>
+      <ul class="step-list"><li><span><strong>Рахунок виплат</strong> — підключи акаунт Stripe у застосунку й перевіряй його статус.</span></li><li><span><strong>Статистика</strong> — три вкладки: бронювання, звіти, гаманець.</span></li><li><span><strong>Фільтри</strong> — дата, клієнт, тип тренування, спосіб оплати, оцінки, дні тижня, години та знижки.</span></li><li><span><strong>Звіти</strong> — дохід і продажі, можна завантажити із застосунку. [NEEDS: формати звітів]</span></li></ul>
+    </div>
+    <div class="phone-row">
+      <figure class="phone phone--sm">
+        <div class="phone__screen">
+          <span class="phone__tag">T-E</span>
+          <figcaption class="phone__caption">Statystyki: zakładka Raporty z filtrami</figcaption>
+          <span class="phone__needs">[NEEDS] screen</span>
+        </div>
+      </figure>
+      <figure class="phone phone--sm phone--raised">
+        <div class="phone__screen">
+          <span class="phone__tag">T-F</span>
+          <figcaption class="phone__caption">Konto wypłat Stripe i abonament</figcaption>
+          <span class="phone__needs">[NEEDS] screen</span>
+        </div>
+      </figure>
+    </div>
+  </div>
+</section>
+<section id="t-start" class="section section-alt">
+  <div class="container" style="display:flex;flex-direction:column;gap:40px;align-items:flex-start;">
+    <h2 class="h2" style="max-width:none;">Старт у чотири кроки</h2>
+    <ol class="start-steps"><li>
+          <span class="start-steps__num" aria-hidden="true">1</span>
+          <p>Завантаж застосунок і створи акаунт тренера.</p>
+        </li><li>
+          <span class="start-steps__num" aria-hidden="true">2</span>
+          <p>Заповни біо.</p>
+        </li><li>
+          <span class="start-steps__num" aria-hidden="true">3</span>
+          <p>Додай послугу: категорія, тривалість, ціна, місце та доступність.</p>
+        </li><li>
+          <span class="start-steps__num" aria-hidden="true">4</span>
+          <p>Підключи рахунок виплат Stripe та активуй підписку.</p>
+        </li></ol>
+    <p class="needs-block">[NEEDS: підтвердити порядок кроків і вимоги верифікації акаунта тренера]</p>
+    <div style="display:flex;gap:16px;flex-wrap:wrap;align-items:center;">
+      <a href="#pobierz" class="btn btn-primary">Завантаж застосунок</a>
+      <a href="pricing.html" class="btn-ghost-link">Скільки коштує обліковий запис тренера? →</a>
+    </div>
+  </div>
+</section>
+<section id="pobierz" class="cta-banner">
+  <div class="container">
+    <h2>Почни із завантаження застосунку</h2>
+    <p>Створи акаунт тренера, заповни профіль і додай першу послугу.</p>
+    <div class="hero__cta-row">
+      <span class="btn btn-lg btn-on-red">Завантаж застосунок</span>
+      <div class="store-badges">
+          <img src="../assets/google-play.png" alt="Завантажити в Google Play" title="[LINK: Google Play — placeholder]" />
+          <img src="../assets/app-store.svg" alt="Завантажити в App Store" title="[LINK: App Store — placeholder]" />
+        </div>
+    </div>
+    <p class="hero__note" style="color:rgba(255,255,255,.85);">Реєстрація тренера відбувається в застосунку.</p>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col footer-col--brand">
+        <div class="logo" style="pointer-events:none;">
+          <img class="logo-mark" src="../assets/logo.webp" alt="Redifit" />
+        </div>
+        <p>Тренери та бронювання тренувань в одному застосунку.</p>
+        <div class="footer-social">
+          <a href="https://facebook.com/redifit">Facebook</a>
+          <a href="https://instagram.com/redi.fit/">Instagram</a>
+          <a href="https://tiktok.com/@redi.fit">TikTok</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <p class="footer-col__title">Застосунок</p>
+        <a href="how-it-works.html">Як це працює</a>
+        <a href="dlya-treneriv.html">Для тренерів</a>
+        <a href="pricing.html">Тарифи</a>
+      </div>
+      <div class="footer-col">
+        <p class="footer-col__title">Допомога</p>
+        <a href="questions.html">Питання</a>
+        <a href="contact.html">Контакти</a>
+      </div>
+      <div class="footer-col">
+        <p class="footer-col__title">Інформація</p>
+        <a href="terms.html">Умови користування</a>
+        <a href="privacy.html">Політика приватності</a>
+        <a href="404.html" class="footer-link--muted">404 (перегляд)</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom__meta">
+        <p>REDi FIT sp. z o.o., вул. Каспшака 31/117, 01-234 Варшава, Польща [NEEDS: підтвердити]</p>
+        <p class="footer-copy">© 2026 REDi FIT</p>
+        <p class="tag--needs">[NEEDS] target domain · indexing: noindex until launch</p>
+      </div>
+      <div role="group" aria-label="Вибери мову" class="lang-switch lang-switch--dark"><a href="../dla-trenerow.html" aria-current="false">PL</a><a href="../en/for-trainers.html" aria-current="false">EN</a><a href="dlya-treneriv.html" aria-current="true">UK</a></div>
+    </div>
+  </div>
+</footer>
+<div role="region" aria-label="Згода на файли cookie" class="cookie-banner" data-cookie-banner>
+  <div class="container">
+    <p>Цей сайт використовує файли cookie, щоб працювати правильно. Докладніше — у <a href="privacy.html">політиці приватності</a>.</p>
+    <div class="cookie-banner__actions">
+      <button type="button" class="btn btn-primary" data-cookie-accept>Приймаю</button>
+      <button type="button" class="btn btn-neutral" data-cookie-accept>Лише необхідні</button>
+    </div>
+  </div>
+</div>
+<script src="../scripts/script.js"></script>
+</body>
+</html>

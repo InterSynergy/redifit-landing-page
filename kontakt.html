@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Redifit — kontakt</title>
+    <meta name="description" content="Napisz do nas: formularz kontaktowy, e-mail i telefon do REDi FIT.">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="site-header__bar container">
+        <a href="index.html" class="logo" aria-label="Redifit — strona główna">
+            <img class="logo-mark" src="assets/logo.webp" alt="Redifit"/>
+        </a>
+        <nav aria-label="Nawigacja główna" class="main-nav">
+            <a href="jak-to-dziala.html">Jak to działa</a>
+            <a href="dla-trenerow.html">Dla trenerów</a>
+            <a href="cennik.html">Cennik</a>
+            <a href="pytania.html">Pytania</a>
+            <a href="kontakt.html" aria-current="page">Kontakt</a>
+        </nav>
+        <div role="group" aria-label="Wybierz język" class="lang-switch"><a href="kontakt.html"
+                                                                            aria-current="true">PL</a><a
+                href="en/contact.html" aria-current="false">EN</a><a href="uk/contact.html" aria-current="false">UK</a>
+        </div>
+        <a href="#pobierz" class="btn btn-primary">Pobierz aplikację</a>
+    </div>
+</header>
+<main>
+    <section class="page-hero" style="padding:72px 24px;">
+        <div class="container">
+            <p class="page-hero__eyebrow">Kontakt</p>
+            <h1>Napisz do nas</h1>
+            <p class="lead">Odpowiadamy na adres e-mail podany w formularzu. Jeśli pytanie dotyczy rezerwacji albo
+                konta, napisz, czy jesteś klientem, czy trenerem — trafi szybciej do właściwej osoby.</p>
+        </div>
+    </section>
+    <section class="contact-page-section">
+        <div class="contact-page-grid">
+            <div class="contact-card">
+                <div class="contact-card__head">
+                    <h2>Formularz kontaktowy</h2>
+                    <span class="tag tag--mock">MOCK — nic nie jest wysyłane</span>
+                </div>
+                <div class="form-success" id="k-success" data-mock-form-success="k" hidden role="status">
+                    <p>Dziękujemy</p>
+                    <p>Twoja wiadomość została wysłana. Odpowiemy na podany adres e-mail.</p>
+                    <button type="button" class="btn btn-outline" data-mock-form-reset>Wyślij kolejną wiadomość</button>
+                </div>
+                <form id="k" data-mock-form="k" novalidate>
+                    <div class="form-field">
+                        <label for="k-name">Imię i nazwisko</label>
+                        <input id="k-name" name="name" type="text" required minlength="2"/>
+                        <p class="form-field__error" id="k-name-error" hidden>To pole jest wymagane</p>
+                    </div>
+                    <div class="form-field">
+                        <label for="k-email">Adres e-mail</label>
+                        <input id="k-email" name="email" type="email" required/>
+                        <p class="form-field__error" id="k-email-error" hidden>Wprowadź poprawny adres e-mail</p>
+                    </div>
+                    <div class="form-field">
+                        <label for="k-role">Kim jesteś?</label>
+                        <select id="k-role" name="role" required>
+                            <option value="" selected disabled>…</option>
+                            <option value="klient">Klient</option>
+                            <option value="trener">Trener</option>
+                            <option value="inne">Inne</option>
+                        </select>
+                        <p class="form-field__error" id="k-role-error" hidden>To pole jest wymagane</p>
+                    </div>
+                    <div class="form-field">
+                        <label for="k-subject">Temat</label>
+                        <input id="k-subject" name="subject" type="text" required/>
+                        <p class="form-field__error" id="k-subject-error" hidden>To pole jest wymagane</p>
+                    </div>
+                    <div class="form-field">
+                        <label for="k-message">Wiadomość</label>
+                        <textarea id="k-message" name="message" rows="4" required maxlength="2000"></textarea>
+                        <p class="form-field__error" id="k-message-error" hidden>To pole jest wymagane</p>
+                    </div>
+                    <div class="consent-list">
+                        <label class="consent-label">
+                            <input type="checkbox" data-consent required/>
+                            <span>Wyrażam zgodę na przetwarzanie moich danych osobowych w celu udzielenia odpowiedzi na zapytanie. [NEEDS: prawnik]</span>
+                        </label>
+                        <label class="consent-label">
+                            <input type="checkbox" data-consent required/>
+                            <span>Akceptuję regulamin i politykę prywatności. [NEEDS: prawnik]</span>
+                        </label>
+                        <p class="form-field__error" data-consent-error hidden>Musisz zaakceptować wszystkie wymagane
+                            zgody</p>
+                    </div>
+                    <button type="submit" class="btn btn-outline" style="align-self:flex-start;">Wyślij wiadomość
+                    </button>
+                </form>
+
+            </div>
+            <div class="contact-side">
+                <div class="contact-info-card">
+                    <h2>Dane kontaktowe</h2>
+                    <dl>
+                        <div>
+                            <dt>E-mail</dt>
+                            <dd><a href="mailto:biuro@redifit.pl">biuro@redifit.pl</a></dd>
+                        </div>
+                        <div>
+                            <dt>Telefon</dt>
+                            <dd><a href="tel:+48502602999">502 602 999</a></dd>
+                        </div>
+                        <div>
+                            <dt>Adres</dt>
+                            <dd>REDi FIT sp. z o.o.<br>ul. Kasprzaka 31/117<br>01-234 Warszawa</dd>
+                        </div>
+                    </dl>
+                    <p class="needs-block">[NEEDS] potwierdzić, że te dane obowiązują dla aplikacji — pochodzą z
+                        redifit.pl/kontakt</p>
+                </div>
+                <div class="contact-note-card">
+                    <h2>Sprawy konta i rezerwacji</h2>
+                    <p>Rejestrację, zmianę terminu, anulowanie i ustawienia usług prowadzisz w aplikacji. Formularz
+                        służy do pytań, na które nie ma odpowiedzi w aplikacji ani w sekcji pytań.</p>
+                    <a href="pytania.html" class="btn-ghost-link">Zobacz częste pytania →</a>
+                </div>
+                <div class="contact-todo">
+                    <p class="contact-todo__label">Do wdrożenia</p>
+                    <p>[NEEDS] gdzie trafiają zgłoszenia: e-mail biuro@redifit.pl czy CRM — wymóg S-016 „integracja z
+                        systemem zgłoszeń”
+                        [NEEDS] zabezpieczenie antyspamowe
+                        [NEEDS] czy potrzebna mapa dojazdu przy adresie</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="pobierz" class="cta-banner" style="padding:64px 24px;">
+        <div class="container">
+            <h2 style="font-size:clamp(22px,2.8vw,32px);">Zacznij od pobrania aplikacji</h2>
+            <p>Znajdź trenera, wybierz termin, zarezerwuj w aplikacji.</p>
+            <div class="hero__cta-row">
+                <span class="btn btn-lg btn-on-red">Pobierz aplikację</span>
+                <div class="store-badges">
+                    <img src="assets/google-play.png" alt="Pobierz z Google Play"
+                         title="[LINK: Google Play — placeholder]"/>
+                    <img src="assets/app-store.svg" alt="Pobierz z App Store" title="[LINK: App Store — placeholder]"/>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col footer-col--brand">
+                <div class="logo" style="pointer-events:none;">
+                    <img class="logo-mark" src="assets/logo.webp" alt="Redifit"/>
+                </div>
+                <p>Trenerzy i rezerwacje treningów w jednej aplikacji.</p>
+                <div class="footer-social">
+                    <a href="https://facebook.com/redifit">Facebook</a>
+                    <a href="https://instagram.com/redi.fit/">Instagram</a>
+                    <a href="https://tiktok.com/@redi.fit">TikTok</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <p class="footer-col__title">Aplikacja</p>
+                <a href="jak-to-dziala.html">Jak to działa</a>
+                <a href="dla-trenerow.html">Dla trenerów</a>
+                <a href="cennik.html">Cennik</a>
+            </div>
+            <div class="footer-col">
+                <p class="footer-col__title">Pomoc</p>
+                <a href="pytania.html">Pytania</a>
+                <a href="kontakt.html">Kontakt</a>
+            </div>
+            <div class="footer-col">
+                <p class="footer-col__title">Informacje</p>
+                <a href="terms.html">Regulamin</a>
+                <a href="privacy.html">Polityka prywatności</a>
+                <a href="404.html" class="footer-link--muted">404 (podgląd)</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom__meta">
+                <p>REDi FIT sp. z o.o., ul. Kasprzaka 31/117, 01-234 Warszawa [NEEDS: potwierdzić]</p>
+                <p class="footer-copy">© 2026 REDi FIT</p>
+                <p class="tag--needs">[NEEDS] target domain · indexing: noindex until launch</p>
+            </div>
+            <div role="group" aria-label="Wybierz język" class="lang-switch lang-switch--dark"><a href="kontakt.html"
+                                                                                                  aria-current="true">PL</a><a
+                    href="en/contact.html" aria-current="false">EN</a><a href="uk/contact.html"
+                                                                         aria-current="false">UK</a></div>
+        </div>
+    </div>
+</footer>
+<div role="region" aria-label="Zgoda na pliki cookies" class="cookie-banner" data-cookie-banner>
+    <div class="container">
+        <p>Ta strona używa plików cookies, aby działać poprawnie. Więcej znajdziesz w <a href="privacy.html">polityce
+            prywatności</a>.</p>
+        <div class="cookie-banner__actions">
+            <button type="button" class="btn btn-primary" data-cookie-accept>Akceptuję</button>
+            <button type="button" class="btn btn-neutral" data-cookie-accept>Tylko niezbędne</button>
+        </div>
+    </div>
+</div>
+<script src="scripts/script.js"></script>
+</body>
+</html>
