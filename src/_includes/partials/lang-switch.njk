@@ -1,0 +1,3 @@
+<div role="group" aria-label="{% ta 'common.lang_label' %}" class="lang-switch{{ langSwitchClass }}">
+    {%- for l in languages %}<a href="{% url pageKey, l.code %}" aria-current="{{ 'true' if l.code == lang.code else 'false' }}">{{ l.label }}</a>{% endfor -%}
+</div>

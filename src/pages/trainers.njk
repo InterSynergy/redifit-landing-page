@@ -1,0 +1,278 @@
+---
+pageKey: trainers
+css: [trainers]
+---
+<main>
+    <section id="t-hero" class="hero">
+        <div class="hero__pattern" aria-hidden="true"></div>
+        <div class="hero__scrim" aria-hidden="true"></div>
+        <p class="hero__needs">{% t "trainers.t_hero.needs" %}</p>
+        <div class="hero__grid">
+            <div class="hero__copy">
+                <div class="role-toggle">
+                    <a href="{% url "home" %}">{% t "trainers.t_hero.a" %}</a>
+                    <span aria-current="page">{% t "trainers.t_hero.span" %}</span>
+                </div>
+                <p class="hero__eyebrow">{% t "trainers.t_hero.eyebrow" %}</p>
+                <h1 class="h1">{% t "trainers.t_hero.h1" %}</h1>
+                <p class="hero__sub">{% t "trainers.t_hero.sub" %}</p>
+                <div class="hero__cta-row">
+                    <a href="#pobierz" class="btn btn-lg btn-primary">{% t "trainers.t_hero.btn" %}</a>
+                    <div class="store-badges">
+                        <img src="{% asset "assets/google-play.png" %}" alt="{% ta "trainers.t_hero.img_alt" %}" title="{% ta "trainers.t_hero.img_title" %}" />
+                        <img src="{% asset "assets/app-store.svg" %}" alt="{% ta "trainers.t_hero.img_alt_2" %}" title="{% ta "trainers.t_hero.img_title_2" %}" />
+                    </div>
+                </div>
+                <p class="hero__note">{% t "trainers.t_hero.note" %}</p>
+                <div class="hero-proof">
+                    <div class="hero-proof__item">
+                        <p class="hero-proof__value">{% t "trainers.t_hero.value" %}</p>
+                        <p class="hero-proof__label">{% t "trainers.t_hero.label" %}</p>
+                        <span class="tag tag--sample">{% t "trainers.t_hero.tag" %}</span>
+                    </div>
+                    <div class="hero-proof__item">
+                        <p class="hero-proof__value">{% t "trainers.t_hero.value_2" %}</p>
+                        <p class="hero-proof__label">{% t "trainers.t_hero.label_2" %}</p>
+                        <span class="tag tag--sample">{% t "trainers.t_hero.tag_2" %}</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__media">
+                <figure class="phone phone--tilt-r">
+                    <div class="phone__screen">
+                        <span class="phone__tag">{% t "trainers.t_hero.tag_3" %}</span>
+                        <figcaption class="phone__caption">{% t "trainers.t_hero.caption" %}
+                        </figcaption>
+                        <span class="phone__needs">{% t "trainers.t_hero.needs_2" %}</span>
+                    </div>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <section id="t-dlaczego" class="section">
+        <div class="container" style="display:flex;flex-direction:column;gap:40px;">
+            <h2 class="h2">{% t "trainers.t_dlaczego.h2" %}</h2>
+            <div class="compare-grid">
+                <div class="compare-card compare-card--without">
+                    <p class="compare-card__title">{% t "trainers.t_dlaczego.title" %}</p>
+                    <ul>
+                        <li>{% t "trainers.t_dlaczego.li" %}</li>
+                        <li>{% t "trainers.t_dlaczego.li_2" %}</li>
+                        <li>{% t "trainers.t_dlaczego.li_3" %}</li>
+                    </ul>
+                </div>
+                <div class="compare-card compare-card--with">
+                    <p class="compare-card__title">{% t "trainers.t_dlaczego.title_2" %}</p>
+                    <ul>
+                        <li>{% t "trainers.t_dlaczego.li_4" %}</li>
+                        <li>{% t "trainers.t_dlaczego.li_5" %}</li>
+                        <li>{% t "trainers.t_dlaczego.li_6" %}</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="needs-block">{% t "trainers.t_dlaczego.needs_block" %}</p>
+        </div>
+    </section>
+    <section id="t-profil" class="section section-alt step-section">
+        <div class="container">
+            <div class="step-section__copy">
+                <h2 class="h2">{% t "trainers.t_profil.h2" %}</h2>
+                <p class="lead">{% t "trainers.t_profil.lead" %}</p>
+                <ul class="step-list">
+                    <li>{% t "trainers.t_profil.li" %}</li>
+                    <li>{% t "trainers.t_profil.li_2" %}</li>
+                    <li>{% t "trainers.t_profil.li_3" %}</li>
+                    <li>{% t "trainers.t_profil.li_4" %}</li>
+                </ul>
+                <p class="step-note" style="background:#fff;border:1px solid var(--color-border-2);">{% t "trainers.t_profil.step_note" %}</p>
+            </div>
+            <div style="display:flex;justify-content:center;">
+                <figure class="phone phone--md">
+                    <div class="phone__screen">
+                        <span class="phone__tag">{% t "trainers.t_profil.tag" %}</span>
+                        <figcaption class="phone__caption">{% t "trainers.t_profil.caption" %}</figcaption>
+                        <span class="phone__needs">{% t "trainers.t_profil.needs" %}</span>
+                    </div>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <section id="t-zasady" class="section">
+        <div class="container" style="display:flex;flex-direction:column;gap:40px;">
+            <h2 class="h2">{% t "trainers.t_zasady.h2" %}</h2>
+            <div>
+                <div class="feature-grid">
+                    <div class="feature-card feature-card--muted">
+                        <h3>{% t "trainers.t_zasady.h3" %}</h3>
+                        <p>{% t "trainers.t_zasady.p" %}</p>
+                    </div>
+                    <div class="feature-card feature-card--muted">
+                        <h3>{% t "trainers.t_zasady.h3_2" %}</h3>
+                        <p>{% t "trainers.t_zasady.p_2" %}</p>
+                    </div>
+                    <div class="feature-card feature-card--muted">
+                        <h3>{% t "trainers.t_zasady.h3_3" %}</h3>
+                        <p>{% t "trainers.t_zasady.p_3" %}</p>
+                    </div>
+                    <div class="feature-card feature-card--muted">
+                        <h3>{% t "trainers.t_zasady.h3_4" %}</h3>
+                        <p>{% t "trainers.t_zasady.p_4" %}</p>
+                    </div>
+                    <div class="feature-card feature-card--muted">
+                        <h3>{% t "trainers.t_zasady.h3_5" %}</h3>
+                        <p>{% t "trainers.t_zasady.p_5" %}</p>
+                    </div>
+                    <div class="feature-card feature-card--muted">
+                        <h3>{% t "trainers.t_zasady.h3_6" %}</h3>
+                        <p>{% t "trainers.t_zasady.p_6" %}</p>
+                    </div>
+                    <div class="feature-card feature-card--muted">
+                        <h3>{% t "trainers.t_zasady.h3_7" %}</h3>
+                        <p>{% t "trainers.t_zasady.p_7" %}</p>
+                    </div>
+                    <div class="feature-card feature-card--muted">
+                        <h3>{% t "trainers.t_zasady.h3_8" %}</h3>
+                        <p>{% t "trainers.t_zasady.p_8" %}</p>
+                    </div>
+                </div>
+                <figure class="phone phone--sm">
+                    <div class="phone__screen">
+                        <span class="phone__tag">{% t "trainers.t_zasady.tag" %}</span>
+                        <figcaption class="phone__caption">{% t "trainers.t_zasady.caption" %}
+                        </figcaption>
+                        <span class="phone__needs">{% t "trainers.t_zasady.needs" %}</span>
+                    </div>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <section id="t-popyt" class="section section-alt">
+        <div class="container">
+            <div class="intro">
+                <p class="eyebrow">{% t "trainers.t_popyt.eyebrow" %}</p>
+                <h2 class="h2">{% t "trainers.t_popyt.h2" %}</h2>
+                <p class="lead">{% t "trainers.t_popyt.lead" %}</p>
+            </div>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>{% t "trainers.t_popyt.h3" %}</h3>
+                    <p>{% t "trainers.t_popyt.p" %}</p>
+                </div>
+                <div class="feature-card">
+                    <h3>{% t "trainers.t_popyt.h3_2" %}</h3>
+                    <p>{% t "trainers.t_popyt.p_2" %}</p>
+                </div>
+                <div class="feature-card">
+                    <h3>{% t "trainers.t_popyt.h3_3" %}</h3>
+                    <p>{% t "trainers.t_popyt.p_3" %}</p>
+                </div>
+                <div class="feature-card">
+                    <h3>{% t "trainers.t_popyt.h3_4" %}</h3>
+                    <p>{% t "trainers.t_popyt.p_4" %}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="t-praca" class="section section-alt step-section">
+        <div class="container">
+            <div class="phone-row">
+                <figure class="phone phone--sm">
+                    <div class="phone__screen">
+                        <span class="phone__tag">{% t "trainers.t_praca.tag" %}</span>
+                        <figcaption class="phone__caption">{% t "trainers.t_praca.caption" %}
+                        </figcaption>
+                        <span class="phone__needs">{% t "trainers.t_praca.needs" %}</span>
+                    </div>
+                </figure>
+                <figure class="phone phone--sm phone--raised">
+                    <div class="phone__screen">
+                        <span class="phone__tag">{% t "trainers.t_praca.tag_2" %}</span>
+                        <figcaption class="phone__caption">{% t "trainers.t_praca.caption_2" %}
+                        </figcaption>
+                        <span class="phone__needs">{% t "trainers.t_praca.needs_2" %}</span>
+                    </div>
+                </figure>
+            </div>
+            <div class="step-section__copy">
+                <h2 class="h2">{% t "trainers.t_praca.h2" %}</h2>
+                <ul class="step-list">
+                    <li>{% t "trainers.t_praca.li" %}</li>
+                    <li>{% t "trainers.t_praca.li_2" %}</li>
+                    <li>{% t "trainers.t_praca.li_3" %}</li>
+                    <li>{% t "trainers.t_praca.li_4" %}</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="t-platnosci" class="section step-section">
+        <div class="container">
+            <div class="step-section__copy">
+                <h2 class="h2">{% t "trainers.t_platnosci.h2" %}</h2>
+                <ul class="step-list">
+                    <li>{% t "trainers.t_platnosci.li" %}</li>
+                    <li>{% t "trainers.t_platnosci.li_2" %}</li>
+                    <li>{% t "trainers.t_platnosci.li_3" %}</li>
+                    <li>{% t "trainers.t_platnosci.li_4" %}</li>
+                </ul>
+            </div>
+            <div class="phone-row">
+                <figure class="phone phone--sm">
+                    <div class="phone__screen">
+                        <span class="phone__tag">{% t "trainers.t_platnosci.tag" %}</span>
+                        <figcaption class="phone__caption">{% t "trainers.t_platnosci.caption" %}</figcaption>
+                        <span class="phone__needs">{% t "trainers.t_platnosci.needs" %}</span>
+                    </div>
+                </figure>
+                <figure class="phone phone--sm phone--raised">
+                    <div class="phone__screen">
+                        <span class="phone__tag">{% t "trainers.t_platnosci.tag_2" %}</span>
+                        <figcaption class="phone__caption">{% t "trainers.t_platnosci.caption_2" %}</figcaption>
+                        <span class="phone__needs">{% t "trainers.t_platnosci.needs_2" %}</span>
+                    </div>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <section id="t-start" class="section section-alt">
+        <div class="container" style="display:flex;flex-direction:column;gap:40px;align-items:flex-start;">
+            <h2 class="h2" style="max-width:none;">{% t "trainers.t_start.h2" %}</h2>
+            <ol class="start-steps">
+                <li>
+                    <span class="start-steps__num" aria-hidden="true">{% t "trainers.t_start.num" %}</span>
+                    <p>{% t "trainers.t_start.p" %}</p>
+                </li>
+                <li>
+                    <span class="start-steps__num" aria-hidden="true">{% t "trainers.t_start.num_2" %}</span>
+                    <p>{% t "trainers.t_start.p_2" %}</p>
+                </li>
+                <li>
+                    <span class="start-steps__num" aria-hidden="true">{% t "trainers.t_start.num_3" %}</span>
+                    <p>{% t "trainers.t_start.p_3" %}</p>
+                </li>
+                <li>
+                    <span class="start-steps__num" aria-hidden="true">{% t "trainers.t_start.num_4" %}</span>
+                    <p>{% t "trainers.t_start.p_4" %}</p>
+                </li>
+            </ol>
+            <p class="needs-block">{% t "trainers.t_start.needs_block" %}</p>
+            <div style="display:flex;gap:16px;flex-wrap:wrap;align-items:center;">
+                <a href="#pobierz" class="btn btn-primary">{% t "trainers.t_start.btn" %}</a>
+                <a href="{% url "pricing" %}" class="btn-ghost-link">{% t "trainers.t_start.btn_ghost_link" %}</a>
+            </div>
+        </div>
+    </section>
+    <section id="pobierz" class="cta-banner">
+        <div class="container">
+            <h2>{% t "trainers.pobierz.h2" %}</h2>
+            <p>{% t "trainers.pobierz.p" %}</p>
+            <div class="hero__cta-row">
+                <span class="btn btn-lg btn-on-red">{% t "trainers.pobierz.btn" %}</span>
+                <div class="store-badges">
+                    <img src="{% asset "assets/google-play.png" %}" alt="{% ta "trainers.pobierz.img_alt" %}" title="{% ta "trainers.pobierz.img_title" %}" />
+                    <img src="{% asset "assets/app-store.svg" %}" alt="{% ta "trainers.pobierz.img_alt_2" %}" title="{% ta "trainers.pobierz.img_title_2" %}" />
+                </div>
+            </div>
+            <p class="hero__note" style="color:rgba(255,255,255,.85);">{% t "trainers.pobierz.note" %}</p>
+        </div>
+    </section>
+</main>

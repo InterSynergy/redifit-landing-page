@@ -1,0 +1,733 @@
+{
+  "slugs": {
+    "home": "index",
+    "find": "szukam-trenera",
+    "trainers": "dla-trenerow",
+    "pricing": "cennik",
+    "faq": "faq",
+    "contact": "kontakt",
+    "terms": "terms",
+    "privacy": "privacy",
+    "notfound": "404"
+  },
+  "common": {
+    "logo_label": "Redifit — strona główna",
+    "nav_label": "Nawigacja główna",
+    "nav": {
+      "find": "Jak to działa",
+      "trainers": "Dla trenerów",
+      "pricing": "Cennik",
+      "faq": "Pytania",
+      "contact": "Kontakt"
+    },
+    "lang_label": "Wybierz język",
+    "get_app": "Pobierz aplikację",
+    "footer": {
+      "tagline": "Trenerzy i rezerwacje treningów w jednej aplikacji.",
+      "col_app": "Aplikacja",
+      "col_help": "Pomoc",
+      "col_info": "Informacje",
+      "terms": "Regulamin",
+      "privacy": "Polityka prywatności",
+      "preview_404": "404 (podgląd)",
+      "address": "REDi FIT sp. z o.o., ul. Kasprzaka 31/117, 01-234 Warszawa [NEEDS: potwierdzić]",
+      "copyright": "© 2026 REDi FIT",
+      "needs": "[NEEDS] target domain · indexing: noindex until launch"
+    },
+    "cookie": {
+      "label": "Zgoda na pliki cookies",
+      "text": "Ta strona używa plików cookies, aby działać poprawnie. Więcej znajdziesz w <a href=\"{url:privacy}\">polityce prywatności</a>.",
+      "accept": "Akceptuję",
+      "essential": "Tylko niezbędne"
+    }
+  },
+  "home": {
+    "meta": {
+      "title": "Redifit — trenerzy i rezerwacje treningów w jednej aplikacji",
+      "description": "Znajdź trenera po kategorii, miejscu i terminie, sprawdź opinie i portfolio, zarezerwuj trening w aplikacji. Na Androida i iOS, w trzech językach."
+    },
+    "hero": {
+      "needs": "[NEEDS] zdjęcie hero ≥ 1920×1080 — trening na dworze o zachodzie słońca, przyciemnienie 40%",
+      "span": "Jestem klientem",
+      "a": "Jestem trenerem →",
+      "eyebrow": "BE REDi!",
+      "h1": "Znajdź trenera, wybierz termin, zarezerwuj w aplikacji.",
+      "sub": "Redifit łączy klientów z trenerami. Szukasz według kategorii, miejsca i terminu, sprawdzasz opinie i portfolio, a płacisz kartą, BLIK-iem, gotówką lub przelewem — zależnie od tego, co oferuje trener.",
+      "btn": "Pobierz aplikację",
+      "img_alt": "Pobierz z Google Play",
+      "img_title": "[LINK: Google Play — placeholder]",
+      "img_alt_2": "Pobierz z App Store",
+      "img_title_2": "[LINK: App Store — placeholder]",
+      "caption": "[MOCK] Zeskanuj telefonem i pobierz aplikację",
+      "note": "Na Androida i iOS. W trzech językach.",
+      "switch_link": "Jesteś trenerem? Zobacz, co dostajesz →",
+      "tag": "C1",
+      "caption_2": "Ekran główny klienta: kategorie, „Trenuj dziś”, „Trenerzy w Twojej okolicy”, „Wydarzenia”",
+      "needs_2": "[NEEDS] screen z aplikacji albo Figma",
+      "value": "250+",
+      "label": "trenerów w aplikacji",
+      "tag_2": "DANE PRÓBNE",
+      "value_2": "12",
+      "label_2": "miast",
+      "tag_3": "DANE PRÓBNE",
+      "value_3": "15",
+      "label_3": "kategorii treningów",
+      "tag_4": "DANE PRÓBNE",
+      "value_4": "4,8 / 5",
+      "label_4": "średnia ocena w aplikacji",
+      "tag_5": "DANE PRÓBNE"
+    },
+    "dlaczego": {
+      "h2": "Umawianie treningów bez szukania po wielu miejscach",
+      "title": "Bez Redifit",
+      "li": "<span>Trenerów szukasz w wielu miejscach naraz.</span>",
+      "li_2": "<span>O wolny termin pytasz w wiadomościach i czekasz na odpowiedź.</span>",
+      "li_3": "<span>Cenę, miejsce i formę płatności ustalasz osobno z każdym trenerem.</span>",
+      "title_2": "Z Redifit",
+      "li_4": "<span>Trenerów widzisz w jednym miejscu, na liście i na mapie.</span>",
+      "li_5": "<span>Wolne terminy sprawdzasz od razu, także na dziś.</span>",
+      "li_6": "<span>Cenę, lokalizację i dostępne formy płatności widzisz przy usłudze trenera.</span>",
+      "needs_block": "[NEEDS: potwierdzić kolumnę „Bez Redifit” wywiadami / warsztatami Product Discovery]"
+    },
+    "kroki": {
+      "h2": "Trzy kroki od pomysłu do zarezerwowanego treningu",
+      "lead": "Znajdź, sprawdź, zarezerwuj. Każdy krok zostaje w aplikacji — razem z płatnością i możliwością zmiany terminu.",
+      "label": "Krok 1 — Znajdź",
+      "h3": "Kategoria, miejsce, termin",
+      "p": "Wyniki na liście albo na mapie, z sekcją „Trenuj dziś” i trenerami do 15 km od Ciebie.",
+      "label_2": "Krok 2 — Sprawdź",
+      "h3_2": "Kwalifikacje i opinie",
+      "p_2": "Wykształcenie, kursy, specjalizacje, portfolio i opinie klientów — przed płatnością, nie po.",
+      "label_3": "Krok 3 — Zarezerwuj",
+      "h3_3": "Płatność i zmiana terminu",
+      "p_3": "Karta, BLIK, gotówka lub przelew. Termin zmienisz albo odwołasz tam, gdzie go zarezerwowano.",
+      "btn": "Zobacz każdy krok z ekranami"
+    },
+    "kategorie": {
+      "h2": "Czego chcesz trenować?",
+      "lead": "Kategoria to pierwszy filtr w wyszukiwarce. Wybierasz ją na ekranie głównym, a potem zawężasz wyniki ceną, porą dnia i odległością.",
+      "name": "Kategoria 01",
+      "needs": "[NEEDS] nazwa",
+      "name_2": "Kategoria 02",
+      "needs_2": "[NEEDS] nazwa",
+      "name_3": "Kategoria 03",
+      "needs_3": "[NEEDS] nazwa",
+      "name_4": "Kategoria 04",
+      "needs_4": "[NEEDS] nazwa",
+      "name_5": "Kategoria 05",
+      "needs_5": "[NEEDS] nazwa",
+      "name_6": "i 10 kolejnych",
+      "tag": "DANE PRÓBNE",
+      "needs_block": "[NEEDS] pełna lista kategorii treningów z app_pl.arb — kod ujawnia istnienie filtra kategorii, ale nie nazwy. Liczba „15” jest danymi próbnymi."
+    },
+    "gdzie": {
+      "h2": "Trenuj u trenera albo poproś, żeby przyjechał",
+      "lead": "Miejsce ustawia trener przy każdej usłudze, więc widzisz je jeszcze przed rezerwacją.",
+      "kicker": "Stacjonarnie",
+      "h3": "Adres z pinezką na mapie",
+      "p": "Wiesz, gdzie dojechać, jeszcze przed potwierdzeniem terminu. Na mapie widzisz też, ilu trenerów pracuje w danym obszarze.",
+      "kicker_2": "Mobilnie",
+      "h3_2": "Trener z zasięgiem w kilometrach",
+      "p_2": "Część trenerów pracuje z dojazdem i sama ustawia promień, w którym przyjmuje zlecenia.",
+      "kicker_3": "W okolicy",
+      "h3_3": "Do 15 km od Ciebie",
+      "p_3": "Sekcja „Trenerzy w Twojej okolicy” działa po włączeniu lokalizacji w telefonie."
+    },
+    "wydarzenia": {
+      "eyebrow": "Wydarzenia i zniżki",
+      "h2": "Nie tylko treningi jeden na jeden",
+      "lead": "Trenerzy publikują też wydarzenia grupowe i obniżają ceny w wybranych godzinach. Jedno i drugie znajdziesz na ekranie głównym.",
+      "li": "<span><strong>Wydarzenia z limitem miejsc</strong> — data, godziny, lokalizacja, zdjęcia, poziom i cena. Widzisz, ile miejsc zostało.</span>",
+      "li_2": "<span><strong>Happy hours</strong> — zniżka w godzinach, które trener wskazał, cyklicznie i do określonej daty.</span>",
+      "li_3": "<span><strong>Trenuj dziś</strong> — osobna sekcja z terminami, które są wolne jeszcze dzisiaj.</span>",
+      "li_4": "<span><strong>Ulubieni trenerzy</strong> — zapisz trenera i wróć do niego jednym dotknięciem.</span>",
+      "step_note": "Wydarzenia przechodzą moderację, zanim pojawią się w aplikacji. <span class=\"tag--needs\">[NEEDS] zasady moderacji</span>",
+      "tag": "C1",
+      "caption": "Sekcja „Wydarzenia” i „Trenuj dziś” na ekranie głównym",
+      "needs": "[NEEDS] screen z aplikacji albo Figma"
+    },
+    "opinie": {
+      "eyebrow": "Opinie",
+      "h2": "Co mówią osoby, które już trenują",
+      "lead": "Opinie w aplikacji wystawiają klienci po zakończonej rezerwacji, więc każda pochodzi od kogoś, kto naprawdę był na treningu.",
+      "needs_block": "[NEEDS] prawdziwe opinie użytkowników aplikacji — imię, rola, miasto, ocena. Poniżej puste sloty: nic nie wymyślono, bo cytat od nieistniejącej osoby to zmyślony dowód społeczny.",
+      "stars": "★★★★★",
+      "who": "<span class=\"testimonial-card__avatar\" aria-hidden=\"true\"></span> <span class=\"testimonial-card__meta\">[NEEDS] imię, rola, miasto<br>klient</span>",
+      "stars_2": "★★★★★",
+      "who_2": "<span class=\"testimonial-card__avatar\" aria-hidden=\"true\"></span> <span class=\"testimonial-card__meta\">[NEEDS] imię, rola, miasto<br>klient</span>",
+      "stars_3": "★★★★★",
+      "who_3": "<span class=\"testimonial-card__avatar\" aria-hidden=\"true\"></span> <span class=\"testimonial-card__meta\">[NEEDS] imię, rola, miasto<br>trener</span>",
+      "value": "4,8 / 5",
+      "label": "średnia ocena trenerów w aplikacji",
+      "tag": "DANE PRÓBNE"
+    },
+    "jezyki": {
+      "h2": "Aplikacja po polsku, angielsku i ukraińsku",
+      "lead": "Język wybierasz przy pierwszym uruchomieniu i zmieniasz w ustawieniach. Cała aplikacja — nie tylko strona — działa w trzech językach.",
+      "code": "PL",
+      "name": "polski",
+      "code_2": "EN",
+      "name_2": "English",
+      "code_3": "UK",
+      "name_3": "українська"
+    },
+    "sciezki": {
+      "h2": "Jedna aplikacja, dwie ścieżki",
+      "lead": "Pobierasz to samo. Podział następuje przy rejestracji: zakładasz konto klienta albo konto trenera.",
+      "label": "Konto klienta",
+      "h3": "Szukasz trenera i rezerwujesz",
+      "li": "Wyszukiwarka, mapa i „Trenuj dziś”",
+      "li_2": "Kalendarz rezerwacji i „Umów ponownie”",
+      "li_3": "Opinie po zakończonym treningu",
+      "btn_ghost_link": "Jak to działa →",
+      "label_2": "Konto trenera",
+      "h3_2": "Zdobywasz klientów i prowadzisz treningi",
+      "li_4": "Profil widoczny w wyszukiwarce i na mapie",
+      "li_5": "Kalendarz, klienci, wiadomości SMS",
+      "li_6": "Płatności online, portfel i raporty",
+      "btn": "Dla trenerów",
+      "btn_ghost_link_2": "Cennik →"
+    },
+    "pobierz": {
+      "h2": "Zacznij od pobrania aplikacji",
+      "p": "Znajdź trenera, wybierz termin, zarezerwuj w aplikacji.",
+      "btn": "Pobierz aplikację",
+      "img_alt": "Pobierz z Google Play",
+      "img_title": "[LINK: Google Play — placeholder]",
+      "img_alt_2": "Pobierz z App Store",
+      "img_title_2": "[LINK: App Store — placeholder]",
+      "caption": "[MOCK] Zeskanuj telefonem i pobierz aplikację",
+      "note": "Na Androida i iOS. W trzech językach.",
+      "switch_link": "Masz pytania? →"
+    }
+  },
+  "find": {
+    "meta": {
+      "title": "Redifit — jak to działa: znajdź, sprawdź, zarezerwuj",
+      "description": "Trzy kroki od wyszukiwania trenera do zarezerwowanego treningu — z ekranami aplikacji i zasadami płatności."
+    },
+    "page_hero": {
+      "eyebrow": "Jak to działa",
+      "h1": "Od wyszukiwania do zarezerwowanego treningu",
+      "lead": "Trzy kroki, wszystkie w aplikacji. Poniżej każdy z nich z ekranem, na którym się dzieje, i z zasadami, które warto znać przed płatnością."
+    },
+    "pill_tabs": {
+      "pill_tabs_label": "Na tej stronie",
+      "a": "1. Znajdź",
+      "a_2": "2. Sprawdź",
+      "a_3": "3. Zarezerwuj",
+      "a_4": "Bezpieczeństwo"
+    },
+    "znajdz": {
+      "eyebrow": "KROK 1",
+      "h2": "Znajdź trenera po kategorii, miejscu i terminie",
+      "lead": "Wybierz kategorię treningu, wpisz adres i zaznacz, kiedy chcesz trenować. Wyniki zobaczysz na liście albo na mapie.",
+      "li": "<span><strong>Wolne terminy na dziś</strong> — sekcja „Trenuj dziś” na ekranie głównym.</span>",
+      "li_2": "<span><strong>Trenerzy w Twojej okolicy</strong> — do 15 km od Twojej lokalizacji, po włączeniu lokalizacji w telefonie.</span>",
+      "li_3": "<span><strong>Filtry i mapa</strong> — zawęź wyniki według kategorii, ceny i pory dnia (rano, popołudnie, wieczór), a na mapie zobacz liczbę trenerów w danym obszarze.</span>",
+      "li_4": "<span><strong>Ulubieni trenerzy</strong> — zapisz trenera i wróć do niego z ekranu głównego.</span>",
+      "tag": "C1",
+      "caption": "Ekran główny: kategorie, „Trenuj dziś”, trenerzy w okolicy",
+      "needs": "[NEEDS] screen",
+      "tag_2": "C2",
+      "caption_2": "Wyszukiwarka: Kiedy? Gdzie? Cena, filtry kategorii, wyniki + widok mapy",
+      "needs_2": "[NEEDS] screen"
+    },
+    "sprawdz": {
+      "tag": "C4",
+      "caption": "Profil trenera: zakładki Usługi / Opinie / Portfolio / Szczegóły",
+      "needs": "[NEEDS] screen z aplikacji albo Figma",
+      "label": "Miejsce na opinię",
+      "body": "[NEEDS: opinia użytkownika aplikacji — imię, rola, miasto; nie wymyślono]",
+      "eyebrow": "KROK 2",
+      "h2": "Zanim zarezerwujesz, sprawdź, na kogo trafiasz",
+      "lead": "Profil trenera pokazuje to, co potrzebne do decyzji: kwalifikacje, specjalizacje, zdjęcia z portfolio i opinie klientów.",
+      "li": "<span><strong>Bio i kwalifikacje</strong> — wykształcenie, doświadczenie, ukończone kursy i szkolenia oraz specjalizacje.</span>",
+      "li_2": "<span><strong>Portfolio</strong> — zdjęcia, które trener dodał do swojego profilu.</span>",
+      "li_3": "<span><strong>Opinie z ocenami w gwiazdkach</strong> — sortuj od najnowszych, najstarszych, najlepiej albo najgorzej ocenianych, oceń przydatność opinii lub zgłoś nieodpowiednią. Trener może odpowiedzieć na opinię.</span>",
+      "li_4": "<span><strong>Usługi z cenami</strong> — przy każdej usłudze czas trwania, cena i lokalizacja.</span>",
+      "step_note": "Opinie wystawiają klienci po zakończonej rezerwacji. [NEEDS: potwierdzić z backendem]"
+    },
+    "zarezerwuj": {
+      "eyebrow": "KROK 3",
+      "h2": "Zarezerwuj i zarządzaj terminem w jednej aplikacji",
+      "lead": "Wybierz termin i formę płatności, potwierdź. Rezerwację znajdziesz w kalendarzu aplikacji, a stamtąd zmienisz ją, odwołasz albo dodasz do kalendarza w telefonie.",
+      "li": "<span><strong>Karta i BLIK w bezpiecznym formularzu Stripe</strong> — aplikacja nie przechowuje danych karty.</span>",
+      "li_2": "<span><strong>Gotówka lub przelew</strong> — jeśli trener je oferuje; formy płatności ustala trener.</span>",
+      "li_3": "<span><strong>Kalendarz rezerwacji</strong> — zakładki: nadchodzące, zrealizowane, anulowane; „Umów ponownie” jednym przyciskiem.</span>",
+      "li_4": "<span><strong>Termin w Twoim telefonie</strong> — dodaj go do kalendarza urządzenia albo zapisz jako plik .ics.</span>",
+      "li_5": "<span><strong>Powiadomienia o zmianie statusu</strong> — push, e-mail lub SMS, wybierasz w ustawieniach.</span>",
+      "title": "Zasady zmiany i anulowania",
+      "text": "Zgodnie z zasadami trenera anulowanie rezerwacji jest możliwe minimum 24 godziny wcześniej. Pobrana opłata może nie zostać zwrócona. [NEEDS: potwierdzić, czy 24 h obowiązuje zawsze]",
+      "tag": "C5",
+      "caption": "Podsumowanie rezerwacji z wyborem formy płatności (Gotówka / Karta / BLIK / Przelew)",
+      "needs": "[NEEDS] screen",
+      "tag_2": "C7",
+      "caption_2": "Kalendarz rezerwacji: Nadchodzące / Zrealizowane / Anulowane",
+      "needs_2": "[NEEDS] screen"
+    },
+    "bezpieczenstwo": {
+      "h2": "Co nas pilnuje, gdy płacisz przez aplikację",
+      "lead": "Pięć mechanizmów, które działają zanim i po tym, jak zarezerwujesz trening.",
+      "h3": "Dane karty poza aplikacją",
+      "p": "Karta i BLIK obsługiwane w formularzu Stripe. Redifit nie przechowuje numerów kart.",
+      "h3_2": "Numer potwierdzony kodem SMS",
+      "p_2": "Przy rejestracji potwierdzasz telefon kodem, więc konta nie zakłada się na przypadkowy numer.",
+      "h3_3": "Opinie tylko po treningu",
+      "p_3": "Ocenę wystawia się po zakończonej rezerwacji. Nieodpowiednią opinię można zgłosić.",
+      "h3_4": "Wydarzenia po moderacji",
+      "p_4": "Wydarzenie trenera pojawia się w aplikacji po sprawdzeniu. <span class=\"tag--needs\">[NEEDS] zasady</span>",
+      "h3_5": "Zasada anulowania podana wprost",
+      "p_5": "Warunek 24 godzin i możliwy brak zwrotu opłaty piszemy na stronie, nie tylko w regulaminie.",
+      "btn": "Pobierz aplikację",
+      "btn_ghost_link": "Zobacz odpowiedzi na częste pytania →"
+    },
+    "pobierz": {
+      "h2": "Trzy kroki zaczynają się w aplikacji",
+      "p": "Znajdź trenera, wybierz termin, zarezerwuj.",
+      "btn": "Pobierz aplikację",
+      "img_alt": "Pobierz z Google Play",
+      "img_title": "[LINK: Google Play — placeholder]",
+      "img_alt_2": "Pobierz z App Store",
+      "img_title_2": "[LINK: App Store — placeholder]"
+    }
+  },
+  "trainers": {
+    "meta": {
+      "title": "Redifit dla trenerów — klienci, kalendarz i płatności",
+      "description": "Zdobywaj nowych klientów i prowadź treningi w jednej aplikacji: profil, kalendarz, klienci, płatności online i statystyki. Na Androida i iOS."
+    },
+    "t_hero": {
+      "needs": "[NEEDS] zdjęcie hero ≥ 1920×1080 — trener przy pracy, przyciemnienie 40%",
+      "a": "Jestem klientem →",
+      "span": "Jestem trenerem",
+      "eyebrow": "DLA TRENERÓW",
+      "h1": "Zdobywaj nowych klientów. Prowadź treningi w jednej aplikacji.",
+      "sub": "Redifit daje trenerowi profil widoczny dla klientów, kalendarz rezerwacji, płatności online i statystyki. Konto trenera zakładasz w aplikacji.",
+      "btn": "Pobierz aplikację",
+      "img_alt": "Pobierz z Google Play",
+      "img_title": "[LINK: Google Play — placeholder]",
+      "img_alt_2": "Pobierz z App Store",
+      "img_title_2": "[LINK: App Store — placeholder]",
+      "note": "Rejestracja trenera odbywa się w aplikacji.",
+      "value": "250+",
+      "label": "trenerów w aplikacji",
+      "tag": "DANE PRÓBNE",
+      "value_2": "3 400",
+      "label_2": "rezerwacji miesięcznie",
+      "tag_2": "DANE PRÓBNE",
+      "tag_3": "T-A",
+      "caption": "Kalendarz trenera (miesiąc) + lista treningów wybranego dnia",
+      "needs_2": "[NEEDS] screen z aplikacji albo Figma"
+    },
+    "t_dlaczego": {
+      "h2": "Cała organizacja pracy w jednym miejscu",
+      "title": "Dziś",
+      "li": "<span>Klienci, wiadomości i terminy rozproszone po telefonie, notatkach i kalendarzach.</span>",
+      "li_2": "<span>Rozliczenia i podsumowania sprzedaży prowadzisz osobno.</span>",
+      "li_3": "<span>O nowych klientów musisz zadbać samodzielnie, poza treningami.</span>",
+      "title_2": "W Redifit",
+      "li_4": "<span>Rezerwacje, klienci i historia w jednym kalendarzu.</span>",
+      "li_5": "<span>Płatności online, portfel i raporty w tej samej aplikacji.</span>",
+      "li_6": "<span>Twój profil widzą klienci, którzy szukają trenera według kategorii i miejsca.</span>",
+      "needs_block": "[NEEDS: potwierdzić kolumnę „Dziś” rozmowami z trenerami]"
+    },
+    "t_profil": {
+      "h2": "Klienci szukają trenerów. Niech znajdą Ciebie",
+      "lead": "Twój profil to pierwsze, co klient widzi przed rezerwacją. Uzupełnij go w aplikacji.",
+      "li": "<span><strong>Bio i kwalifikacje</strong> — nazwa profilu, specjalizacja, wykształcenie, doświadczenie, ukończone kursy i szkolenia.</span>",
+      "li_2": "<span><strong>Portfolio</strong> — dodawaj zdjęcia z aparatu lub galerii i ustaw ich kolejność przeciąganiem.</span>",
+      "li_3": "<span><strong>Opinie</strong> — odpowiadaj na opinie klientów, a odpowiedź możesz później edytować.</span>",
+      "li_4": "<span><strong>Widoczność</strong> — klienci znajdą Cię w wyszukiwarce, na mapie i w sekcji „Trenerzy w Twojej okolicy”.</span>",
+      "step_note": "Ustawienia usług zapisują się na profilu, więc zacznij od uzupełnienia bio.",
+      "tag": "T-H",
+      "caption": "Bio i portfolio trenera",
+      "needs": "[NEEDS] screen z aplikacji albo Figma"
+    },
+    "t_zasady": {
+      "h2": "Usługi, ceny i dostępność ustawiasz samodzielnie",
+      "h3": "Usługa",
+      "p": "Nazwa, opis, kategoria, czas trwania, cena brutto i stawka VAT.",
+      "h3_2": "Miejsce",
+      "p_2": "Stacjonarnie z pinezką na mapie albo mobilnie z zasięgiem w kilometrach.",
+      "h3_3": "Dostępność",
+      "p_3": "Godziny pracy, przerwy, cykliczność i odstęp między rezerwacjami na dojazd lub przygotowanie.",
+      "h3_4": "Limity rezerwacji",
+      "p_4": "Jak daleko w przyszłość klienci mogą rezerwować, z jakim wyprzedzeniem i do kiedy mogą zmienić termin.",
+      "h3_5": "Urlopy",
+      "p_5": "Zakres dat z opisem; w tym czasie nie przyjmujesz rezerwacji. [NEEDS: potwierdzić skutek urlopu]",
+      "h3_6": "Happy hours",
+      "p_6": "Zniżka w wybranych godzinach, cyklicznie, ważna do wskazanej daty.",
+      "h3_7": "Formy płatności",
+      "p_7": "Zaznaczasz, które oferujesz: gotówka, karta, BLIK, przelew.",
+      "h3_8": "Wydarzenia",
+      "p_8": "Data, godziny, lokalizacja, zdjęcia, poziom, cena i limit uczestników. Wydarzenia przechodzą moderację. [NEEDS: zasady moderacji]",
+      "tag": "T-C",
+      "caption": "Formularz usługi (nazwa, kategoria, czas, cena brutto, VAT)",
+      "needs": "[NEEDS] screen"
+    },
+    "t_popyt": {
+      "eyebrow": "Kiedy kalendarz świeci pustkami",
+      "h2": "Cztery narzędzia, którymi sam napędzasz zapisy",
+      "lead": "Wszystkie są w aplikacji i nie wymagają dodatkowej reklamy.",
+      "h3": "Happy hours",
+      "p": "Obniż cenę w godzinach, które trudno zapełnić. Zniżka działa cyklicznie i wygasa w dniu, który wskażesz.",
+      "h3_2": "Wydarzenia grupowe",
+      "p_2": "Jeden termin, wielu uczestników. Ustawiasz poziom, cenę i limit miejsc, dodajesz galerię.",
+      "h3_3": "SMS do klientów",
+      "p_3": "Wiadomość do wszystkich albo wybranych osób z listy, do 200 znaków, wysyłana z Twojego telefonu.",
+      "h3_4": "„Umów ponownie”",
+      "p_4": "Z historii klienta jednym przyciskiem wracasz do tej samej usługi — dla obu stron."
+    },
+    "t_praca": {
+      "tag": "T-A",
+      "caption": "Kalendarz trenera: miesiąc i lista treningów dnia",
+      "needs": "[NEEDS] screen",
+      "tag_2": "T-D",
+      "caption_2": "Klienci + „Wyślij wiadomość: do wszystkich / do wybranych”",
+      "needs_2": "[NEEDS] screen",
+      "h2": "Kalendarz, klienci i wiadomości w jednym miejscu",
+      "li": "<span><strong>Kalendarz</strong> — widok miesiąca i tygodnia oraz lista treningów wybranego dnia.</span>",
+      "li_2": "<span><strong>Rezerwacja</strong> — klient, telefon, notatka, koszt i forma płatności; edytuj, dodaj do kalendarza lub umów ponownie.</span>",
+      "li_3": "<span><strong>Klienci</strong> — lista z wyszukiwarką i historią rezerwacji każdego z nich.</span>",
+      "li_4": "<span><strong>Wiadomości</strong> — do wszystkich albo do wybranych klientów (do 200 znaków); wyślesz ją z aplikacji SMS w telefonie.</span>"
+    },
+    "t_platnosci": {
+      "h2": "Płatności trafiają na Twoje konto, a liczby masz pod ręką",
+      "li": "<span><strong>Konto wypłat</strong> — połącz konto Stripe w aplikacji i sprawdzaj jego status.</span>",
+      "li_2": "<span><strong>Statystyki</strong> — trzy zakładki: rezerwacje, raporty, portfel.</span>",
+      "li_3": "<span><strong>Filtry</strong> — data, klient, rodzaj treningu, forma płatności, oceny, dni tygodnia, godziny i zniżki.</span>",
+      "li_4": "<span><strong>Raporty</strong> — przychód i sprzedaż, do pobrania z aplikacji. [NEEDS: formaty raportów]</span>",
+      "tag": "T-E",
+      "caption": "Statystyki: zakładka Raporty z filtrami",
+      "needs": "[NEEDS] screen",
+      "tag_2": "T-F",
+      "caption_2": "Konto wypłat Stripe i abonament",
+      "needs_2": "[NEEDS] screen"
+    },
+    "t_start": {
+      "h2": "Start w czterech krokach",
+      "num": "1",
+      "p": "Pobierz aplikację i załóż konto trenera.",
+      "num_2": "2",
+      "p_2": "Uzupełnij bio.",
+      "num_3": "3",
+      "p_3": "Dodaj usługę: kategoria, czas, cena, miejsce i dostępność.",
+      "num_4": "4",
+      "p_4": "Połącz konto wypłat Stripe i aktywuj abonament.",
+      "needs_block": "[NEEDS: potwierdzić kolejność kroków i wymogi weryfikacji konta trenera]",
+      "btn": "Pobierz aplikację",
+      "btn_ghost_link": "Ile kosztuje konto trenera? →"
+    },
+    "pobierz": {
+      "h2": "Zacznij od pobrania aplikacji",
+      "p": "Załóż konto trenera, uzupełnij profil i dodaj pierwszą usługę.",
+      "btn": "Pobierz aplikację",
+      "img_alt": "Pobierz z Google Play",
+      "img_title": "[LINK: Google Play — placeholder]",
+      "img_alt_2": "Pobierz z App Store",
+      "img_title_2": "[LINK: App Store — placeholder]",
+      "note": "Rejestracja trenera odbywa się w aplikacji."
+    }
+  },
+  "pricing": {
+    "meta": {
+      "title": "Redifit — cennik: 100 zł miesięcznie dla trenera",
+      "description": "Jeden abonament dla trenera, konto klienta bez abonamentu. Co obejmuje cena i jaka jest prowizja od płatności online."
+    },
+    "page_hero": {
+      "eyebrow": "Cennik",
+      "h1": "Jeden abonament dla trenera. Konto klienta bez abonamentu.",
+      "lead": "Nie ma trzech planów do porównywania — jest jeden. Poniżej to, co obejmuje, i to, co dochodzi od płatności online."
+    },
+    "section": {
+      "plan": "Konto trenera · REDi FIT Standard",
+      "amount": "100 zł / miesiąc",
+      "frame": "To około 3,30 zł na dzień.",
+      "needs_block": "[NEEDS: cena publiczna, netto/brutto]",
+      "li": "<span>Aktywne konto trenera z profilem widocznym dla klientów</span>",
+      "li_2": "<span>Kalendarz, klienci, statystyki i wiadomości</span>",
+      "li_3": "<span>Płatności online przez Stripe</span>",
+      "li_4": "<span>Usługi, dostępność, urlopy, happy hours i wydarzenia</span>",
+      "dt": "Prowizja od płatności online",
+      "dd": "5% [DANE PRÓBNE]",
+      "dt_2": "Okres próbny",
+      "dd_2": "[NEEDS: czy jest i na ile dni]",
+      "dt_3": "Gotówka i przelew",
+      "dd_3": "bez prowizji aplikacji",
+      "manage": "Abonamentem zarządzasz w aplikacji. Anulowany kończy się z końcem opłaconego okresu. [NEEDS: potwierdzić]",
+      "btn": "Pobierz aplikację",
+      "label": "Konto klienta",
+      "h2": "Płacisz za trening, nie za aplikację",
+      "p": "Rezerwujesz i płacisz trenerowi w wysokości, którą ustawił przy usłudze. Za samo korzystanie z aplikacji nie ma abonamentu.",
+      "needs_block_2": "[NEEDS] potwierdzić, że konto klienta jest bezpłatne — brief tego nie stwierdza wprost",
+      "h2_2": "Co, jeśli płatność za abonament się nie powiedzie?",
+      "p_2": "Aplikacja pokaże status „Płatność nie powiodła się” i poprosi o zaktualizowanie karty.",
+      "btn_ghost_link": "Więcej pytań trenerów →",
+      "h2_3": "Nie wiesz, czy to się spina?",
+      "p_3": "Napisz — odpowiemy, co konto trenera obejmuje w Twoim przypadku.",
+      "btn_2": "Zadaj pytanie"
+    },
+    "pobierz": {
+      "h2": "Abonament aktywujesz w aplikacji",
+      "p": "Najpierw konto i profil, potem konto wypłat Stripe i abonament.",
+      "btn": "Pobierz aplikację",
+      "img_alt": "Pobierz z Google Play",
+      "img_title": "[LINK: Google Play — placeholder]",
+      "img_alt_2": "Pobierz z App Store",
+      "img_title_2": "[LINK: App Store — placeholder]"
+    }
+  },
+  "faq": {
+    "meta": {
+      "title": "Redifit — pytania i odpowiedzi",
+      "description": "Odpowiedzi dla klientów i trenerów zanim pobierzesz aplikację Redifit."
+    },
+    "page_hero": {
+      "eyebrow": "Pytania",
+      "h1": "Odpowiedzi zanim pobierzesz aplikację"
+    },
+    "pill_tabs": {
+      "pill_tabs_label": "Na tej stronie",
+      "a": "Dla klientów",
+      "a_2": "Dla trenerów"
+    },
+    "faq_klient": {
+      "h2": "Klient — rezerwacja, płatność, zmiana terminu",
+      "needs_block": "[NEEDS] pytania robocze, wywiedzione z aplikacji — zastąpić prawdziwymi pytaniami od użytkowników i supportu",
+      "summary": "Czy muszę mieć konto, żeby rezerwować?",
+      "p": "Tak. Konto zakładasz w aplikacji: podajesz e-mail, imię, nazwisko, numer telefonu i hasło, potwierdzasz numer kodem SMS i akceptujesz zgody.",
+      "summary_2": "Jak zapłacę za trening?",
+      "p_2": "Formy płatności ustala trener. Możesz zapłacić kartą lub BLIK-iem w formularzu Stripe, a jeśli trener je oferuje — gotówką lub przelewem.",
+      "summary_3": "Czy mogę odwołać albo zmienić termin?",
+      "p_3": "Tak, w aplikacji. Zgodnie z zasadami trenera anulowanie jest możliwe minimum 24 godziny wcześniej, a pobrana opłata może nie zostać zwrócona.",
+      "summary_4": "Skąd mam wiedzieć, że trener jest wiarygodny?",
+      "p_4": "Sprawdź jego profil: wykształcenie, ukończone kursy, specjalizacje, portfolio i opinie klientów. Opinie wystawiają osoby po zakończonej rezerwacji.",
+      "summary_5": "Czy trener może przyjechać do mnie?",
+      "p_5": "Zależy od usługi. Trener ustawia miejsce jako stacjonarne z pinezką na mapie albo mobilne z zasięgiem w kilometrach.",
+      "summary_6": "W jakich językach działa aplikacja?",
+      "p_6": "Po polsku, angielsku i ukraińsku.",
+      "summary_7": "Na jakich telefonach działa Redifit?",
+      "p_7": "Na Androidzie i iOS. [NEEDS: minimalne wersje systemów]",
+      "summary_8": "Czy Redifit to aplikacja siłowni REDi FIT?",
+      "p_8": "Redifit to aplikacja, w której klienci umawiają treningi z trenerami. [NEEDS: doprecyzować relację z siłownią REDi FIT]"
+    },
+    "faq_trener": {
+      "h2": "Trener — konto, abonament, wypłaty",
+      "needs_block": "[NEEDS] prawdziwe pytania od trenerów",
+      "summary": "Ile kosztuje konto trenera?",
+      "p": "Abonament REDi FIT Standard kosztuje 100 zł miesięcznie. [NEEDS]",
+      "summary_2": "Jak dostanę pieniądze za treningi opłacone online?",
+      "p_2": "Płatności online trafiają na Twoje konto wypłat Stripe, które łączysz w aplikacji.",
+      "summary_3": "Czy mogę przyjmować gotówkę?",
+      "p_3": "Tak, jeśli ją zaznaczysz. Formy płatności ustawiasz w ustawieniach usług: gotówka, karta, BLIK, przelew.",
+      "summary_4": "Co, jeśli w danym okresie nie prowadzę zajęć?",
+      "p_4": "Dodaj urlop w ustawieniach usług: zakres dat i opis.",
+      "summary_5": "Czy klienci mogą zmieniać terminy?",
+      "p_5": "Decydujesz o tym Ty. Możesz zezwolić na zmianę terminu i ustawić minimalne wyprzedzenie w godzinach.",
+      "summary_6": "Co się stanie, jeśli płatność za abonament się nie powiedzie?",
+      "p_6": "Aplikacja pokaże status „Płatność nie powiodła się” i poprosi o zaktualizowanie karty. [NEEDS: skutki dla widoczności profilu]"
+    },
+    "faq_more": {
+      "h2": "Brak odpowiedzi na Twoje pytanie?",
+      "lead": "Napisz do nas — formularz jest na stronie kontaktowej. Odpowiadamy na podany adres e-mail.",
+      "btn": "Przejdź do kontaktu"
+    },
+    "pobierz": {
+      "h2": "Zacznij od pobrania aplikacji",
+      "p": "Znajdź trenera, wybierz termin, zarezerwuj w aplikacji.",
+      "btn": "Pobierz aplikację",
+      "img_alt": "Pobierz z Google Play",
+      "img_title": "[LINK: Google Play — placeholder]",
+      "img_alt_2": "Pobierz z App Store",
+      "img_title_2": "[LINK: App Store — placeholder]"
+    }
+  },
+  "contact": {
+    "meta": {
+      "title": "Redifit — kontakt",
+      "description": "Napisz do nas: formularz kontaktowy, e-mail i telefon do REDi FIT."
+    },
+    "page_hero": {
+      "eyebrow": "Kontakt",
+      "h1": "Napisz do nas",
+      "lead": "Odpowiadamy na adres e-mail podany w formularzu. Jeśli pytanie dotyczy rezerwacji albo konta, napisz, czy jesteś klientem, czy trenerem — trafi szybciej do właściwej osoby."
+    },
+    "contact_page_section": {
+      "h2": "Formularz kontaktowy",
+      "tag": "MOCK — nic nie jest wysyłane",
+      "p": "Dziękujemy",
+      "p_2": "Twoja wiadomość została wysłana. Odpowiemy na podany adres e-mail.",
+      "btn": "Wyślij kolejną wiadomość",
+      "label": "Imię i nazwisko",
+      "error": "To pole jest wymagane",
+      "label_2": "Adres e-mail",
+      "error_2": "Wprowadź poprawny adres e-mail",
+      "label_3": "Kim jesteś?",
+      "option": "…",
+      "option_2": "Klient",
+      "option_3": "Trener",
+      "option_4": "Inne",
+      "error_3": "To pole jest wymagane",
+      "label_4": "Temat",
+      "error_4": "To pole jest wymagane",
+      "label_5": "Wiadomość",
+      "error_5": "To pole jest wymagane",
+      "span": "Wyrażam zgodę na przetwarzanie moich danych osobowych w celu udzielenia odpowiedzi na zapytanie. [NEEDS: prawnik]",
+      "span_2": "Akceptuję regulamin i politykę prywatności. [NEEDS: prawnik]",
+      "error_6": "Musisz zaakceptować wszystkie wymagane zgody",
+      "btn_2": "Wyślij wiadomość",
+      "h2_2": "Dane kontaktowe",
+      "dt": "E-mail",
+      "dt_2": "Telefon",
+      "dt_3": "Adres",
+      "dd_3": "REDi FIT sp. z o.o.<br>ul. Kasprzaka 31/117<br>01-234 Warszawa",
+      "needs_block": "[NEEDS] potwierdzić, że te dane obowiązują dla aplikacji — pochodzą z redifit.pl/kontakt",
+      "h2_3": "Sprawy konta i rezerwacji",
+      "p_3": "Rejestrację, zmianę terminu, anulowanie i ustawienia usług prowadzisz w aplikacji. Formularz służy do pytań, na które nie ma odpowiedzi w aplikacji ani w sekcji pytań.",
+      "btn_ghost_link": "Zobacz częste pytania →",
+      "label_6": "Do wdrożenia",
+      "p_4": "[NEEDS] gdzie trafiają zgłoszenia: e-mail biuro@redifit.pl czy CRM — wymóg S-016 „integracja z systemem zgłoszeń” [NEEDS] zabezpieczenie antyspamowe [NEEDS] czy potrzebna mapa dojazdu przy adresie"
+    },
+    "pobierz": {
+      "h2": "Zacznij od pobrania aplikacji",
+      "p": "Znajdź trenera, wybierz termin, zarezerwuj w aplikacji.",
+      "btn": "Pobierz aplikację",
+      "img_alt": "Pobierz z Google Play",
+      "img_title": "[LINK: Google Play — placeholder]",
+      "img_alt_2": "Pobierz z App Store",
+      "img_title_2": "[LINK: App Store — placeholder]"
+    }
+  },
+  "terms": {
+    "meta": {
+      "title": "Regulamin — Redifit",
+      "description": ""
+    },
+    "main": {
+      "h1": "Regulamin",
+      "updated": "Ostatnia aktualizacja: <span class=\"tag tag--needs\">[NEEDS]</span>",
+      "title": "Szablon strony tekstowej",
+      "p": "[NEEDS: prawnik] Treść regulaminu. W aplikacji strona jest „w trakcie przygotowania” (legal_terms_of_service_in_preparation), a formularz kontaktowy wymaga zgody odsyłającej tutaj — musi być gotowa przed publikacją."
+    },
+    "toc": {
+      "toc_label": "Spis treści",
+      "title": "Spis treści",
+      "li": "<a href=\"#r-1\">1. Postanowienia ogólne</a>",
+      "li_2": "<a href=\"#r-2\">2. Konto i rejestracja</a>",
+      "li_3": "<a href=\"#r-3\">3. Rezerwacje i płatności</a>",
+      "li_4": "<a href=\"#r-4\">4. Zmiana i anulowanie</a>",
+      "li_5": "<a href=\"#r-5\">5. Konto trenera i abonament</a>",
+      "li_6": "<a href=\"#r-6\">6. Reklamacje</a>"
+    },
+    "r_1": {
+      "h2": "1. Postanowienia ogólne",
+      "p": "[NEEDS: prawnik] Definicje, dane usługodawcy, zakres usługi."
+    },
+    "r_2": {
+      "h2": "2. Konto i rejestracja",
+      "p": "[NEEDS: prawnik] Wymóg konta, weryfikacja numeru kodem SMS, wymagane zgody."
+    },
+    "r_3": {
+      "h2": "3. Rezerwacje i płatności",
+      "p": "[NEEDS: prawnik] Rola Stripe, formy płatności ustalane przez trenera, obowiązki stron."
+    },
+    "r_4": {
+      "h2": "4. Zmiana i anulowanie",
+      "p": "[NEEDS: prawnik] Zasada 24 h — potwierdzić, czy obowiązuje zawsze, czy zależy od trenera."
+    },
+    "r_5": {
+      "h2": "5. Konto trenera i abonament",
+      "p": "[NEEDS: prawnik] Cena abonamentu, prowizja, okres próbny, anulowanie z końcem okresu."
+    },
+    "r_6": {
+      "h2": "6. Reklamacje",
+      "p": "[NEEDS: prawnik] Tryb i terminy, dane kontaktowe."
+    },
+    "pobierz": {
+      "h2": "Zacznij od pobrania aplikacji",
+      "p": "Znajdź trenera, wybierz termin, zarezerwuj w aplikacji.",
+      "btn": "Pobierz aplikację",
+      "img_alt": "Pobierz z Google Play",
+      "img_title": "[LINK: Google Play — placeholder]",
+      "img_alt_2": "Pobierz z App Store",
+      "img_title_2": "[LINK: App Store — placeholder]"
+    }
+  },
+  "privacy": {
+    "meta": {
+      "title": "Polityka prywatności — Redifit",
+      "description": ""
+    },
+    "main": {
+      "h1": "Polityka prywatności",
+      "updated": "Ostatnia aktualizacja: <span class=\"tag tag--needs\">[NEEDS]</span>",
+      "title": "Szablon strony tekstowej",
+      "p": "[NEEDS: prawnik] Treść polityki. W aplikacji strona jest „w trakcie przygotowania” (legal_privacy_policy_in_preparation)."
+    },
+    "toc": {
+      "toc_label": "Spis treści",
+      "title": "Spis treści",
+      "li": "<a href=\"#p-1\">1. Administrator danych</a>",
+      "li_2": "<a href=\"#p-2\">2. Jakie dane zbieramy</a>",
+      "li_3": "<a href=\"#p-3\">3. Cele i podstawy przetwarzania</a>",
+      "li_4": "<a href=\"#p-4\">4. Odbiorcy danych</a>",
+      "li_5": "<a href=\"#p-5\">5. Pliki cookies</a>",
+      "li_6": "<a href=\"#p-6\">6. Twoje prawa</a>"
+    },
+    "p_1": {
+      "h2": "1. Administrator danych",
+      "p": "[NEEDS: prawnik] REDi FIT sp. z o.o. — potwierdzić dane rejestrowe i kontakt do spraw danych osobowych."
+    },
+    "p_2": {
+      "h2": "2. Jakie dane zbieramy",
+      "p": "[NEEDS: prawnik] Dane z rejestracji, lokalizacja, dane z formularza kontaktowego."
+    },
+    "p_3": {
+      "h2": "3. Cele i podstawy przetwarzania",
+      "p": "[NEEDS: prawnik]"
+    },
+    "p_4": {
+      "h2": "4. Odbiorcy danych",
+      "p": "[NEEDS: prawnik] Stripe jako operator płatności, dostawca powiadomień SMS."
+    },
+    "p_5": {
+      "h2": "5. Pliki cookies",
+      "p": "[NEEDS: prawnik] Zakres cookies i analityki — baner na stronie odsyła tutaj."
+    },
+    "p_6": {
+      "h2": "6. Twoje prawa",
+      "p": "[NEEDS: prawnik]"
+    },
+    "pobierz": {
+      "h2": "Zacznij od pobrania aplikacji",
+      "p": "Znajdź trenera, wybierz termin, zarezerwuj w aplikacji.",
+      "btn": "Pobierz aplikację",
+      "img_alt": "Pobierz z Google Play",
+      "img_title": "[LINK: Google Play — placeholder]",
+      "img_alt_2": "Pobierz z App Store",
+      "img_title_2": "[LINK: App Store — placeholder]"
+    }
+  },
+  "notfound": {
+    "meta": {
+      "title": "Nie znaleziono strony — Redifit",
+      "description": ""
+    },
+    "main": {
+      "logo_mark_alt": "Redifit",
+      "h1": "Nie znaleziono strony",
+      "p": "Ten adres nie istnieje albo został zmieniony.",
+      "btn": "Wróć na stronę główną"
+    },
+    "pobierz": {
+      "h2": "Zacznij od pobrania aplikacji",
+      "p": "Znajdź trenera, wybierz termin, zarezerwuj w aplikacji.",
+      "btn": "Pobierz aplikację",
+      "img_alt": "Pobierz z Google Play",
+      "img_title": "[LINK: Google Play — placeholder]",
+      "img_alt_2": "Pobierz z App Store",
+      "img_title_2": "[LINK: App Store — placeholder]"
+    }
+  }
+}

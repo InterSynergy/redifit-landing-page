@@ -1,0 +1,5 @@
+[
+  { "code": "pl", "dir": "", "label": "PL", "name": "Polski" },
+  { "code": "en", "dir": "en/", "label": "EN", "name": "English" },
+  { "code": "uk", "dir": "uk/", "label": "UK", "name": "Українська" }
+]

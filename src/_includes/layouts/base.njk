@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ lang.code }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% t pageKey + ".meta.title" %}</title>
+    {%- if i18n[lang.code][pageKey].meta.description %}
+    <meta name="description" content="{% ta pageKey + '.meta.description' %}">
+    {%- endif %}
+    <meta name="robots" content="{{ site.robots }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="{% asset 'css/styles.css' %}">
+    {%- for c in css %}
+    <link rel="stylesheet" href="{% asset 'css/' + c + '.css' %}">
+    {%- endfor %}
+</head>
+<body>
+{% include "partials/header.njk" %}
+{{ content | safe }}
+{% include "partials/footer.njk" %}
+{% include "partials/cookie.njk" %}
+<script src="{% asset 'scripts/script.js' %}"></script>
+</body>
+</html>

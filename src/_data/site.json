@@ -1,0 +1,14 @@
+{
+  "_info": "Dane wspólne dla wszystkich języków. W tekstach tłumaczeń można się do nich odwołać przez {site:klucz}, np. {site:contact.email}.",
+  "contact": {
+    "email": "biuro@redifit.pl",
+    "phone": "502 602 999",
+    "phoneHref": "+48502602999"
+  },
+  "social": [
+    { "name": "Facebook", "url": "https://facebook.com/redifit" },
+    { "name": "Instagram", "url": "https://instagram.com/redi.fit/" },
+    { "name": "TikTok", "url": "https://tiktok.com/@redi.fit" }
+  ],
+  "robots": "noindex, nofollow"
+}

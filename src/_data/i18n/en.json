@@ -1,0 +1,733 @@
+{
+  "slugs": {
+    "home": "index",
+    "find": "find-a-trainer",
+    "trainers": "for-trainers",
+    "pricing": "pricing",
+    "faq": "faq",
+    "contact": "contact",
+    "terms": "terms",
+    "privacy": "privacy",
+    "notfound": "404"
+  },
+  "common": {
+    "logo_label": "Redifit — home page",
+    "nav_label": "Main navigation",
+    "nav": {
+      "find": "How it works",
+      "trainers": "For trainers",
+      "pricing": "Pricing",
+      "faq": "Questions",
+      "contact": "Contact"
+    },
+    "lang_label": "Choose language",
+    "get_app": "Get the app",
+    "footer": {
+      "tagline": "Trainers and training bookings in one app.",
+      "col_app": "App",
+      "col_help": "Help",
+      "col_info": "Information",
+      "terms": "Terms of service",
+      "privacy": "Privacy policy",
+      "preview_404": "404 (preview)",
+      "address": "REDi FIT sp. z o.o., ul. Kasprzaka 31/117, 01-234 Warsaw, Poland [NEEDS: confirm]",
+      "copyright": "© 2026 REDi FIT",
+      "needs": "[NEEDS] target domain · indexing: noindex until launch"
+    },
+    "cookie": {
+      "label": "Cookie consent",
+      "text": "This site uses cookies to work properly. You will find more in the <a href=\"{url:privacy}\">privacy policy</a>.",
+      "accept": "Accept",
+      "essential": "Only essential"
+    }
+  },
+  "home": {
+    "meta": {
+      "title": "Redifit — trainers and training bookings in one app",
+      "description": "Find a trainer by category, location and date, check reviews and portfolios, book a session in the app. For Android and iOS, in three languages."
+    },
+    "hero": {
+      "needs": "[NEEDS] zdjęcie hero ≥ 1920×1080 — trening na dworze o zachodzie słońca, przyciemnienie 40%",
+      "span": "I'm a client",
+      "a": "I'm a trainer →",
+      "eyebrow": "BE REDi!",
+      "h1": "Find a trainer, pick a time, book it in the app.",
+      "sub": "Redifit connects clients with trainers. Search by category, location and date, check reviews and portfolios, then pay by card, BLIK, cash or bank transfer — depending on what the trainer offers.",
+      "btn": "Get the app",
+      "img_alt": "Get it on Google Play",
+      "img_title": "[LINK: Google Play — placeholder]",
+      "img_alt_2": "Download on the App Store",
+      "img_title_2": "[LINK: App Store — placeholder]",
+      "caption": "[MOCK] Scan with your phone to get the app",
+      "note": "For Android and iOS. In three languages.",
+      "switch_link": "Are you a trainer? See what you get →",
+      "tag": "C1",
+      "caption_2": "Ekran główny klienta: kategorie, „Trenuj dziś”, „Trenerzy w Twojej okolicy”, „Wydarzenia”",
+      "needs_2": "[NEEDS] screen z aplikacji albo Figma",
+      "value": "250+",
+      "label": "trainers in the app",
+      "tag_2": "SAMPLE DATA",
+      "value_2": "12",
+      "label_2": "cities",
+      "tag_3": "SAMPLE DATA",
+      "value_3": "15",
+      "label_3": "training categories",
+      "tag_4": "SAMPLE DATA",
+      "value_4": "4.8 / 5",
+      "label_4": "average rating in the app",
+      "tag_5": "SAMPLE DATA"
+    },
+    "dlaczego": {
+      "h2": "Booking a session without hunting in five different places",
+      "title": "Without Redifit",
+      "li": "<span>You look for trainers in several places at once.</span>",
+      "li_2": "<span>You ask about free slots in messages and wait for a reply.</span>",
+      "li_3": "<span>You agree on price, place and payment separately with every trainer.</span>",
+      "title_2": "With Redifit",
+      "li_4": "<span>You see trainers in one place, as a list and on a map.</span>",
+      "li_5": "<span>You check free slots right away, including today.</span>",
+      "li_6": "<span>Price, location and accepted payment methods sit next to the trainer's service.</span>",
+      "needs_block": "[NEEDS: confirm the \"Without Redifit\" column with interviews / Product Discovery]"
+    },
+    "kroki": {
+      "h2": "Three steps from idea to booked session",
+      "lead": "Find, check, book. Every step stays in the app — together with payment and the option to change the date.",
+      "label": "Step 1 — Find",
+      "h3": "Category, location, date",
+      "p": "Results as a list or on the map, with a “Train today” section and trainers within 15 km of you.",
+      "label_2": "Step 2 — Check",
+      "h3_2": "Qualifications and reviews",
+      "p_2": "Education, courses, specialisations, portfolio and client reviews — before you pay, not after.",
+      "label_3": "Step 3 — Book",
+      "h3_3": "Payment and rescheduling",
+      "p_3": "Card, BLIK, cash or bank transfer. Change or cancel the booking wherever you made it.",
+      "btn": "See every step with screens"
+    },
+    "kategorie": {
+      "h2": "What do you want to train?",
+      "lead": "Category is the first filter in the search. You pick it on the home screen, then narrow results by price, time of day and distance.",
+      "name": "Category 01",
+      "needs": "[NEEDS] name",
+      "name_2": "Category 02",
+      "needs_2": "[NEEDS] name",
+      "name_3": "Category 03",
+      "needs_3": "[NEEDS] name",
+      "name_4": "Category 04",
+      "needs_4": "[NEEDS] name",
+      "name_5": "Category 05",
+      "needs_5": "[NEEDS] name",
+      "name_6": "and 10 more",
+      "tag": "SAMPLE DATA",
+      "needs_block": "[NEEDS] the full list of training categories from app_pl.arb — the code confirms a category filter exists, but not the names. The number “15” is sample data."
+    },
+    "gdzie": {
+      "h2": "Train at the trainer's place, or ask them to come to you",
+      "lead": "The trainer sets the location on each service, so you see it before you book.",
+      "kicker": "In person",
+      "h3": "An address pinned on the map",
+      "p": "You know where to go before you confirm the date. The map also shows how many trainers work in that area.",
+      "kicker_2": "Mobile",
+      "h3_2": "A trainer with a range in kilometres",
+      "p_2": "Some trainers travel to you and set their own radius for taking bookings.",
+      "kicker_3": "Nearby",
+      "h3_3": "Within 15 km of you",
+      "p_3": "The “Trainers near you” section works once you turn on location on your phone."
+    },
+    "wydarzenia": {
+      "eyebrow": "Events and discounts",
+      "h2": "Not just one-on-one sessions",
+      "lead": "Trainers also publish group events and lower prices at set times. You'll find both on the home screen.",
+      "li": "<span><strong>Events with limited spots</strong> — date, times, location, photos, level and price. You see how many spots are left.</span>",
+      "li_2": "<span><strong>Happy hours</strong> — a discount at hours the trainer sets, on a recurring basis, until a chosen date.</span>",
+      "li_3": "<span><strong>Train today</strong> — a separate section with slots that are still free today.</span>",
+      "li_4": "<span><strong>Favourite trainers</strong> — save a trainer and get back to them in one tap.</span>",
+      "step_note": "Events go through moderation before they appear in the app. <span class=\"tag--needs\">[NEEDS] moderation rules</span>",
+      "tag": "C1",
+      "caption": "The “Events” and “Train today” sections on the home screen",
+      "needs": "[NEEDS] screen z aplikacji albo Figma"
+    },
+    "opinie": {
+      "eyebrow": "Reviews",
+      "h2": "What people who already train are saying",
+      "lead": "Reviews in the app are left by clients after a completed booking, so every one comes from someone who was actually at a session.",
+      "needs_block": "[NEEDS] real reviews from app users — name, role, city, rating. The slots below are empty on purpose: nothing was made up, because a quote from someone who doesn't exist is fabricated social proof.",
+      "stars": "★★★★★",
+      "who": "<span class=\"testimonial-card__avatar\" aria-hidden=\"true\"></span> <span class=\"testimonial-card__meta\">[NEEDS] name, role, city<br>client</span>",
+      "stars_2": "★★★★★",
+      "who_2": "<span class=\"testimonial-card__avatar\" aria-hidden=\"true\"></span> <span class=\"testimonial-card__meta\">[NEEDS] name, role, city<br>client</span>",
+      "stars_3": "★★★★★",
+      "who_3": "<span class=\"testimonial-card__avatar\" aria-hidden=\"true\"></span> <span class=\"testimonial-card__meta\">[NEEDS] name, role, city<br>trainer</span>",
+      "value": "4.8 / 5",
+      "label": "average trainer rating in the app",
+      "tag": "SAMPLE DATA"
+    },
+    "jezyki": {
+      "h2": "The app in Polish, English and Ukrainian",
+      "lead": "You choose the language on first launch and change it in settings. The whole app — not just the site — works in three languages.",
+      "code": "PL",
+      "name": "polski",
+      "code_2": "EN",
+      "name_2": "English",
+      "code_3": "UK",
+      "name_3": "українська"
+    },
+    "sciezki": {
+      "h2": "One app, two paths",
+      "lead": "You download the same app. The split happens at registration: you create a client account or a trainer account.",
+      "label": "Client account",
+      "h3": "You search for a trainer and book",
+      "li": "Search, map and “Train today”",
+      "li_2": "Booking calendar and “Book again”",
+      "li_3": "Reviews after a completed session",
+      "btn_ghost_link": "How it works →",
+      "label_2": "Trainer account",
+      "h3_2": "You win clients and run your sessions",
+      "li_4": "A profile visible in search and on the map",
+      "li_5": "Calendar, clients, SMS messages",
+      "li_6": "Online payments, wallet and reports",
+      "btn": "For trainers",
+      "btn_ghost_link_2": "Pricing →"
+    },
+    "pobierz": {
+      "h2": "Start by getting the app",
+      "p": "Find a trainer, pick a time, book it in the app.",
+      "btn": "Get the app",
+      "img_alt": "Get it on Google Play",
+      "img_title": "[LINK: Google Play — placeholder]",
+      "img_alt_2": "Download on the App Store",
+      "img_title_2": "[LINK: App Store — placeholder]",
+      "caption": "[MOCK] Scan with your phone to get the app",
+      "note": "For Android and iOS. In three languages.",
+      "switch_link": "Got questions? →"
+    }
+  },
+  "find": {
+    "meta": {
+      "title": "Redifit — how it works: find, check, book",
+      "description": "Three steps from finding a trainer to a booked session — with app screens and payment rules."
+    },
+    "page_hero": {
+      "eyebrow": "How it works",
+      "h1": "From search to a booked session",
+      "lead": "Three steps, all in the app. Below is each one with the screen it happens on, and the rules worth knowing before you pay."
+    },
+    "pill_tabs": {
+      "pill_tabs_label": "On this page",
+      "a": "1. Find",
+      "a_2": "2. Check",
+      "a_3": "3. Book",
+      "a_4": "Safety"
+    },
+    "znajdz": {
+      "eyebrow": "STEP 1",
+      "h2": "Find a trainer by category, location and date",
+      "lead": "Pick a training category, type in an address and mark when you want to train. Results show up as a list or on a map.",
+      "li": "<span><strong>Free slots today</strong> — the \"Train today\" section on the home screen.</span>",
+      "li_2": "<span><strong>Trainers near you</strong> — up to 15 km from your location, once location is on.</span>",
+      "li_3": "<span><strong>Filters and map</strong> — narrow results by category, price and time of day (morning, afternoon, evening), and see how many trainers work in an area.</span>",
+      "li_4": "<span><strong>Favourite trainers</strong> — save a trainer and come back from the home screen.</span>",
+      "tag": "C1",
+      "caption": "Ekran główny: kategorie, „Trenuj dziś”, trenerzy w okolicy",
+      "needs": "[NEEDS] screen",
+      "tag_2": "C2",
+      "caption_2": "Wyszukiwarka: Kiedy? Gdzie? Cena, filtry kategorii, wyniki + widok mapy",
+      "needs_2": "[NEEDS] screen"
+    },
+    "sprawdz": {
+      "tag": "C4",
+      "caption": "Profil trenera: zakładki Usługi / Opinie / Portfolio / Szczegóły",
+      "needs": "[NEEDS] screen z aplikacji albo Figma",
+      "label": "Space for a testimonial",
+      "body": "[NEEDS: a real app user's review — name, role, city; not invented]",
+      "eyebrow": "STEP 2",
+      "h2": "Before you book, see who you are dealing with",
+      "lead": "A trainer's profile shows what you need to decide: qualifications, specialisations, portfolio photos and client reviews.",
+      "li": "<span><strong>Bio and qualifications</strong> — education, experience, completed courses and specialisations.</span>",
+      "li_2": "<span><strong>Portfolio</strong> — photos the trainer added to their profile.</span>",
+      "li_3": "<span><strong>Star-rated reviews</strong> — sort by newest, oldest, highest or lowest rated, mark a review as helpful or report it. Trainers can reply to reviews.</span>",
+      "li_4": "<span><strong>Services with prices</strong> — each service shows duration, price and location.</span>",
+      "step_note": "Reviews come from clients after a completed booking. [NEEDS: confirm with backend]"
+    },
+    "zarezerwuj": {
+      "eyebrow": "STEP 3",
+      "h2": "Book and manage the session in one app",
+      "lead": "Pick a time and payment method, then confirm. The booking lands in the app calendar, where you can change it, cancel it or add it to your phone calendar.",
+      "li": "<span><strong>Card and BLIK in a secure Stripe form</strong> — the app does not store card details.</span>",
+      "li_2": "<span><strong>Cash or bank transfer</strong> — if the trainer offers them; the trainer sets the payment methods.</span>",
+      "li_3": "<span><strong>Booking calendar</strong> — tabs for upcoming, completed and cancelled; \"Book again\" in one tap.</span>",
+      "li_4": "<span><strong>The session in your phone</strong> — add it to your device calendar or save it as an .ics file.</span>",
+      "li_5": "<span><strong>Status notifications</strong> — push, email or SMS, your choice in settings.</span>",
+      "title": "Change and cancellation rules",
+      "text": "Under the trainer's rules, a booking can be cancelled at least 24 hours in advance. A payment already taken may not be refunded. [NEEDS: confirm whether 24 h always applies]",
+      "tag": "C5",
+      "caption": "Podsumowanie rezerwacji z wyborem formy płatności (Gotówka / Karta / BLIK / Przelew)",
+      "needs": "[NEEDS] screen",
+      "tag_2": "C7",
+      "caption_2": "Kalendarz rezerwacji: Nadchodzące / Zrealizowane / Anulowane",
+      "needs_2": "[NEEDS] screen"
+    },
+    "bezpieczenstwo": {
+      "h2": "What's looking out for you when you pay in the app",
+      "lead": "Five mechanisms that work before and after you book a session.",
+      "h3": "Card details never touch the app",
+      "p": "Card and BLIK are handled in Stripe's own form. Redifit doesn't store card numbers.",
+      "h3_2": "Phone number confirmed by SMS code",
+      "p_2": "You confirm your number with a code at registration, so accounts can't be opened on a random number.",
+      "h3_3": "Reviews only after a session",
+      "p_3": "A rating is left after a completed booking. An inappropriate review can be reported.",
+      "h3_4": "Events go through moderation",
+      "p_4": "A trainer's event appears in the app after review. <span class=\"tag--needs\">[NEEDS] the rules</span>",
+      "h3_5": "The cancellation rule, stated plainly",
+      "p_5": "The 24-hour condition and the possibility that the fee won't be refunded are on this page, not just in the terms.",
+      "btn": "Get the app",
+      "btn_ghost_link": "See answers to common questions →"
+    },
+    "pobierz": {
+      "h2": "The three steps start in the app",
+      "p": "Find a trainer, pick a time, book.",
+      "btn": "Get the app",
+      "img_alt": "Get it on Google Play",
+      "img_title": "[LINK: Google Play — placeholder]",
+      "img_alt_2": "Download on the App Store",
+      "img_title_2": "[LINK: App Store — placeholder]"
+    }
+  },
+  "trainers": {
+    "meta": {
+      "title": "Redifit for trainers — clients, calendar and payments",
+      "description": "Win new clients and run your training in one app: profile, calendar, clients, online payments and statistics. For Android and iOS."
+    },
+    "t_hero": {
+      "needs": "[NEEDS] zdjęcie hero ≥ 1920×1080 — trener przy pracy, przyciemnienie 40%",
+      "a": "I'm a client →",
+      "span": "I'm a trainer",
+      "eyebrow": "FOR TRAINERS",
+      "h1": "Win new clients. Run your training in one app.",
+      "sub": "Redifit gives a trainer a profile clients can see, a booking calendar, online payments and statistics. You create the trainer account in the app.",
+      "btn": "Get the app",
+      "img_alt": "Get it on Google Play",
+      "img_title": "[LINK: Google Play — placeholder]",
+      "img_alt_2": "Download on the App Store",
+      "img_title_2": "[LINK: App Store — placeholder]",
+      "note": "Trainer registration happens in the app.",
+      "value": "250+",
+      "label": "trainers in the app",
+      "tag": "SAMPLE DATA",
+      "value_2": "3,400",
+      "label_2": "bookings a month",
+      "tag_2": "SAMPLE DATA",
+      "tag_3": "T-A",
+      "caption": "Kalendarz trenera (miesiąc) + lista treningów wybranego dnia",
+      "needs_2": "[NEEDS] screen z aplikacji albo Figma"
+    },
+    "t_dlaczego": {
+      "h2": "All the admin in one place",
+      "title": "Today",
+      "li": "<span>Clients, messages and appointments scattered across your phone, notes and calendars.</span>",
+      "li_2": "<span>You keep settlements and sales summaries separately.</span>",
+      "li_3": "<span>Finding new clients is on you, outside training hours.</span>",
+      "title_2": "With Redifit",
+      "li_4": "<span>Bookings, clients and history in one calendar.</span>",
+      "li_5": "<span>Online payments, wallet and reports in the same app.</span>",
+      "li_6": "<span>Your profile reaches clients searching for a trainer by category and location.</span>",
+      "needs_block": "[NEEDS: confirm the \"Today\" column in trainer interviews]"
+    },
+    "t_profil": {
+      "h2": "Clients are looking for trainers. Let them find you",
+      "lead": "Your profile is the first thing a client sees before booking. Fill it in inside the app.",
+      "li": "<span><strong>Bio and qualifications</strong> — profile name, specialisation, education, experience, completed courses and training.</span>",
+      "li_2": "<span><strong>Portfolio</strong> — add photos from the camera or gallery and reorder them by dragging.</span>",
+      "li_3": "<span><strong>Reviews</strong> — reply to client reviews and edit your reply later.</span>",
+      "li_4": "<span><strong>Visibility</strong> — clients find you in search, on the map and in \"Trainers near you\".</span>",
+      "step_note": "Service settings are saved on your profile, so start with the bio.",
+      "tag": "T-H",
+      "caption": "Bio i portfolio trenera",
+      "needs": "[NEEDS] screen z aplikacji albo Figma"
+    },
+    "t_zasady": {
+      "h2": "You set services, prices and availability yourself",
+      "h3": "Service",
+      "p": "Name, description, category, duration, gross price and VAT rate.",
+      "h3_2": "Place",
+      "p_2": "On site with a map pin, or mobile with a range in kilometres.",
+      "h3_3": "Availability",
+      "p_3": "Working hours, breaks, recurrence and a gap between bookings for travel or setup.",
+      "h3_4": "Booking limits",
+      "p_4": "How far ahead clients can book, how much notice they need and until when they can reschedule.",
+      "h3_5": "Time off",
+      "p_5": "A date range with a note; you take no bookings then. [NEEDS: confirm what time off does]",
+      "h3_6": "Happy hours",
+      "p_6": "A discount in chosen hours, recurring, valid until a set date.",
+      "h3_7": "Payment methods",
+      "p_7": "You tick what you accept: cash, card, BLIK, bank transfer.",
+      "h3_8": "Events",
+      "p_8": "Date, hours, location, photos, level, price and participant limit. Events go through moderation. [NEEDS: moderation rules]",
+      "tag": "T-C",
+      "caption": "Formularz usługi (nazwa, kategoria, czas, cena brutto, VAT)",
+      "needs": "[NEEDS] screen"
+    },
+    "t_popyt": {
+      "eyebrow": "When your calendar has gaps",
+      "h2": "Four tools you use to drive bookings yourself",
+      "lead": "All of them are in the app and need no extra advertising.",
+      "h3": "Happy hours",
+      "p": "Lower the price at hours that are hard to fill. The discount runs on a cycle and expires on a day you set.",
+      "h3_2": "Group events",
+      "p_2": "One slot, several participants. You set the level, price and spot limit, and add a gallery.",
+      "h3_3": "SMS to clients",
+      "p_3": "A message to everyone or to chosen people on your list, up to 200 characters, sent from your phone.",
+      "h3_4": "“Book again”",
+      "p_4": "From a client's history, one button takes you back to the same service — for both sides."
+    },
+    "t_praca": {
+      "tag": "T-A",
+      "caption": "Kalendarz trenera: miesiąc i lista treningów dnia",
+      "needs": "[NEEDS] screen",
+      "tag_2": "T-D",
+      "caption_2": "Klienci + „Wyślij wiadomość: do wszystkich / do wybranych”",
+      "needs_2": "[NEEDS] screen",
+      "h2": "Calendar, clients and messages in one place",
+      "li": "<span><strong>Calendar</strong> — month and week views plus the sessions for a chosen day.</span>",
+      "li_2": "<span><strong>Booking</strong> — client, phone, note, cost and payment method; edit it, add it to a calendar or book again.</span>",
+      "li_3": "<span><strong>Clients</strong> — a searchable list with each client's booking history.</span>",
+      "li_4": "<span><strong>Messages</strong> — to all or selected clients (up to 200 characters); sent from the SMS app on your phone.</span>"
+    },
+    "t_platnosci": {
+      "h2": "Payments land in your account and the numbers are at hand",
+      "li": "<span><strong>Payout account</strong> — connect your Stripe account in the app and check its status.</span>",
+      "li_2": "<span><strong>Statistics</strong> — three tabs: bookings, reports, wallet.</span>",
+      "li_3": "<span><strong>Filters</strong> — date, client, training type, payment method, ratings, weekdays, hours and discounts.</span>",
+      "li_4": "<span><strong>Reports</strong> — revenue and sales, downloadable from the app. [NEEDS: report formats]</span>",
+      "tag": "T-E",
+      "caption": "Statystyki: zakładka Raporty z filtrami",
+      "needs": "[NEEDS] screen",
+      "tag_2": "T-F",
+      "caption_2": "Konto wypłat Stripe i abonament",
+      "needs_2": "[NEEDS] screen"
+    },
+    "t_start": {
+      "h2": "Getting started in four steps",
+      "num": "1",
+      "p": "Get the app and create a trainer account.",
+      "num_2": "2",
+      "p_2": "Fill in your bio.",
+      "num_3": "3",
+      "p_3": "Add a service: category, duration, price, place and availability.",
+      "num_4": "4",
+      "p_4": "Connect your Stripe payout account and activate the subscription.",
+      "needs_block": "[NEEDS: confirm the order of steps and trainer account verification]",
+      "btn": "Get the app",
+      "btn_ghost_link": "How much does a trainer account cost? →"
+    },
+    "pobierz": {
+      "h2": "Start by getting the app",
+      "p": "Create a trainer account, fill in your profile and add your first service.",
+      "btn": "Get the app",
+      "img_alt": "Get it on Google Play",
+      "img_title": "[LINK: Google Play — placeholder]",
+      "img_alt_2": "Download on the App Store",
+      "img_title_2": "[LINK: App Store — placeholder]",
+      "note": "Trainer registration happens in the app."
+    }
+  },
+  "pricing": {
+    "meta": {
+      "title": "Redifit — pricing: PLN 100 a month for trainers",
+      "description": "One subscription for trainers, no subscription for the client account. What the price includes and the commission on online payments."
+    },
+    "page_hero": {
+      "eyebrow": "Pricing",
+      "h1": "One subscription for the trainer. No subscription for the client account.",
+      "lead": "There isn't three plans to compare — there's one. Below is what it includes, and what's added on top of online payments."
+    },
+    "section": {
+      "plan": "Trainer account · REDi FIT Standard",
+      "amount": "PLN 100 / month",
+      "frame": "That is about PLN 3.30 a day.",
+      "needs_block": "[NEEDS: public price, net/gross]",
+      "li": "<span>An active trainer account with a profile clients can see</span>",
+      "li_2": "<span>Calendar, clients, statistics and messages</span>",
+      "li_3": "<span>Online payments via Stripe</span>",
+      "li_4": "<span>Services, availability, time off, happy hours and events</span>",
+      "dt": "Online payment fee",
+      "dd": "5% [SAMPLE DATA]",
+      "dt_2": "Trial period",
+      "dd_2": "[NEEDS: whether it exists and for how many days]",
+      "dt_3": "Cash and bank transfer",
+      "dd_3": "no app commission",
+      "manage": "You manage the subscription in the app. If cancelled, it runs until the end of the paid period. [NEEDS: confirm]",
+      "btn": "Get the app",
+      "label": "Client account",
+      "h2": "You pay for the session, not for the app",
+      "p": "You book and pay the trainer the amount they set on the service. There's no subscription just to use the app.",
+      "needs_block_2": "[NEEDS] confirm the client account is free — the brief doesn't state this outright",
+      "h2_2": "What if the subscription payment fails?",
+      "p_2": "The app will show a “Payment failed” status and ask you to update your card.",
+      "btn_ghost_link": "More questions from trainers →",
+      "h2_3": "Not sure the numbers work for you?",
+      "p_3": "Write to us — we'll tell you what the trainer account covers in your case.",
+      "btn_2": "Ask a question"
+    },
+    "pobierz": {
+      "h2": "You activate the subscription in the app",
+      "p": "First the account and profile, then the Stripe payout account and the subscription.",
+      "btn": "Get the app",
+      "img_alt": "Get it on Google Play",
+      "img_title": "[LINK: Google Play — placeholder]",
+      "img_alt_2": "Download on the App Store",
+      "img_title_2": "[LINK: App Store — placeholder]"
+    }
+  },
+  "faq": {
+    "meta": {
+      "title": "Redifit — questions and answers",
+      "description": "Answers for clients and trainers before you download the Redifit app."
+    },
+    "page_hero": {
+      "eyebrow": "Questions",
+      "h1": "Answers before you download the app"
+    },
+    "pill_tabs": {
+      "pill_tabs_label": "On this page",
+      "a": "For clients",
+      "a_2": "For trainers"
+    },
+    "faq_klient": {
+      "h2": "Client — booking, payment, rescheduling",
+      "needs_block": "[NEEDS] pytania robocze, wywiedzione z aplikacji — zastąpić prawdziwymi pytaniami od użytkowników i supportu",
+      "summary": "Do I need an account to book?",
+      "p": "Yes. You create it in the app: email, first and last name, phone number and password, then confirm the number with an SMS code and accept the consents.",
+      "summary_2": "How do I pay for a session?",
+      "p_2": "The trainer sets the payment methods. You can pay by card or BLIK in the Stripe form, or — if the trainer offers it — in cash or by transfer.",
+      "summary_3": "Can I cancel or reschedule?",
+      "p_3": "Yes, in the app. Under the trainer's rules cancellation is possible at least 24 hours ahead, and a payment already taken may not be refunded.",
+      "summary_4": "How do I know a trainer is credible?",
+      "p_4": "Check the profile: education, completed courses, specialisations, portfolio and client reviews. Reviews are left by people after a completed booking.",
+      "summary_5": "Can a trainer come to me?",
+      "p_5": "Depends on the service. The trainer sets the location as in-person with a map pin, or mobile with a range in kilometres.",
+      "summary_6": "What languages does the app support?",
+      "p_6": "Polish, English and Ukrainian.",
+      "summary_7": "Which phones does Redifit run on?",
+      "p_7": "On Android and iOS. [NEEDS: minimum OS versions]",
+      "summary_8": "Is Redifit the REDi FIT gym app?",
+      "p_8": "Redifit is the app where clients book sessions with trainers. [NEEDS: clarify the relation to the REDi FIT gym]"
+    },
+    "faq_trener": {
+      "h2": "Trainer — account, subscription, payouts",
+      "needs_block": "[NEEDS] prawdziwe pytania od trenerów",
+      "summary": "How much does a trainer account cost?",
+      "p": "The REDi FIT Standard subscription costs PLN 100 per month. [NEEDS]",
+      "summary_2": "How do I get paid for sessions paid online?",
+      "p_2": "Online payments go to your Stripe payout account, which you connect in the app.",
+      "summary_3": "Can I take cash?",
+      "p_3": "Yes, if you tick it. You set payment methods in the service settings: cash, card, BLIK, transfer.",
+      "summary_4": "What if I am not running sessions for a while?",
+      "p_4": "Add time off in the service settings: a date range and a note.",
+      "summary_5": "Can clients reschedule?",
+      "p_5": "That is your call. You can allow rescheduling and set the minimum notice in hours.",
+      "summary_6": "What happens if a subscription payment fails?",
+      "p_6": "The app shows a \"Payment failed\" status and asks you to update the card. [NEEDS: effect on profile visibility]"
+    },
+    "faq_more": {
+      "h2": "Didn't find an answer to your question?",
+      "lead": "Write to us — the form is on the contact page. We reply to the email address you give.",
+      "btn": "Go to contact"
+    },
+    "pobierz": {
+      "h2": "Start by getting the app",
+      "p": "Find a trainer, pick a time, book it in the app.",
+      "btn": "Get the app",
+      "img_alt": "Get it on Google Play",
+      "img_title": "[LINK: Google Play — placeholder]",
+      "img_alt_2": "Download on the App Store",
+      "img_title_2": "[LINK: App Store — placeholder]"
+    }
+  },
+  "contact": {
+    "meta": {
+      "title": "Redifit — contact",
+      "description": "Write to us: contact form, email and phone for REDi FIT."
+    },
+    "page_hero": {
+      "eyebrow": "Contact",
+      "h1": "Write to us",
+      "lead": "We reply to the email address given in the form. If your question is about a booking or an account, say whether you're a client or a trainer — it'll reach the right person faster."
+    },
+    "contact_page_section": {
+      "h2": "Contact form",
+      "tag": "MOCK — nothing is actually sent",
+      "p": "Thank you",
+      "p_2": "Your message has been sent. We will reply to the email address you gave.",
+      "btn": "Send another message",
+      "label": "Full name",
+      "error": "This field is required",
+      "label_2": "Email address",
+      "error_2": "Enter a valid email address",
+      "label_3": "Who are you?",
+      "option": "…",
+      "option_2": "Client",
+      "option_3": "Trainer",
+      "option_4": "Other",
+      "error_3": "This field is required",
+      "label_4": "Subject",
+      "error_4": "This field is required",
+      "label_5": "Message",
+      "error_5": "This field is required",
+      "span": "I consent to my personal data being processed so that my enquiry can be answered. [NEEDS: legal]",
+      "span_2": "I accept the terms of service and the privacy policy. [NEEDS: legal]",
+      "error_6": "You must accept all required consents",
+      "btn_2": "Send message",
+      "h2_2": "Contact details",
+      "dt": "Email",
+      "dt_2": "Phone",
+      "dt_3": "Address",
+      "dd_3": "REDi FIT sp. z o.o.<br>ul. Kasprzaka 31/117<br>01-234 Warszawa",
+      "needs_block": "[NEEDS] confirm these details apply to the app — they come from redifit.pl/kontakt",
+      "h2_3": "Account and booking matters",
+      "p_3": "Registration, rescheduling, cancelling and service settings are handled in the app. The form is for questions the app and the FAQ don't answer.",
+      "btn_ghost_link": "See frequently asked questions →",
+      "label_6": "To implement",
+      "p_4": "[NEEDS] where submissions go: the biuro@redifit.pl inbox or a CRM — requirement S-016 “integration with a ticketing system” [NEEDS] anti-spam protection [NEEDS] whether a directions map is needed next to the address"
+    },
+    "pobierz": {
+      "h2": "Start by getting the app",
+      "p": "Find a trainer, pick a time, book it in the app.",
+      "btn": "Get the app",
+      "img_alt": "Get it on Google Play",
+      "img_title": "[LINK: Google Play — placeholder]",
+      "img_alt_2": "Download on the App Store",
+      "img_title_2": "[LINK: App Store — placeholder]"
+    }
+  },
+  "terms": {
+    "meta": {
+      "title": "Terms of service — Redifit",
+      "description": ""
+    },
+    "main": {
+      "h1": "Terms of service",
+      "updated": "Last updated: <span class=\"tag tag--needs\">[NEEDS]</span>",
+      "title": "Text-page template",
+      "p": "[NEEDS: legal counsel] Terms of service content. In the app this page is \"being prepared\" (legal_terms_of_service_in_preparation), and the contact form requires a consent that links here — it must be ready before launch."
+    },
+    "toc": {
+      "toc_label": "Table of contents",
+      "title": "Table of contents",
+      "li": "<a href=\"#r-1\">1. General provisions</a>",
+      "li_2": "<a href=\"#r-2\">2. Account and registration</a>",
+      "li_3": "<a href=\"#r-3\">3. Bookings and payments</a>",
+      "li_4": "<a href=\"#r-4\">4. Changes and cancellations</a>",
+      "li_5": "<a href=\"#r-5\">5. Trainer account and subscription</a>",
+      "li_6": "<a href=\"#r-6\">6. Complaints</a>"
+    },
+    "r_1": {
+      "h2": "1. General provisions",
+      "p": "[NEEDS: legal counsel] Definitions, provider details, scope of the service."
+    },
+    "r_2": {
+      "h2": "2. Account and registration",
+      "p": "[NEEDS: legal counsel] Account requirement, SMS code verification, required consents."
+    },
+    "r_3": {
+      "h2": "3. Bookings and payments",
+      "p": "[NEEDS: legal counsel] Stripe's role, payment methods set by the trainer, obligations of both parties."
+    },
+    "r_4": {
+      "h2": "4. Changes and cancellations",
+      "p": "[NEEDS: legal counsel] The 24h rule — confirm whether it always applies or depends on the trainer."
+    },
+    "r_5": {
+      "h2": "5. Trainer account and subscription",
+      "p": "[NEEDS: legal counsel] Subscription price, commission, trial period, cancellation at period end."
+    },
+    "r_6": {
+      "h2": "6. Complaints",
+      "p": "[NEEDS: legal counsel] Procedure and deadlines, contact details."
+    },
+    "pobierz": {
+      "h2": "Start by getting the app",
+      "p": "Find a trainer, pick a time, book it in the app.",
+      "btn": "Get the app",
+      "img_alt": "Get it on Google Play",
+      "img_title": "[LINK: Google Play — placeholder]",
+      "img_alt_2": "Download on the App Store",
+      "img_title_2": "[LINK: App Store — placeholder]"
+    }
+  },
+  "privacy": {
+    "meta": {
+      "title": "Privacy policy — Redifit",
+      "description": ""
+    },
+    "main": {
+      "h1": "Privacy policy",
+      "updated": "Last updated: <span class=\"tag tag--needs\">[NEEDS]</span>",
+      "title": "Text-page template",
+      "p": "[NEEDS: legal counsel] Privacy policy content. In the app this page is \"being prepared\" (legal_privacy_policy_in_preparation)."
+    },
+    "toc": {
+      "toc_label": "Table of contents",
+      "title": "Table of contents",
+      "li": "<a href=\"#p-1\">1. Data controller</a>",
+      "li_2": "<a href=\"#p-2\">2. What data we collect</a>",
+      "li_3": "<a href=\"#p-3\">3. Purposes and legal basis</a>",
+      "li_4": "<a href=\"#p-4\">4. Data recipients</a>",
+      "li_5": "<a href=\"#p-5\">5. Cookies</a>",
+      "li_6": "<a href=\"#p-6\">6. Your rights</a>"
+    },
+    "p_1": {
+      "h2": "1. Data controller",
+      "p": "[NEEDS: legal counsel] REDi FIT sp. z o.o. — confirm registered details and the contact for data protection matters."
+    },
+    "p_2": {
+      "h2": "2. What data we collect",
+      "p": "[NEEDS: legal counsel] Registration data, location, contact form data."
+    },
+    "p_3": {
+      "h2": "3. Purposes and legal basis",
+      "p": "[NEEDS: legal counsel]"
+    },
+    "p_4": {
+      "h2": "4. Data recipients",
+      "p": "[NEEDS: legal counsel] Stripe as payment processor, the SMS notification provider."
+    },
+    "p_5": {
+      "h2": "5. Cookies",
+      "p": "[NEEDS: legal counsel] Scope of cookies and analytics — the on-site banner links here."
+    },
+    "p_6": {
+      "h2": "6. Your rights",
+      "p": "[NEEDS: legal counsel]"
+    },
+    "pobierz": {
+      "h2": "Start by getting the app",
+      "p": "Find a trainer, pick a time, book it in the app.",
+      "btn": "Get the app",
+      "img_alt": "Get it on Google Play",
+      "img_title": "[LINK: Google Play — placeholder]",
+      "img_alt_2": "Download on the App Store",
+      "img_title_2": "[LINK: App Store — placeholder]"
+    }
+  },
+  "notfound": {
+    "meta": {
+      "title": "Page not found — Redifit",
+      "description": ""
+    },
+    "main": {
+      "logo_mark_alt": "Redifit",
+      "h1": "Page not found",
+      "p": "This address does not exist or has changed.",
+      "btn": "Back to the home page"
+    },
+    "pobierz": {
+      "h2": "Start by getting the app",
+      "p": "Find a trainer, pick a time, book it in the app.",
+      "btn": "Get the app",
+      "img_alt": "Get it on Google Play",
+      "img_title": "[LINK: Google Play — placeholder]",
+      "img_alt_2": "Download on the App Store",
+      "img_title_2": "[LINK: App Store — placeholder]"
+    }
+  }
+}

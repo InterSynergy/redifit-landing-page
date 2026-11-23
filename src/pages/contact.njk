@@ -1,0 +1,116 @@
+---
+pageKey: contact
+css: [contact]
+---
+<main>
+    <section class="page-hero" style="padding:72px 24px;">
+        <div class="container">
+            <p class="page-hero__eyebrow">{% t "contact.page_hero.eyebrow" %}</p>
+            <h1>{% t "contact.page_hero.h1" %}</h1>
+            <p class="lead">{% t "contact.page_hero.lead" %}</p>
+        </div>
+    </section>
+    <section class="contact-page-section">
+        <div class="contact-page-grid">
+            <div class="contact-card">
+                <div class="contact-card__head">
+                    <h2>{% t "contact.contact_page_section.h2" %}</h2>
+                    <span class="tag tag--mock">{% t "contact.contact_page_section.tag" %}</span>
+                </div>
+                <div class="form-success" id="k-success" data-mock-form-success="k" hidden role="status">
+                    <p>{% t "contact.contact_page_section.p" %}</p>
+                    <p>{% t "contact.contact_page_section.p_2" %}</p>
+                    <button type="button" class="btn btn-outline" data-mock-form-reset>{% t "contact.contact_page_section.btn" %}</button>
+                </div>
+                <form id="k" data-mock-form="k" novalidate>
+                    <div class="form-field">
+                        <label for="k-name">{% t "contact.contact_page_section.label" %}</label>
+                        <input id="k-name" name="name" type="text" required minlength="2" />
+                        <p class="form-field__error" id="k-name-error" hidden>{% t "contact.contact_page_section.error" %}</p>
+                    </div>
+                    <div class="form-field">
+                        <label for="k-email">{% t "contact.contact_page_section.label_2" %}</label>
+                        <input id="k-email" name="email" type="email" required />
+                        <p class="form-field__error" id="k-email-error" hidden>{% t "contact.contact_page_section.error_2" %}</p>
+                    </div>
+                    <div class="form-field">
+                        <label for="k-role">{% t "contact.contact_page_section.label_3" %}</label>
+                        <select id="k-role" name="role" required>
+                            <option value="" selected disabled>{% t "contact.contact_page_section.option" %}</option>
+                            <option value="klient">{% t "contact.contact_page_section.option_2" %}</option>
+                            <option value="trener">{% t "contact.contact_page_section.option_3" %}</option>
+                            <option value="inne">{% t "contact.contact_page_section.option_4" %}</option>
+                        </select>
+                        <p class="form-field__error" id="k-role-error" hidden>{% t "contact.contact_page_section.error_3" %}</p>
+                    </div>
+                    <div class="form-field">
+                        <label for="k-subject">{% t "contact.contact_page_section.label_4" %}</label>
+                        <input id="k-subject" name="subject" type="text" required />
+                        <p class="form-field__error" id="k-subject-error" hidden>{% t "contact.contact_page_section.error_4" %}</p>
+                    </div>
+                    <div class="form-field">
+                        <label for="k-message">{% t "contact.contact_page_section.label_5" %}</label>
+                        <textarea id="k-message" name="message" rows="4" required maxlength="2000"></textarea>
+                        <p class="form-field__error" id="k-message-error" hidden>{% t "contact.contact_page_section.error_5" %}</p>
+                    </div>
+                    <div class="consent-list">
+                        <label class="consent-label">
+                            <input type="checkbox" data-consent required />
+                            <span>{% t "contact.contact_page_section.span" %}</span>
+                        </label>
+                        <label class="consent-label">
+                            <input type="checkbox" data-consent required />
+                            <span>{% t "contact.contact_page_section.span_2" %}</span>
+                        </label>
+                        <p class="form-field__error" data-consent-error hidden>{% t "contact.contact_page_section.error_6" %}</p>
+                    </div>
+                    <button type="submit" class="btn btn-outline" style="align-self:flex-start;">{% t "contact.contact_page_section.btn_2" %}
+                    </button>
+                </form>
+
+            </div>
+            <div class="contact-side">
+                <div class="contact-info-card">
+                    <h2>{% t "contact.contact_page_section.h2_2" %}</h2>
+                    <dl>
+                        <div>
+                            <dt>{% t "contact.contact_page_section.dt" %}</dt>
+                            <dd><a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></dd>
+                        </div>
+                        <div>
+                            <dt>{% t "contact.contact_page_section.dt_2" %}</dt>
+                            <dd><a href="tel:{{ site.contact.phoneHref }}">{{ site.contact.phone }}</a></dd>
+                        </div>
+                        <div>
+                            <dt>{% t "contact.contact_page_section.dt_3" %}</dt>
+                            <dd>{% t "contact.contact_page_section.dd_3" %}</dd>
+                        </div>
+                    </dl>
+                    <p class="needs-block">{% t "contact.contact_page_section.needs_block" %}</p>
+                </div>
+                <div class="contact-note-card">
+                    <h2>{% t "contact.contact_page_section.h2_3" %}</h2>
+                    <p>{% t "contact.contact_page_section.p_3" %}</p>
+                    <a href="{% url "faq" %}" class="btn-ghost-link">{% t "contact.contact_page_section.btn_ghost_link" %}</a>
+                </div>
+                <div class="contact-todo">
+                    <p class="contact-todo__label">{% t "contact.contact_page_section.label_6" %}</p>
+                    <p>{% t "contact.contact_page_section.p_4" %}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="pobierz" class="cta-banner" style="padding:64px 24px;">
+        <div class="container">
+            <h2 style="font-size:clamp(22px,2.8vw,32px);">{% t "contact.pobierz.h2" %}</h2>
+            <p>{% t "contact.pobierz.p" %}</p>
+            <div class="hero__cta-row">
+                <span class="btn btn-lg btn-on-red">{% t "contact.pobierz.btn" %}</span>
+                <div class="store-badges">
+                    <img src="{% asset "assets/google-play.png" %}" alt="{% ta "contact.pobierz.img_alt" %}" title="{% ta "contact.pobierz.img_title" %}" />
+                    <img src="{% asset "assets/app-store.svg" %}" alt="{% ta "contact.pobierz.img_alt_2" %}" title="{% ta "contact.pobierz.img_title_2" %}" />
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

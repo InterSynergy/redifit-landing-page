@@ -1,0 +1,13 @@
+{
+  "name": "redifit-landing",
+  "private": true,
+  "type": "module",
+  "description": "Landing page aplikacji REDi FIT — generator Eleventy, teksty w src/_data/i18n/*.json",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
+}
