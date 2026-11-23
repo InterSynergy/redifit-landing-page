@@ -8,7 +8,7 @@
             <a href="{% url key %}"{% if key == pageKey %} aria-current="page"{% endif %}>{% t 'common.nav.' + key %}</a>
             {%- endfor %}
         </nav>
-        {% set langSwitchClass = '' %}{% include "partials/lang-switch.njk" %}
+        {% set langMenuClass = '' %}{% include "partials/lang-menu.njk" %}
         <a href="#pobierz" class="btn btn-primary">{% t 'common.get_app' %}</a>
     </div>
 </header>

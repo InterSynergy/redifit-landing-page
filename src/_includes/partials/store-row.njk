@@ -1,0 +1,13 @@
+{# Duże badge sklepów + QR (uwagi #5, #6, #26). Linki do sklepów: site.json → stores. #}
+<div class="store-badges store-badges--lg">
+    {%- for s in [
+        { "url": site.stores.googlePlay, "img": "assets/google-play.png", "alt": "common.stores.google_play_alt" },
+        { "url": site.stores.appStore, "img": "assets/app-store.svg", "alt": "common.stores.app_store_alt" }
+    ] %}
+    {% if s.url %}<a href="{{ s.url }}">{% endif %}<img src="{% asset s.img %}" alt="{% ta s.alt %}"/>{% if s.url %}</a>{% endif %}
+    {%- endfor %}
+</div>
+<div class="qr-mock qr-mock--lg">
+    <span class="qr-mock__box" aria-hidden="true"></span>
+    <span class="qr-mock__caption">{% t "common.stores.qr_caption" %}</span>
+</div>

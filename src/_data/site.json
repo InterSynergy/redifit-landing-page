@@ -6,9 +6,82 @@
     "phoneHref": "+48502602999"
   },
   "social": [
-    { "name": "Facebook", "url": "https://facebook.com/redifit" },
-    { "name": "Instagram", "url": "https://instagram.com/redi.fit/" },
-    { "name": "TikTok", "url": "https://tiktok.com/@redi.fit" }
+    {
+      "name": "Facebook",
+      "url": "https://facebook.com/redifit"
+    },
+    {
+      "name": "Instagram",
+      "url": "https://instagram.com/redi.fit/"
+    },
+    {
+      "name": "TikTok",
+      "url": "https://tiktok.com/@redi.fit"
+    }
   ],
-  "robots": "noindex, nofollow"
+  "robots": "noindex, nofollow",
+  "features": {
+    "_info": "Przełączniki sekcji. stats: pasek statystyk w hero (#8) — włączyć, gdy będą realne dane.",
+    "stats": false
+  },
+  "stores": {
+    "_info": "Linki do sklepów. Puste = badge bez linku.",
+    "googlePlay": "",
+    "appStore": ""
+  },
+  "categories": [
+    {
+      "id": "personal",
+      "image": ""
+    },
+    {
+      "id": "swimming",
+      "image": ""
+    },
+    {
+      "id": "running",
+      "image": ""
+    },
+    {
+      "id": "physio",
+      "image": ""
+    },
+    {
+      "id": "tennis",
+      "image": ""
+    },
+    {
+      "id": "postnatal",
+      "image": ""
+    },
+    {
+      "id": "motor",
+      "image": ""
+    },
+    {
+      "id": "strength",
+      "image": ""
+    },
+    {
+      "id": "seniors",
+      "image": ""
+    },
+    {
+      "id": "mobility",
+      "image": ""
+    },
+    {
+      "id": "martial",
+      "image": ""
+    },
+    {
+      "id": "stretching",
+      "image": ""
+    },
+    {
+      "id": "pilates",
+      "image": ""
+    }
+  ],
+  "_categories_info": "Kolejność kategorii w karuzeli na stronie głównej. image: ścieżka do zdjęcia, np. assets/categories/pilates.webp (puste = szare pole). Nazwy w i18n → home.kategorie.items."
 }

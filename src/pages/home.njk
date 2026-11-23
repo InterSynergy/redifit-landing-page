@@ -2,183 +2,146 @@
 pageKey: home
 css: [home]
 ---
+{# Strona główna (klient). Numery #N w komentarzach = punkty z uwag klienta, docs/landing-zadania.md #}
 <main>
+    {# #1–#10 #}
     <section id="hero" class="hero">
         <div class="hero__pattern" aria-hidden="true"></div>
-        <div class="hero__scrim" aria-hidden="true"></div>
-        <p class="hero__needs">{% t "home.hero.needs" %}</p>
         <div class="hero__grid">
             <div class="hero__copy">
                 <div class="role-toggle">
-                    <span aria-current="page">{% t "home.hero.span" %}</span>
-                    <a href="{% url "trainers" %}">{% t "home.hero.a" %}</a>
+                    <span aria-current="page">{% t "home.hero.role_client" %}</span>
+                    <a href="{% url "trainers" %}">{% t "home.hero.role_trainer" %}</a>
                 </div>
                 <p class="hero__eyebrow">{% t "home.hero.eyebrow" %}</p>
                 <h1 class="h1">{% t "home.hero.h1" %}</h1>
                 <p class="hero__sub">{% t "home.hero.sub" %}</p>
+                <p class="hero__free">{% t "home.hero.free" %}</p>
                 <div class="hero__cta-row">
-                    <a href="#pobierz" class="btn btn-lg btn-primary">{% t "home.hero.btn" %}</a>
-                    <div class="store-badges">
-                        <img src="{% asset "assets/google-play.png" %}" alt="{% ta "home.hero.img_alt" %}" title="{% ta "home.hero.img_title" %}" />
-                        <img src="{% asset "assets/app-store.svg" %}" alt="{% ta "home.hero.img_alt_2" %}" title="{% ta "home.hero.img_title_2" %}" />
-                    </div>
-                    <div class="qr-mock">
-                        <span class="qr-mock__box" aria-hidden="true"></span>
-                        <span class="qr-mock__caption">{% t "home.hero.caption" %}</span>
-                    </div>
+                    {% include "partials/store-row.njk" %}
                 </div>
-                <p class="hero__note">{% t "home.hero.note" %}</p>
+                <div class="hero__tagline">
+                    <p class="hero__tagline-title">{% t "home.hero.tagline_title" %}</p>
+                    <p class="hero__tagline-text">{% t "home.hero.tagline_text" %}</p>
+                </div>
                 <a href="{% url "trainers" %}" class="hero__switch-link">{% t "home.hero.switch_link" %}</a>
             </div>
             <div class="hero__media">
+                {# #3: tu wchodzi screen ekranu głównego aplikacji (wyszukiwarka + kategorie) #}
                 <figure class="phone phone--tilt-l">
                     <div class="phone__screen">
-                        <span class="phone__tag">{% t "home.hero.tag" %}</span>
-                        <figcaption class="phone__caption">{% t "home.hero.caption_2" %}
-                        </figcaption>
-                        <span class="phone__needs">{% t "home.hero.needs_2" %}</span>
+                        <figcaption class="phone__caption">{% t "home.hero.screen_caption" %}</figcaption>
                     </div>
                 </figure>
             </div>
         </div>
+        {# #8: pasek statystyk ukryty do czasu realnych danych — włącza site.json → features.stats #}
+        {% if site.features.stats %}
         <div class="proof-bar">
             <div class="proof-bar__grid">
+                {%- for key in ['trainers', 'cities', 'categories', 'rating'] %}
                 <div class="proof-stat">
-                    <p class="proof-stat__value">{% t "home.hero.value" %}</p>
-                    <p class="proof-stat__label">{% t "home.hero.label" %}</p>
-                    <span class="tag tag--sample">{% t "home.hero.tag_2" %}</span>
+                    <p class="proof-stat__value">{% t "home.hero.stats." + key + "_value" %}</p>
+                    <p class="proof-stat__label">{% t "home.hero.stats." + key + "_label" %}</p>
                 </div>
-                <div class="proof-stat">
-                    <p class="proof-stat__value">{% t "home.hero.value_2" %}</p>
-                    <p class="proof-stat__label">{% t "home.hero.label_2" %}</p>
-                    <span class="tag tag--sample">{% t "home.hero.tag_3" %}</span>
-                </div>
-                <div class="proof-stat">
-                    <p class="proof-stat__value">{% t "home.hero.value_3" %}</p>
-                    <p class="proof-stat__label">{% t "home.hero.label_3" %}</p>
-                    <span class="tag tag--sample">{% t "home.hero.tag_4" %}</span>
-                </div>
-                <div class="proof-stat">
-                    <p class="proof-stat__value">{% t "home.hero.value_4" %}</p>
-                    <p class="proof-stat__label">{% t "home.hero.label_4" %}</p>
-                    <span class="tag tag--sample">{% t "home.hero.tag_5" %}</span>
-                </div>
+                {%- endfor %}
             </div>
         </div>
+        {% endif %}
     </section>
+
+    {# #11–#12 #}
     <section id="dlaczego" class="section">
-        <div class="container" style="display:flex;flex-direction:column;gap:40px;">
+        <div class="container">
             <h2 class="h2">{% t "home.dlaczego.h2" %}</h2>
-            <div class="compare-grid">
+            <div class="compare-grid compare-grid--lg">
                 <div class="compare-card compare-card--without">
-                    <p class="compare-card__title">{% t "home.dlaczego.title" %}</p>
+                    <p class="compare-card__title">{% t "home.dlaczego.without_title" %}</p>
                     <ul>
-                        <li>{% t "home.dlaczego.li" %}</li>
-                        <li>{% t "home.dlaczego.li_2" %}</li>
-                        <li>{% t "home.dlaczego.li_3" %}</li>
+                        {%- for i in range(1, 6) %}
+                        <li><span>{% t "home.dlaczego.without_" + i %}</span></li>
+                        {%- endfor %}
                     </ul>
                 </div>
                 <div class="compare-card compare-card--with">
-                    <p class="compare-card__title">{% t "home.dlaczego.title_2" %}</p>
+                    <p class="compare-card__title">{% t "home.dlaczego.with_title" %}</p>
                     <ul>
-                        <li>{% t "home.dlaczego.li_4" %}</li>
-                        <li>{% t "home.dlaczego.li_5" %}</li>
-                        <li>{% t "home.dlaczego.li_6" %}</li>
+                        {%- for i in range(1, 6) %}
+                        <li><span>{% t "home.dlaczego.with_" + i %}</span></li>
+                        {%- endfor %}
                     </ul>
                 </div>
             </div>
-            <p class="needs-block">{% t "home.dlaczego.needs_block" %}</p>
         </div>
     </section>
+
+    {# #13–#16 #}
     <section id="kroki" class="section section-alt">
         <div class="container">
             <div class="intro">
                 <h2 class="h2">{% t "home.kroki.h2" %}</h2>
-                <p class="lead" style="max-width:none;">{% t "home.kroki.lead" %}</p>
+                <p class="lead">{% t "home.kroki.lead" %}</p>
             </div>
-            <div class="step-card-grid">
-                <div class="step-card">
-                    <p class="step-card__label">{% t "home.kroki.label" %}</p>
-                    <h3>{% t "home.kroki.h3" %}</h3>
-                    <p>{% t "home.kroki.p" %}</p>
-                </div>
-                <div class="step-card">
-                    <p class="step-card__label">{% t "home.kroki.label_2" %}</p>
-                    <h3>{% t "home.kroki.h3_2" %}</h3>
-                    <p>{% t "home.kroki.p_2" %}</p>
-                </div>
-                <div class="step-card">
-                    <p class="step-card__label">{% t "home.kroki.label_3" %}</p>
-                    <h3>{% t "home.kroki.h3_3" %}</h3>
-                    <p>{% t "home.kroki.p_3" %}</p>
-                </div>
-            </div>
-            <a href="{% url "find" %}" class="btn btn-outline">{% t "home.kroki.btn" %}</a>
+            <ol class="step-card-grid">
+                {%- for i in range(1, 4) %}
+                <li class="step-card">
+                    <p class="step-card__step"><span class="step-card__word">{% t "home.kroki.step_label" %}</span> <span class="step-card__num">{{ i }}</span></p>
+                    <h3>{% t "home.kroki.step_" + i + "_title" %}</h3>
+                    <p>{% t "home.kroki.step_" + i + "_text" %}</p>
+                </li>
+                {%- endfor %}
+            </ol>
+            <a href="{% url "find" %}" class="btn btn-outline">{% t "home.kroki.cta" %}</a>
         </div>
     </section>
+
+    {# #17–#18: karuzela kategorii; lista i zdjęcia w site.json → categories #}
     <section id="kategorie" class="section">
         <div class="container">
             <div class="intro">
                 <h2 class="h2">{% t "home.kategorie.h2" %}</h2>
-                <p class="lead" style="max-width:none;">{% t "home.kategorie.lead" %}</p>
+                <p class="lead">{% t "home.kategorie.lead" %}</p>
             </div>
-            <div class="category-grid">
-                <div class="category-card">
-                    <span class="category-card__icon" aria-hidden="true"></span>
-                    <p class="name">{% t "home.kategorie.name" %}</p>
-                    <p class="needs">{% t "home.kategorie.needs" %}</p>
-                </div>
-                <div class="category-card">
-                    <span class="category-card__icon" aria-hidden="true"></span>
-                    <p class="name">{% t "home.kategorie.name_2" %}</p>
-                    <p class="needs">{% t "home.kategorie.needs_2" %}</p>
-                </div>
-                <div class="category-card">
-                    <span class="category-card__icon" aria-hidden="true"></span>
-                    <p class="name">{% t "home.kategorie.name_3" %}</p>
-                    <p class="needs">{% t "home.kategorie.needs_3" %}</p>
-                </div>
-                <div class="category-card">
-                    <span class="category-card__icon" aria-hidden="true"></span>
-                    <p class="name">{% t "home.kategorie.name_4" %}</p>
-                    <p class="needs">{% t "home.kategorie.needs_4" %}</p>
-                </div>
-                <div class="category-card">
-                    <span class="category-card__icon" aria-hidden="true"></span>
-                    <p class="name">{% t "home.kategorie.name_5" %}</p>
-                    <p class="needs">{% t "home.kategorie.needs_5" %}</p>
-                </div>
-                <div class="category-card category-card--more">
-                    <p class="name">{% t "home.kategorie.name_6" %}</p>
-                    <span class="tag tag--sample">{% t "home.kategorie.tag" %}</span>
-                </div>
+            <div class="cat-carousel" data-carousel>
+                <button type="button" class="cat-carousel__nav cat-carousel__nav--prev" data-carousel-prev aria-label="{% ta 'home.kategorie.prev' %}">‹</button>
+                <ul class="cat-track" data-carousel-track aria-label="{% ta 'home.kategorie.carousel_label' %}">
+                    {%- for c in site.categories %}
+                    <li class="cat-item">
+                        {%- if c.image %}
+                        <img class="cat-item__img" src="{% asset c.image %}" alt="" loading="lazy">
+                        {%- else %}
+                        <span class="cat-item__img cat-item__img--empty" aria-hidden="true"></span>
+                        {%- endif %}
+                        <span class="cat-item__name">{% t "home.kategorie.items." + c.id %}</span>
+                    </li>
+                    {%- endfor %}
+                    <li class="cat-item cat-item--more">
+                        <a class="cat-item__img" href="{% url "find" %}">{% t "home.kategorie.more" %}</a>
+                    </li>
+                </ul>
+                <button type="button" class="cat-carousel__nav cat-carousel__nav--next" data-carousel-next aria-label="{% ta 'home.kategorie.next' %}">›</button>
             </div>
-            <p class="needs-block">{% t "home.kategorie.needs_block" %}</p>
         </div>
     </section>
+
+    {# #19–#20 #}
     <section id="gdzie" class="section section-alt">
         <div class="container">
             <div class="intro">
-                <h2 class="h2" style="max-width:none;">{% t "home.gdzie.h2" %}</h2>
-                <p class="lead" style="max-width:none;">{% t "home.gdzie.lead" %}</p>
+                <h2 class="h2">{% t "home.gdzie.h2" %}</h2>
+                <p class="lead">{% t "home.gdzie.lead" %}</p>
             </div>
+            {%- for key in ['onsite', 'mobile', 'nearby'] %}
             <div class="feature-card">
-                <p class="kicker">{% t "home.gdzie.kicker" %}</p>
-                <h3>{% t "home.gdzie.h3" %}</h3>
-                <p>{% t "home.gdzie.p" %}</p>
+                <p class="kicker">{% t "home.gdzie." + key + "_kicker" %}</p>
+                <h3>{% t "home.gdzie." + key + "_title" %}</h3>
+                <p>{% t "home.gdzie." + key + "_text" %}</p>
             </div>
-            <div class="feature-card">
-                <p class="kicker">{% t "home.gdzie.kicker_2" %}</p>
-                <h3>{% t "home.gdzie.h3_2" %}</h3>
-                <p>{% t "home.gdzie.p_2" %}</p>
-            </div>
-            <div class="feature-card">
-                <p class="kicker">{% t "home.gdzie.kicker_3" %}</p>
-                <h3>{% t "home.gdzie.h3_3" %}</h3>
-                <p>{% t "home.gdzie.p_3" %}</p>
-            </div>
+            {%- endfor %}
         </div>
     </section>
+
+    {# #21–#22 #}
     <section id="wydarzenia" class="section step-section">
         <div class="container">
             <div class="step-section__copy">
@@ -186,136 +149,108 @@ css: [home]
                 <h2 class="h2">{% t "home.wydarzenia.h2" %}</h2>
                 <p class="lead">{% t "home.wydarzenia.lead" %}</p>
                 <ul class="step-list">
-                    <li>{% t "home.wydarzenia.li" %}</li>
-                    <li>{% t "home.wydarzenia.li_2" %}</li>
-                    <li>{% t "home.wydarzenia.li_3" %}</li>
-                    <li>{% t "home.wydarzenia.li_4" %}</li>
+                    {%- for key in ['events', 'happy', 'today', 'favs'] %}
+                    <li><span><strong>{% t "home.wydarzenia." + key + "_title" %}</strong> {% t "home.wydarzenia." + key + "_text" %}</span></li>
+                    {%- endfor %}
                 </ul>
-                <p class="step-note">{% t "home.wydarzenia.step_note" %}</p>
             </div>
             <div class="hero__media">
+                {# #22: duży screen z sekcjami „Wydarzenia” i „Trenuj dziś” #}
                 <figure class="phone">
                     <div class="phone__screen">
-                        <span class="phone__tag">{% t "home.wydarzenia.tag" %}</span>
-                        <figcaption class="phone__caption">{% t "home.wydarzenia.caption" %}
-                        </figcaption>
-                        <span class="phone__needs">{% t "home.wydarzenia.needs" %}</span>
+                        <figcaption class="phone__caption">{% t "home.wydarzenia.screen_caption" %}</figcaption>
                     </div>
                 </figure>
             </div>
         </div>
     </section>
-    <section id="opinie" class="section section-alt">
+
+    {# #23: kafelki z prawdziwymi opiniami dojdą, gdy pojawią się w aplikacji #}
+    <section id="opinie" class="section section-alt step-section">
         <div class="container">
-            <div class="intro">
+            <div class="hero__media">
+                <figure class="phone">
+                    <div class="phone__screen">
+                        <figcaption class="phone__caption">{% t "home.opinie.screen_caption" %}</figcaption>
+                    </div>
+                </figure>
+            </div>
+            <div class="step-section__copy">
                 <p class="eyebrow">{% t "home.opinie.eyebrow" %}</p>
                 <h2 class="h2">{% t "home.opinie.h2" %}</h2>
-                <p class="lead" style="max-width:none;">{% t "home.opinie.lead" %}</p>
-            </div>
-            <p class="needs-block">{% t "home.opinie.needs_block" %}</p>
-            <div class="testimonial-grid">
-                <figure class="testimonial-card">
-                    <p class="testimonial-card__stars" aria-hidden="true">{% t "home.opinie.stars" %}</p>
-                    <blockquote class="testimonial-card__lines">
-                        <span class="testimonial-card__line" aria-hidden="true"></span><span class="testimonial-card__line" aria-hidden="true"></span><span class="testimonial-card__line testimonial-card__line--short" aria-hidden="true"></span>
-                    </blockquote>
-                    <figcaption class="testimonial-card__who">{% t "home.opinie.who" %}</figcaption>
-                </figure>
-                <figure class="testimonial-card">
-                    <p class="testimonial-card__stars" aria-hidden="true">{% t "home.opinie.stars_2" %}</p>
-                    <blockquote class="testimonial-card__lines">
-                        <span class="testimonial-card__line" aria-hidden="true"></span><span class="testimonial-card__line" aria-hidden="true"></span><span class="testimonial-card__line testimonial-card__line--short" aria-hidden="true"></span>
-                    </blockquote>
-                    <figcaption class="testimonial-card__who">{% t "home.opinie.who_2" %}</figcaption>
-                </figure>
-                <figure class="testimonial-card">
-                    <p class="testimonial-card__stars" aria-hidden="true">{% t "home.opinie.stars_3" %}</p>
-                    <blockquote class="testimonial-card__lines">
-                        <span class="testimonial-card__line" aria-hidden="true"></span><span class="testimonial-card__line" aria-hidden="true"></span><span class="testimonial-card__line testimonial-card__line--short" aria-hidden="true"></span>
-                    </blockquote>
-                    <figcaption class="testimonial-card__who">{% t "home.opinie.who_3" %}</figcaption>
-                </figure>
-            </div>
-            <div class="testimonial-rating">
-                <p class="testimonial-rating__value">{% t "home.opinie.value" %}</p>
-                <p class="testimonial-rating__label">{% t "home.opinie.label" %}</p>
-                <span class="tag tag--sample">{% t "home.opinie.tag" %}</span>
+                <p class="lead">{% t "home.opinie.lead" %}</p>
             </div>
         </div>
     </section>
+
+    {# #24: grafika wyboru języka wg docs/wzory/24-jezyk-dropdown.png; lista z languages.json #}
     <section id="jezyki">
         <div class="container">
             <div class="intro">
                 <h2>{% t "home.jezyki.h2" %}</h2>
                 <p class="lead">{% t "home.jezyki.lead" %}</p>
             </div>
-            <div class="lang-grid">
-                <div class="lang-chip">
-                    <p class="lang-chip__code">{% t "home.jezyki.code" %}</p>
-                    <p class="lang-chip__name">{% t "home.jezyki.name" %}</p>
+            <div class="lang-picker" aria-hidden="true">
+                <img class="lang-picker__globe" src="{% asset 'assets/globe.webp' %}" alt="">
+                <p class="lang-picker__title">{% t "home.jezyki.picker_title" %}</p>
+                <div class="lang-picker__select">
+                    <span class="lang-picker__icon">文A</span>
+                    <span class="lang-picker__current">{{ lang.name }}</span>
+                    <span class="lang-picker__chevron">⌄</span>
                 </div>
-                <div class="lang-chip">
-                    <p class="lang-chip__code">{% t "home.jezyki.code_2" %}</p>
-                    <p class="lang-chip__name">{% t "home.jezyki.name_2" %}</p>
-                </div>
-                <div class="lang-chip">
-                    <p class="lang-chip__code">{% t "home.jezyki.code_3" %}</p>
-                    <p class="lang-chip__name">{% t "home.jezyki.name_3" %}</p>
-                </div>
+                <ul class="lang-picker__menu">
+                    {%- for l in languages %}
+                    <li{% if l.code == lang.code %} class="is-active"{% endif %}>{{ l.name }}</li>
+                    {%- endfor %}
+                </ul>
             </div>
         </div>
     </section>
+
+    {# #25 #}
     <section id="sciezki" class="section">
         <div class="container">
             <div class="intro">
                 <h2 class="h2">{% t "home.sciezki.h2" %}</h2>
-                <p class="lead" style="max-width:none;">{% t "home.sciezki.lead" %}</p>
+                <p class="lead">{% t "home.sciezki.lead" %}</p>
             </div>
             <div class="path-grid">
                 <div class="path-card path-card--client">
-                    <p class="path-card__label">{% t "home.sciezki.label" %}</p>
-                    <h3>{% t "home.sciezki.h3" %}</h3>
+                    <p class="path-card__label">{% t "home.sciezki.client_label" %}</p>
+                    <h3>{% t "home.sciezki.client_title" %}</h3>
                     <ul>
-                        <li>{% t "home.sciezki.li" %}</li>
-                        <li>{% t "home.sciezki.li_2" %}</li>
-                        <li>{% t "home.sciezki.li_3" %}</li>
+                        {%- for i in range(1, 6) %}
+                        <li>{% t "home.sciezki.client_" + i %}</li>
+                        {%- endfor %}
                     </ul>
-                    <a href="{% url "find" %}" class="btn-ghost-link">{% t "home.sciezki.btn_ghost_link" %}</a>
+                    <p class="path-card__free">{% t "home.sciezki.client_free" %}</p>
+                    <a href="{% url "find" %}" class="btn-ghost-link">{% t "home.sciezki.client_link" %}</a>
                 </div>
                 <div class="path-card path-card--trainer">
-                    <p class="path-card__label">{% t "home.sciezki.label_2" %}</p>
-                    <h3>{% t "home.sciezki.h3_2" %}</h3>
+                    <p class="path-card__label">{% t "home.sciezki.trainer_label" %}</p>
+                    <h3>{% t "home.sciezki.trainer_title" %}</h3>
                     <ul>
-                        <li>{% t "home.sciezki.li_4" %}</li>
-                        <li>{% t "home.sciezki.li_5" %}</li>
-                        <li>{% t "home.sciezki.li_6" %}</li>
+                        {%- for i in range(1, 6) %}
+                        <li>{% t "home.sciezki.trainer_" + i %}</li>
+                        {%- endfor %}
                     </ul>
-                    <div class="path-card__actions">
-                        <a href="{% url "trainers" %}" class="btn btn-primary">{% t "home.sciezki.btn" %}</a>
-                        <a href="{% url "pricing" %}" class="btn-ghost-link">{% t "home.sciezki.btn_ghost_link_2" %}</a>
-                    </div>
+                    <a href="{% url "trainers" %}" class="btn-ghost-link">{% t "home.sciezki.trainer_link" %}</a>
                 </div>
             </div>
         </div>
     </section>
+
+    {# #26 #}
     <section id="pobierz" class="cta-banner">
         <div class="container">
             <h2>{% t "home.pobierz.h2" %}</h2>
             <p>{% t "home.pobierz.p" %}</p>
             <div class="hero__cta-row">
-                <span class="btn btn-lg btn-on-red">{% t "home.pobierz.btn" %}</span>
-                <div class="store-badges">
-                    <img src="{% asset "assets/google-play.png" %}" alt="{% ta "home.pobierz.img_alt" %}" title="{% ta "home.pobierz.img_title" %}" />
-                    <img src="{% asset "assets/app-store.svg" %}" alt="{% ta "home.pobierz.img_alt_2" %}" title="{% ta "home.pobierz.img_title_2" %}" />
-                </div>
-                <div class="qr-mock">
-                    <span class="qr-mock__box" aria-hidden="true"></span>
-                    <span class="qr-mock__caption">{% t "home.pobierz.caption" %}</span>
-                </div>
+                {% include "partials/store-row.njk" %}
             </div>
-            <div class="hero__cta-row" style="margin-top:4px;">
-                <p class="hero__note" style="color:rgba(255,255,255,.85);">{% t "home.pobierz.note" %}</p>
-                <a href="{% url "faq" %}" class="hero__switch-link">{% t "home.pobierz.switch_link" %}</a>
+            <div class="hero__cta-row">
+                <p class="hero__note">{% t "home.pobierz.note" %}</p>
+                <a href="{% url "faq" %}" class="hero__switch-link">{% t "home.pobierz.faq_link" %}</a>
             </div>
         </div>
     </section>

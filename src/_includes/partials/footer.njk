@@ -1,42 +1,42 @@
+{# Stopka wg uwagi #27; adres (#29) zostaje; przełącznik języka jako lista (#28). #}
 <footer class="site-footer">
     <div class="container">
         <div class="footer-grid">
             <div class="footer-col footer-col--brand">
-                <div class="logo" style="pointer-events:none;">
-                    <img class="logo-mark" src="{% asset 'assets/logo.webp' %}" alt="Redifit"/>
-                </div>
+                <a href="{% url 'home' %}" class="logo" aria-label="{% ta 'common.logo_label' %}">
+                    <img class="logo-mark" src="{% asset 'assets/logo.webp' %}" alt="REDi FIT"/>
+                </a>
                 <p>{% t 'common.footer.tagline' %}</p>
-                <div class="footer-social">
+                <p class="footer-social">
                     {%- for s in site.social %}
-                    <a href="{{ s.url }}">{{ s.name }}</a>
+                    {% if not loop.first %}<span aria-hidden="true">·</span> {% endif %}<a href="{{ s.url }}">{{ s.name }}</a>
                     {%- endfor %}
-                </div>
+                </p>
             </div>
             <div class="footer-col">
                 <p class="footer-col__title">{% t 'common.footer.col_app' %}</p>
-                <a href="{% url 'find' %}">{% t 'common.nav.find' %}</a>
-                <a href="{% url 'trainers' %}">{% t 'common.nav.trainers' %}</a>
-                <a href="{% url 'pricing' %}">{% t 'common.nav.pricing' %}</a>
+                <a href="{% url 'find' %}">{% t 'common.footer.links.find' %}</a>
+                <a href="{% url 'trainers' %}">{% t 'common.footer.links.trainers' %}</a>
+                <a href="{% url 'pricing' %}">{% t 'common.footer.links.pricing' %}</a>
             </div>
             <div class="footer-col">
                 <p class="footer-col__title">{% t 'common.footer.col_help' %}</p>
-                <a href="{% url 'faq' %}">{% t 'common.nav.faq' %}</a>
-                <a href="{% url 'contact' %}">{% t 'common.nav.contact' %}</a>
+                <a href="{% url 'faq' %}">{% t 'common.footer.links.faq' %}</a>
+                <a href="{% url 'contact' %}">{% t 'common.footer.links.contact' %}</a>
             </div>
             <div class="footer-col">
                 <p class="footer-col__title">{% t 'common.footer.col_info' %}</p>
-                <a href="{% url 'terms' %}">{% t 'common.footer.terms' %}</a>
-                <a href="{% url 'privacy' %}">{% t 'common.footer.privacy' %}</a>
-                <a href="{% url 'notfound' %}" class="footer-link--muted">{% t 'common.footer.preview_404' %}</a>
+                <a href="{% url 'terms' %}">{% t 'common.footer.links.terms' %}</a>
+                <a href="{% url 'privacy' %}">{% t 'common.footer.links.privacy' %}</a>
+                <button type="button" class="footer-link-btn" data-cookie-settings>{% t 'common.footer.links.cookies' %}</button>
             </div>
         </div>
         <div class="footer-bottom">
             <div class="footer-bottom__meta">
                 <p>{% t 'common.footer.address' %}</p>
                 <p class="footer-copy">{% t 'common.footer.copyright' %}</p>
-                <p class="tag--needs">{% t 'common.footer.needs' %}</p>
             </div>
-            {% set langSwitchClass = ' lang-switch--dark' %}{% include "partials/lang-switch.njk" %}
+            {% set langMenuClass = ' lang-menu--dark lang-menu--up' %}{% include "partials/lang-menu.njk" %}
         </div>
     </div>
 </footer>
