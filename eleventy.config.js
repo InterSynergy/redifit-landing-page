@@ -6,6 +6,7 @@
 //
 // W szablonach:
 //   {% t "home.hero.h1" %}      tekst (może zawierać HTML)
+//   {% tp "faq.….a" %}           tekst z akapitami (pusta linia w JSON = nowy akapit)
 //   {% ta "home.hero.img_alt" %} tekst do atrybutu (escapowany)
 //   {% url "faq" %}             link do strony w bieżącym języku
 //   {% url "faq", "en" %}       link do strony w innym języku
@@ -14,6 +15,7 @@
 // W tekstach (JSON) można używać:
 //   {url:faq}  {url:faq#sekcja}  {url:faq@en}   — link do strony
 //   {site:contact.email}                         — wartość z site.json
+//   {num:pricing.onlineFeeFixed}                 — liczba z site.json w formacie języka (0,49 / 0.49)
 
 import fs from "node:fs";
 import path from "node:path";
@@ -90,11 +92,25 @@ function lookup(lang, key) {
 function resolvePlaceholders(text, ctx) {
   return text
     .replace(/\{url:([\w-]+)(?:@([\w-]+))?(#[^}]*)?\}/g, (_, key, lc, frag) => pageUrl(ctx, key, lc) + (frag || ""))
+    .replace(/\{num:([\w.]+)\}/g, (_, p) => formatNumber(siteValue(p), ctx.lang))
     .replace(/\{site:([\w.]+)\}/g, (_, p) => {
       const v = p.split(".").reduce((o, k) => (o == null ? undefined : o[k]), site);
       if (v == null) throw new Error(`Brak wartości "${p}" w site.json`);
       return v;
     });
+}
+
+function siteValue(p) {
+  const v = p.split(".").reduce((o, k) => (o == null ? undefined : o[k]), site);
+  if (v == null) throw new Error(`Brak wartości "${p}" w site.json`);
+  return v;
+}
+
+// Liczba z site.json zapisana zgodnie z językiem strony: 0.49 → „0,49” (pl, uk), „0.49” (en).
+function formatNumber(v, lang) {
+  if (typeof v !== "number") throw new Error(`{num:…} wymaga liczby w site.json, jest: ${JSON.stringify(v)}`);
+  const decimals = (String(v).split(".")[1] || "").length;
+  return new Intl.NumberFormat(lang, { minimumFractionDigits: decimals, maximumFractionDigits: decimals }).format(v);
 }
 
 const escapeAttr = (s) => s.replace(/&(?![#\w]+;)/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;");
@@ -111,6 +127,35 @@ export default function (eleventyConfig) {
     const ctx = pageContext(this.page);
     return escapeAttr(resolvePlaceholders(lookup(ctx.lang, key), ctx));
   });
+  // Tekst z akapitami: w JSON-ie akapity oddziela pusta linia ("\n\n") → <p>…</p><p>…</p>
+  eleventyConfig.addShortcode("tp", function (key) {
+    const ctx = pageContext(this.page);
+    return resolvePlaceholders(lookup(ctx.lang, key), ctx)
+      .split(/\n\s*\n/)
+      .map((para) => `<p>${para.trim()}</p>`)
+      .join("");
+  });
+
+  // Dane strukturalne FAQPage (schema.org) z pytań w i18n → faq.<sekcja>.groups.*.questions.*
+  eleventyConfig.addShortcode("faqJsonLd", function (...sections) {
+    const ctx = pageContext(this.page);
+    const strip = (html) => html.replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim();
+    const entities = [];
+    for (const sec of sections) {
+      for (const g of Object.values(i18n[ctx.lang].faq[sec].groups)) {
+        for (const q of Object.values(g.questions)) {
+          entities.push({
+            "@type": "Question",
+            name: strip(resolvePlaceholders(q.q, ctx)),
+            acceptedAnswer: { "@type": "Answer", text: strip(resolvePlaceholders(q.a, ctx)) },
+          });
+        }
+      }
+    }
+    const json = JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: entities }, null, 2);
+    return `<script type="application/ld+json">\n${json.replace(/</g, "\\u003c")}\n</script>`;
+  });
+
   eleventyConfig.addShortcode("url", function (key, langCode) {
     return pageUrl(pageContext(this.page), key, langCode);
   });

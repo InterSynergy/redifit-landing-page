@@ -1,7 +1,8 @@
-/* Redifit landing — styles unique to the FAQ page (faq.html) */
+/* REDi FIT landing — style tylko strony FAQ. Numery #N = uwagi klienta. */
 
 .faq-page-section {
     padding: 80px 24px;
+    scroll-margin-top: 70px;
 }
 
 .faq-page-section .container-faq {
@@ -9,14 +10,29 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 40px;
 }
 
 .faq-page-section h2 {
-    font: 800 italic clamp(22px, 2.6vw, 30px)/1.2 var(--font-sans);
+    font: 800 italic clamp(24px, 2.8vw, 34px)/1.2 var(--font-sans);
     color: var(--color-dark);
 }
 
+/* #49, #50 — grupy pytań */
+.faq-group {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.faq-group__title {
+    font: 800 italic var(--fs-eyebrow)/1 var(--font-sans);
+    text-transform: uppercase;
+    letter-spacing: .14em;
+    color: var(--color-logo-red);
+}
+
+/* #51 */
 .faq-more {
     padding: 80px 24px;
 }
@@ -33,11 +49,4 @@
 .faq-more h2 {
     font: 800 italic clamp(22px, 2.6vw, 30px)/1.2 var(--font-sans);
     color: var(--color-dark);
-}
-
-.faq-more__actions {
-    display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
-    align-items: center;
 }

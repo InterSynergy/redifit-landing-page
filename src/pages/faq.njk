@@ -2,110 +2,65 @@
 pageKey: faq
 css: [faq]
 ---
+{# FAQ. Numery #N = punkty z uwag klienta, docs/landing-zadania.md.
+   Pytania: i18n → faq.<client|trainer>.groups.<grupa>.questions.<qN>.{q,a}.
+   Nowe pytanie = nowy wpis qN w każdym języku; w odpowiedzi pusta linia = nowy akapit. #}
+{% set F = i18n[lang.code].faq %}
 <main>
-    <section class="page-hero" style="padding:72px 24px;">
+    {# #48 #}
+    <section class="page-hero">
         <div class="container">
-            <p class="page-hero__eyebrow">{% t "faq.page_hero.eyebrow" %}</p>
-            <h1>{% t "faq.page_hero.h1" %}</h1>
-            <nav aria-label="{% ta "faq.pill_tabs.pill_tabs_label" %}" class="pill-tabs">
-                <a href="#faq-klient">{% t "faq.pill_tabs.a" %}</a>
-                <a href="#faq-trener">{% t "faq.pill_tabs.a_2" %}</a>
+            <p class="page-hero__eyebrow">{% t "faq.hero.eyebrow" %}</p>
+            <h1>{% t "faq.hero.h1" %}</h1>
+            <p class="lead">{% t "faq.hero.lead" %}</p>
+            <nav aria-label="{% ta 'faq.hero.tabs_label' %}" class="pill-tabs">
+                <a href="#faq-klient">{% t "faq.hero.tab_client" %}</a>
+                <a href="#faq-trener">{% t "faq.hero.tab_trainer" %}</a>
             </nav>
         </div>
     </section>
-    <section id="faq-klient" class="faq-page-section">
+
+    {# #49 (klient) i #50 (trener) #}
+    {%- for sec in [{ "key": "client", "id": "faq-klient", "alt": false }, { "key": "trainer", "id": "faq-trener", "alt": true }] %}
+    <section id="{{ sec.id }}" class="faq-page-section{% if sec.alt %} section-alt{% endif %}">
         <div class="container-faq">
-            <h2>{% t "faq.faq_klient.h2" %}</h2>
-            <p class="needs-block">{% t "faq.faq_klient.needs_block" %}</p>
-            <div class="faq-list">
-                <details class="faq-item" data-faq name="faq-c">
-                    <summary>{% t "faq.faq_klient.summary" %}</summary>
-                    <p>{% t "faq.faq_klient.p" %}</p>
-                </details>
-                <details class="faq-item" data-faq name="faq-c">
-                    <summary>{% t "faq.faq_klient.summary_2" %}</summary>
-                    <p>{% t "faq.faq_klient.p_2" %}</p>
-                </details>
-                <details class="faq-item" data-faq name="faq-c">
-                    <summary>{% t "faq.faq_klient.summary_3" %}</summary>
-                    <p>{% t "faq.faq_klient.p_3" %}</p>
-                </details>
-                <details class="faq-item" data-faq name="faq-c">
-                    <summary>{% t "faq.faq_klient.summary_4" %}</summary>
-                    <p>{% t "faq.faq_klient.p_4" %}</p>
-                </details>
-                <details class="faq-item" data-faq name="faq-c">
-                    <summary>{% t "faq.faq_klient.summary_5" %}</summary>
-                    <p>{% t "faq.faq_klient.p_5" %}</p>
-                </details>
-                <details class="faq-item" data-faq name="faq-c">
-                    <summary>{% t "faq.faq_klient.summary_6" %}</summary>
-                    <p>{% t "faq.faq_klient.p_6" %}</p>
-                </details>
-                <details class="faq-item" data-faq name="faq-c">
-                    <summary>{% t "faq.faq_klient.summary_7" %}</summary>
-                    <p>{% t "faq.faq_klient.p_7" %}</p>
-                </details>
-                <details class="faq-item" data-faq name="faq-c">
-                    <summary>{% t "faq.faq_klient.summary_8" %}</summary>
-                    <p>{% t "faq.faq_klient.p_8" %}</p>
-                </details>
+            <h2>{% t "faq." + sec.key + ".title" %}</h2>
+            {%- for gkey, group in F[sec.key].groups %}
+            <div class="faq-group">
+                <h3 class="faq-group__title">{% t "faq." + sec.key + ".groups." + gkey + ".title" %}</h3>
+                <div class="faq-list">
+                    {%- for qkey, item in group.questions %}
+                    {%- set base = "faq." + sec.key + ".groups." + gkey + ".questions." + qkey %}
+                    <details class="faq-item" data-faq id="{{ sec.id }}-{{ qkey }}">
+                        <summary>{% t base + ".q" %}</summary>
+                        <div class="faq-item__answer">{% tp base + ".a" %}</div>
+                    </details>
+                    {%- endfor %}
+                </div>
             </div>
+            {%- endfor %}
         </div>
     </section>
-    <section id="faq-trener" class="faq-page-section section-alt">
-        <div class="container-faq">
-            <h2>{% t "faq.faq_trener.h2" %}</h2>
-            <p class="needs-block">{% t "faq.faq_trener.needs_block" %}</p>
-            <div class="faq-list">
-                <details class="faq-item" data-faq name="faq-t">
-                    <summary>{% t "faq.faq_trener.summary" %}</summary>
-                    <p>{% t "faq.faq_trener.p" %}</p>
-                </details>
-                <details class="faq-item" data-faq name="faq-t">
-                    <summary>{% t "faq.faq_trener.summary_2" %}</summary>
-                    <p>{% t "faq.faq_trener.p_2" %}</p>
-                </details>
-                <details class="faq-item" data-faq name="faq-t">
-                    <summary>{% t "faq.faq_trener.summary_3" %}</summary>
-                    <p>{% t "faq.faq_trener.p_3" %}</p>
-                </details>
-                <details class="faq-item" data-faq name="faq-t">
-                    <summary>{% t "faq.faq_trener.summary_4" %}</summary>
-                    <p>{% t "faq.faq_trener.p_4" %}</p>
-                </details>
-                <details class="faq-item" data-faq name="faq-t">
-                    <summary>{% t "faq.faq_trener.summary_5" %}</summary>
-                    <p>{% t "faq.faq_trener.p_5" %}</p>
-                </details>
-                <details class="faq-item" data-faq name="faq-t">
-                    <summary>{% t "faq.faq_trener.summary_6" %}</summary>
-                    <p>{% t "faq.faq_trener.p_6" %}</p>
-                </details>
-            </div>
-        </div>
-    </section>
+    {%- endfor %}
+
+    {# #51 #}
     <section class="faq-more">
         <div class="container-faq">
-            <h2>{% t "faq.faq_more.h2" %}</h2>
-            <p class="lead">{% t "faq.faq_more.lead" %}</p>
-            <div class="faq-more__actions">
-                <a href="{% url "contact" %}" class="btn btn-primary">{% t "faq.faq_more.btn" %}</a>
-                <a href="mailto:{{ site.contact.email }}" class="btn-ghost-link">{{ site.contact.email }}</a>
-            </div>
+            <h2>{% t "faq.more.h2" %}</h2>
+            <p class="lead">{% t "faq.more.lead" %}</p>
+            <a href="{% url "contact" %}" class="btn btn-primary">{% t "faq.more.btn" %}</a>
         </div>
     </section>
-    <section id="pobierz" class="cta-banner" style="padding:64px 24px;">
+
+    {# #52 #}
+    <section id="pobierz" class="cta-banner">
         <div class="container">
-            <h2 style="font-size:clamp(22px,2.8vw,32px);">{% t "faq.pobierz.h2" %}</h2>
+            <h2>{% t "faq.pobierz.h2" %}</h2>
             <p>{% t "faq.pobierz.p" %}</p>
             <div class="hero__cta-row">
-                <span class="btn btn-lg btn-on-red">{% t "faq.pobierz.btn" %}</span>
-                <div class="store-badges">
-                    <img src="{% asset "assets/google-play.png" %}" alt="{% ta "faq.pobierz.img_alt" %}" title="{% ta "faq.pobierz.img_title" %}" />
-                    <img src="{% asset "assets/app-store.svg" %}" alt="{% ta "faq.pobierz.img_alt_2" %}" title="{% ta "faq.pobierz.img_title_2" %}" />
-                </div>
+                {% include "partials/store-row.njk" %}
             </div>
         </div>
     </section>
 </main>
+{% faqJsonLd "client", "trainer" %}

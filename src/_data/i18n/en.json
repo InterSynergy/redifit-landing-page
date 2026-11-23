@@ -126,7 +126,11 @@
         "mobility": "Mobility",
         "martial": "Combat sports",
         "stretching": "Stretching",
-        "pilates": "Pilates"
+        "pilates": "Pilates",
+        "hiit": "HIIT",
+        "crosstraining": "Cross training",
+        "bodyshaping": "Body shaping",
+        "yoga": "Yoga"
       }
     },
     "gdzie": {
@@ -197,400 +201,585 @@
   },
   "find": {
     "meta": {
-      "title": "Redifit — how it works: find, check, book",
-      "description": "Three steps from finding a trainer to a booked session — with app screens and payment rules."
+      "title": "Find a trainer — how REDi FIT works, step by step",
+      "description": "Find a trainer, check their profile and reviews, book a session and pay in the app. See how REDi FIT works, step by step."
     },
-    "page_hero": {
-      "eyebrow": "How it works",
-      "h1": "From search to a booked session",
-      "lead": "Three steps, all in the app. Below is each one with the screen it happens on, and the rules worth knowing before you pay."
-    },
-    "pill_tabs": {
-      "pill_tabs_label": "On this page",
-      "a": "1. Find",
-      "a_2": "2. Check",
-      "a_3": "3. Book",
-      "a_4": "Safety"
+    "hero": {
+      "eyebrow": "Find a trainer",
+      "h1": "Your training in three simple steps",
+      "lead": "With REDi FIT, finding the right trainer is easy. Choose the type of training, check trainers' profiles and book a convenient time. See how it works, step by step.",
+      "tabs_label": "On this page",
+      "tab_1": "1. Find a trainer",
+      "tab_2": "2. Check the profile",
+      "tab_3": "3. Book a session"
     },
     "znajdz": {
       "eyebrow": "STEP 1",
       "h2": "Find a trainer by category, location and date",
-      "lead": "Pick a training category, type in an address and mark when you want to train. Results show up as a list or on a map.",
-      "li": "<span><strong>Free slots today</strong> — the \"Train today\" section on the home screen.</span>",
-      "li_2": "<span><strong>Trainers near you</strong> — up to 15 km from your location, once location is on.</span>",
-      "li_3": "<span><strong>Filters and map</strong> — narrow results by category, price and time of day (morning, afternoon, evening), and see how many trainers work in an area.</span>",
-      "li_4": "<span><strong>Favourite trainers</strong> — save a trainer and come back from the home screen.</span>",
-      "tag": "C1",
-      "caption": "Ekran główny: kategorie, „Trenuj dziś”, trenerzy w okolicy",
-      "needs": "[NEEDS] screen",
-      "tag_2": "C2",
-      "caption_2": "Wyszukiwarka: Kiedy? Gdzie? Cena, filtry kategorii, wyniki + widok mapy",
-      "needs_2": "[NEEDS] screen"
+      "lead": "Choose the type of training, location and a convenient time. REDi FIT will show you available trainers, whom you can browse on a list or an interactive map.",
+      "today_title": "Train today",
+      "today_text": "find trainers with free slots on the same day.",
+      "nearby_title": "Nearby trainers",
+      "nearby_text": "find trainers close to you and set your own search radius.",
+      "filters_title": "Filters and map",
+      "filters_text": "choose trainers by category, price, location and available times. See the results on the map.",
+      "favs_title": "Favourite trainers",
+      "favs_text": "save trainers you like to easily return to their profiles.",
+      "screen_1": "App home screen",
+      "screen_2": "Search: list and map"
     },
     "sprawdz": {
-      "tag": "C4",
-      "caption": "Profil trenera: zakładki Usługi / Opinie / Portfolio / Szczegóły",
-      "needs": "[NEEDS] screen z aplikacji albo Figma",
-      "label": "Space for a testimonial",
-      "body": "[NEEDS: a real app user's review — name, role, city; not invented]",
       "eyebrow": "STEP 2",
-      "h2": "Before you book, see who you are dealing with",
-      "lead": "A trainer's profile shows what you need to decide: qualifications, specialisations, portfolio photos and client reviews.",
-      "li": "<span><strong>Bio and qualifications</strong> — education, experience, completed courses and specialisations.</span>",
-      "li_2": "<span><strong>Portfolio</strong> — photos the trainer added to their profile.</span>",
-      "li_3": "<span><strong>Star-rated reviews</strong> — sort by newest, oldest, highest or lowest rated, mark a review as helpful or report it. Trainers can reply to reviews.</span>",
-      "li_4": "<span><strong>Services with prices</strong> — each service shows duration, price and location.</span>",
-      "step_note": "Reviews come from clients after a completed booking. [NEEDS: confirm with backend]"
+      "h2": "Get to know the trainer before you book",
+      "lead": "Check the trainer's profile and learn about their experience, specialisation and offer. Look through photos and other clients' reviews to choose the person who best fits your needs.",
+      "bio_title": "Bio and qualifications",
+      "bio_text": "check the trainer's specialisation, experience, education and completed courses.",
+      "portfolio_title": "Portfolio",
+      "portfolio_text": "see the photos the trainer has shared on their profile.",
+      "reviews_title": "Client reviews",
+      "reviews_text": "read the ratings and experiences of people who have trained with this trainer before.",
+      "services_title": "Services and prices",
+      "services_text": "compare available sessions, their prices, length and location.",
+      "note": "Reviews come from clients who have completed a session.",
+      "screen": "Trainer profile: tabs with services, reviews, portfolio and details"
     },
     "zarezerwuj": {
       "eyebrow": "STEP 3",
-      "h2": "Book and manage the session in one app",
-      "lead": "Pick a time and payment method, then confirm. The booking lands in the app calendar, where you can change it, cancel it or add it to your phone calendar.",
-      "li": "<span><strong>Card and BLIK in a secure Stripe form</strong> — the app does not store card details.</span>",
-      "li_2": "<span><strong>Cash or bank transfer</strong> — if the trainer offers them; the trainer sets the payment methods.</span>",
-      "li_3": "<span><strong>Booking calendar</strong> — tabs for upcoming, completed and cancelled; \"Book again\" in one tap.</span>",
-      "li_4": "<span><strong>The session in your phone</strong> — add it to your device calendar or save it as an .ics file.</span>",
-      "li_5": "<span><strong>Status notifications</strong> — push, email or SMS, your choice in settings.</span>",
-      "title": "Change and cancellation rules",
-      "text": "Under the trainer's rules, a booking can be cancelled at least 24 hours in advance. A payment already taken may not be refunded. [NEEDS: confirm whether 24 h always applies]",
-      "tag": "C5",
-      "caption": "Podsumowanie rezerwacji z wyborem formy płatności (Gotówka / Karta / BLIK / Przelew)",
-      "needs": "[NEEDS] screen",
-      "tag_2": "C7",
-      "caption_2": "Kalendarz rezerwacji: Nadchodzące / Zrealizowane / Anulowane",
-      "needs_2": "[NEEDS] screen"
+      "h2": "Book a session and manage your bookings",
+      "lead": "Pick a convenient time and an available payment method, then confirm your booking. You'll find all your sessions in the app, where you can check their details and manage your bookings.",
+      "online_title": "Online payments",
+      "online_text": "pay for sessions quickly and securely using the payment methods available in the app.",
+      "cash_title": "Cash payment",
+      "cash_text": "pay on the spot if the trainer offers this option.",
+      "bookings_title": "Your bookings",
+      "bookings_text": "view upcoming, completed and cancelled sessions and your sports event sign-ups.",
+      "rebook_title": "“Book again”",
+      "rebook_text": "quickly book another session with the same trainer.",
+      "calendar_title": "In your phone's calendar",
+      "calendar_text": "add the booked session to your phone's calendar so you don't forget it.",
+      "notifications_title": "Notifications",
+      "notifications_text": "get updates about your bookings and changes to their status.",
+      "faq_link": "Frequently asked questions →",
+      "screen_1": "Booking: time and payment method",
+      "screen_2": "Your bookings"
     },
-    "bezpieczenstwo": {
-      "h2": "What's looking out for you when you pay in the app",
-      "lead": "Five mechanisms that work before and after you book a session.",
-      "h3": "Card details never touch the app",
-      "p": "Card and BLIK are handled in Stripe's own form. Redifit doesn't store card numbers.",
-      "h3_2": "Phone number confirmed by SMS code",
-      "p_2": "You confirm your number with a code at registration, so accounts can't be opened on a random number.",
-      "h3_3": "Reviews only after a session",
-      "p_3": "A rating is left after a completed booking. An inappropriate review can be reported.",
-      "h3_4": "Events go through moderation",
-      "p_4": "A trainer's event appears in the app after review. <span class=\"tag--needs\">[NEEDS] the rules</span>",
-      "h3_5": "The cancellation rule, stated plainly",
-      "p_5": "The 24-hour condition and the possibility that the fee won't be refunded are on this page, not just in the terms.",
-      "btn": "Get the app",
-      "btn_ghost_link": "See answers to common questions →"
+    "styl": {
+      "h2": "Train the way you like",
+      "lead": "REDi FIT gives you the freedom to choose. Fit your training around your day, your location and your preferences.",
+      "place_title": "Wherever suits you",
+      "place_text": "Choose sessions at a gym, a studio, outdoors or with a trainer who comes to you.",
+      "time_title": "When you have time",
+      "time_text": "Find a session that fits your schedule, even today.",
+      "group_title": "On your own or in a group",
+      "group_text": "Book one-to-one sessions and sign up for sports events.",
+      "budget_title": "Within your budget",
+      "budget_text": "Compare session prices and use Happy Hours deals."
     },
     "pobierz": {
-      "h2": "The three steps start in the app",
-      "p": "Find a trainer, pick a time, book.",
-      "btn": "Get the app",
-      "img_alt": "Get it on Google Play",
-      "img_title": "[LINK: Google Play — placeholder]",
-      "img_alt_2": "Download on the App Store",
-      "img_title_2": "[LINK: App Store — placeholder]"
+      "h2": "Ready for your next session?",
+      "p": "Download REDi FIT and discover an easy way to book sessions. Use the app for free!"
     }
   },
   "trainers": {
     "meta": {
-      "title": "Redifit for trainers — clients, calendar and payments",
-      "description": "Win new clients and run your training in one app: profile, calendar, clients, online payments and statistics. For Android and iOS."
+      "title": "REDi FIT for trainers — win clients and manage your sessions",
+      "description": "REDi FIT helps trainers and sports specialists reach new clients and run their business: services, bookings, calendar and payments in one app. Your first 3 months are free."
     },
-    "t_hero": {
-      "needs": "[NEEDS] zdjęcie hero ≥ 1920×1080 — trener przy pracy, przyciemnienie 40%",
-      "a": "Looking for a trainer →",
-      "span": "I'm a trainer",
-      "eyebrow": "FOR TRAINERS",
-      "h1": "Win new clients. Run your training in one app.",
-      "sub": "Redifit gives a trainer a profile clients can see, a booking calendar, online payments and statistics. You create the trainer account in the app.",
-      "btn": "Get the app",
-      "img_alt": "Get it on Google Play",
-      "img_title": "[LINK: Google Play — placeholder]",
-      "img_alt_2": "Download on the App Store",
-      "img_title_2": "[LINK: App Store — placeholder]",
-      "note": "Trainer registration happens in the app.",
-      "value": "250+",
-      "label": "trainers in the app",
-      "tag": "SAMPLE DATA",
-      "value_2": "3,400",
-      "label_2": "bookings a month",
-      "tag_2": "SAMPLE DATA",
-      "tag_3": "T-A",
-      "caption": "Kalendarz trenera (miesiąc) + lista treningów wybranego dnia",
-      "needs_2": "[NEEDS] screen z aplikacji albo Figma"
+    "hero": {
+      "role_client": "Looking for a trainer →",
+      "role_trainer": "I'm a trainer",
+      "eyebrow": "For trainers",
+      "h1": "Win new clients. Manage your sessions in one app.",
+      "sub": "REDi FIT helps personal trainers and sports specialists reach new clients and run their business with ease. Present your services, take bookings, manage your calendar and payments – all in one place.",
+      "try_free": "Try it for free",
+      "trial": "Your first 3 months on REDi FIT are free!",
+      "screen_caption": "Trainer calendar and the list of sessions for a selected day",
+      "stats": {
+        "trainers_value": "250+",
+        "trainers_label": "trainers in the app",
+        "bookings_value": "3,400",
+        "bookings_label": "bookings a month"
+      }
     },
-    "t_dlaczego": {
+    "dlaczego": {
       "h2": "All the admin in one place",
-      "title": "Today",
-      "li": "<span>Clients, messages and appointments scattered across your phone, notes and calendars.</span>",
-      "li_2": "<span>You keep settlements and sales summaries separately.</span>",
-      "li_3": "<span>Finding new clients is on you, outside training hours.</span>",
-      "title_2": "With Redifit",
-      "li_4": "<span>Bookings, clients and history in one calendar.</span>",
-      "li_5": "<span>Online payments, wallet and reports in the same app.</span>",
-      "li_6": "<span>Your profile reaches clients searching for a trainer by category and location.</span>",
-      "needs_block": "[NEEDS: confirm the \"Today\" column in trainer interviews]"
+      "without_title": "Without REDi FIT",
+      "without_1": "Arranging sessions by phone, text and messages.",
+      "without_2": "Constantly looking for new clients and advertising on social media.",
+      "without_3": "Separate tools for payments and accounting.",
+      "without_4": "Collecting sign-ups for sports events by hand.",
+      "without_5": "Your offer and prices scattered across different sites and profiles.",
+      "with_title": "With REDi FIT",
+      "with_1": "All bookings and sessions in one calendar.",
+      "with_2": "Your offer visible to people looking for a trainer.",
+      "with_3": "Online payments and clear financial reports.",
+      "with_4": "Easy event creation and sign-ups.",
+      "with_5": "One profile with your offer, prices, qualifications and photos."
     },
-    "t_profil": {
+    "profil": {
       "h2": "Clients are looking for trainers. Let them find you",
-      "lead": "Your profile is the first thing a client sees before booking. Fill it in inside the app.",
-      "li": "<span><strong>Bio and qualifications</strong> — profile name, specialisation, education, experience, completed courses and training.</span>",
-      "li_2": "<span><strong>Portfolio</strong> — add photos from the camera or gallery and reorder them by dragging.</span>",
-      "li_3": "<span><strong>Reviews</strong> — reply to client reviews and edit your reply later.</span>",
-      "li_4": "<span><strong>Visibility</strong> — clients find you in search, on the map and in \"Trainers near you\".</span>",
-      "step_note": "Service settings are saved on your profile, so start with the bio.",
-      "tag": "T-H",
-      "caption": "Bio i portfolio trenera",
-      "needs": "[NEEDS] screen z aplikacji albo Figma"
+      "lead": "Show who you are and what you offer. Create a trainer profile on REDi FIT, present your experience and make it easier for new clients to find you.",
+      "bio_title": "Bio and qualifications",
+      "bio_text": "present your specialisation, experience, education and completed courses.",
+      "portfolio_title": "Portfolio",
+      "portfolio_text": "add photos that show you and your work.",
+      "reviews_title": "Client reviews",
+      "reviews_text": "build credibility with reviews from people who have used your services.",
+      "visibility_title": "Visibility",
+      "visibility_text": "get found in search, on the map and in the “Nearby trainers” section.",
+      "events_title": "Sports events",
+      "events_text": "organise group sessions and events, reach new participants and take sign-ups in the app.",
+      "screen_caption": "Trainer profile"
     },
-    "t_zasady": {
-      "h2": "You set services, prices and availability yourself",
-      "h3": "Service",
-      "p": "Name, description, category, duration, gross price and VAT rate.",
-      "h3_2": "Place",
-      "p_2": "On site with a map pin, or mobile with a range in kilometres.",
-      "h3_3": "Availability",
-      "p_3": "Working hours, breaks, recurrence and a gap between bookings for travel or setup.",
-      "h3_4": "Booking limits",
-      "p_4": "How far ahead clients can book, how much notice they need and until when they can reschedule.",
-      "h3_5": "Time off",
-      "p_5": "A date range with a note; you take no bookings then. [NEEDS: confirm what time off does]",
-      "h3_6": "Happy hours",
-      "p_6": "A discount in chosen hours, recurring, valid until a set date.",
-      "h3_7": "Payment methods",
-      "p_7": "You tick what you accept: cash, card, BLIK, bank transfer.",
-      "h3_8": "Events",
-      "p_8": "Date, hours, location, photos, level, price and participant limit. Events go through moderation. [NEEDS: moderation rules]",
-      "tag": "T-C",
-      "caption": "Formularz usługi (nazwa, kategoria, czas, cena brutto, VAT)",
-      "needs": "[NEEDS] screen"
+    "zasady": {
+      "h2": "Your services. Your prices. Your schedule.",
+      "services_title": "Services and prices",
+      "services_text": "Add your own services, set prices and session length.",
+      "place_title": "Training location",
+      "place_text": "Offer sessions at a chosen location or at the client's place.",
+      "availability_title": "Availability",
+      "availability_text": "Set your working hours, breaks and the times clients can book.",
+      "rules_title": "Booking rules",
+      "rules_text": "Decide how far in advance clients can book and change sessions.",
+      "timeoff_title": "Time off",
+      "timeoff_text": "Mark days off when you don't take bookings.",
+      "happy_title": "Happy Hours",
+      "happy_text": "Attract clients with discounted sessions at selected times.",
+      "payments_title": "Payment methods",
+      "payments_text": "Choose which payment methods you accept for your services.",
+      "events_title": "Sports events",
+      "events_text": "Organise events, set prices and take participant sign-ups."
     },
-    "t_popyt": {
+    "popyt": {
       "eyebrow": "When your calendar has gaps",
-      "h2": "Four tools you use to drive bookings yourself",
+      "h2": "Fill your calendar. Grow your income.",
       "lead": "All of them are in the app and need no extra advertising.",
-      "h3": "Happy hours",
-      "p": "Lower the price at hours that are hard to fill. The discount runs on a cycle and expires on a day you set.",
-      "h3_2": "Group events",
-      "p_2": "One slot, several participants. You set the level, price and spot limit, and add a gallery.",
-      "h3_3": "SMS to clients",
-      "p_3": "A message to everyone or to chosen people on your list, up to 200 characters, sent from your phone.",
-      "h3_4": "“Book again”",
-      "p_4": "From a client's history, one button takes you back to the same service — for both sides."
+      "happy_title": "Happy Hours",
+      "happy_text": "Offer sessions at discounted prices at selected times and encourage clients to book your free slots.",
+      "group_title": "Group events",
+      "group_text": "Organise sessions and events for more participants. Set dates and prices and take sign-ups in the app.",
+      "sms_title": "Text messages to clients",
+      "sms_text": "Tell clients about new sessions, promotions and free slots by text message.",
+      "rebook_title": "“Rebook”",
+      "rebook_text": "Quickly book the next session with regular clients without re-entering all the details."
     },
-    "t_praca": {
-      "tag": "T-A",
-      "caption": "Kalendarz trenera: miesiąc i lista treningów dnia",
-      "needs": "[NEEDS] screen",
-      "tag_2": "T-D",
-      "caption_2": "Klienci + „Wyślij wiadomość: do wszystkich / do wybranych”",
-      "needs_2": "[NEEDS] screen",
-      "h2": "Calendar, clients and messages in one place",
-      "li": "<span><strong>Calendar</strong> — month and week views plus the sessions for a chosen day.</span>",
-      "li_2": "<span><strong>Booking</strong> — client, phone, note, cost and payment method; edit it, add it to a calendar or book again.</span>",
-      "li_3": "<span><strong>Clients</strong> — a searchable list with each client's booking history.</span>",
-      "li_4": "<span><strong>Messages</strong> — to all or selected clients (up to 200 characters); sent from the SMS app on your phone.</span>"
+    "praca": {
+      "h2": "All your bookings and client contacts under control",
+      "calendar_title": "Calendar",
+      "calendar_text": "check scheduled sessions and free slots in a day, week or month view.",
+      "bookings_title": "Bookings",
+      "bookings_text": "view session details, edit bookings and add new appointments.",
+      "clients_title": "Clients",
+      "clients_text": "keep your client list, their contact details and training history at hand.",
+      "sms_title": "Text messages",
+      "sms_text": "tell all or selected clients about free slots, promotions and new sessions.",
+      "screen_1": "Trainer calendar",
+      "screen_2": "Client list and text messages"
     },
-    "t_platnosci": {
-      "h2": "Payments land in your account and the numbers are at hand",
-      "li": "<span><strong>Payout account</strong> — connect your Stripe account in the app and check its status.</span>",
-      "li_2": "<span><strong>Statistics</strong> — three tabs: bookings, reports, wallet.</span>",
-      "li_3": "<span><strong>Filters</strong> — date, client, training type, payment method, ratings, weekdays, hours and discounts.</span>",
-      "li_4": "<span><strong>Reports</strong> — revenue and sales, downloadable from the app. [NEEDS: report formats]</span>",
-      "tag": "T-E",
-      "caption": "Statystyki: zakładka Raporty z filtrami",
-      "needs": "[NEEDS] screen",
-      "tag_2": "T-F",
-      "caption_2": "Konto wypłat Stripe i abonament",
-      "needs_2": "[NEEDS] screen"
+    "platnosci": {
+      "h2": "Take payments the way you like. Analyse your results",
+      "methods_title": "Payment methods",
+      "methods_text": "decide how clients pay for sessions: in cash or online.",
+      "online_title": "Online payments",
+      "online_text": "accept payments for sessions easily and securely, right in the REDi FIT app.",
+      "stats_title": "Statistics and reports",
+      "stats_text": "check your revenue, number of bookings and sales results in one place.",
+      "history_title": "Transaction history",
+      "history_text": "review online payments, payouts and settlements in the app.",
+      "screen_1": "Revenue reports",
+      "screen_2": "Wallet"
     },
-    "t_start": {
+    "start": {
       "h2": "Getting started in four steps",
-      "num": "1",
-      "p": "Get the app and create a trainer account.",
-      "num_2": "2",
-      "p_2": "Fill in your bio.",
-      "num_3": "3",
-      "p_3": "Add a service: category, duration, price, place and availability.",
-      "num_4": "4",
-      "p_4": "Connect your Stripe payout account and activate the subscription.",
-      "needs_block": "[NEEDS: confirm the order of steps and trainer account verification]",
-      "btn": "Get the app",
-      "btn_ghost_link": "How much does a trainer account cost? →"
+      "step_1": "Download the app and create a trainer account.",
+      "step_2": "Complete your profile and qualifications.",
+      "step_3": "Add services, set prices and available times.",
+      "step_4": "Set up payments and start taking bookings.",
+      "free": "Start at no cost – your first 3 months in the app are free.",
+      "pricing_link": "See pricing →"
     },
     "pobierz": {
       "h2": "Start by getting the app",
       "p": "Create a trainer account, fill in your profile and add your first service.",
-      "btn": "Get the app",
-      "img_alt": "Get it on Google Play",
-      "img_title": "[LINK: Google Play — placeholder]",
-      "img_alt_2": "Download on the App Store",
-      "img_title_2": "[LINK: App Store — placeholder]",
-      "note": "Trainer registration happens in the app."
+      "try_free": "Try it for free"
     }
   },
   "pricing": {
     "meta": {
-      "title": "Redifit — pricing: PLN 100 a month for trainers",
-      "description": "One subscription for trainers, no subscription for the client account. What the price includes and the commission on online payments."
+      "title": "REDi FIT pricing — subscription for trainers",
+      "description": "One fixed monthly subscription for trainers, regardless of the number of clients and bookings. Your first 3 months are free. The app is free for people who train."
     },
-    "page_hero": {
+    "hero": {
       "eyebrow": "Pricing",
-      "h1": "One subscription for the trainer. No subscription for the client account.",
-      "lead": "There isn't three plans to compare — there's one. Below is what it includes, and what's added on top of online payments."
+      "h1": "A simple subscription. More options for trainers.",
+      "lead": "One fixed monthly subscription, regardless of how many clients and booked sessions you have. Manage your schedule, take bookings and grow your client base.",
+      "free_for_clients": "For people looking for trainers and training sessions, REDi FIT is completely free."
     },
-    "section": {
-      "plan": "Trainer account · REDi FIT Standard",
-      "amount": "PLN 100 / month",
-      "frame": "That is about PLN 3.30 a day.",
-      "needs_block": "[NEEDS: public price, net/gross]",
-      "li": "<span>An active trainer account with a profile clients can see</span>",
-      "li_2": "<span>Calendar, clients, statistics and messages</span>",
-      "li_3": "<span>Online payments via Stripe</span>",
-      "li_4": "<span>Services, availability, time off, happy hours and events</span>",
-      "dt": "Online payment fee",
-      "dd": "5% [SAMPLE DATA]",
-      "dt_2": "Trial period",
-      "dd_2": "[NEEDS: whether it exists and for how many days]",
-      "dt_3": "Cash and bank transfer",
-      "dd_3": "no app commission",
-      "manage": "You manage the subscription in the app. If cancelled, it runs until the end of the paid period. [NEEDS: confirm]",
-      "btn": "Get the app",
-      "label": "Client account",
-      "h2": "You pay for the session, not for the app",
-      "p": "You book and pay the trainer the amount they set on the service. There's no subscription just to use the app.",
-      "needs_block_2": "[NEEDS] confirm the client account is free — the brief doesn't state this outright",
-      "h2_2": "What if the subscription payment fails?",
-      "p_2": "The app will show a “Payment failed” status and ask you to update your card.",
-      "btn_ghost_link": "More questions from trainers →",
-      "h2_3": "Not sure the numbers work for you?",
-      "p_3": "Write to us — we'll tell you what the trainer account covers in your case.",
-      "btn_2": "Ask a question"
+    "plan": {
+      "label": "Trainer account · REDi FIT Standard",
+      "amount": "PLN {num:pricing.subscriptionMonthly}",
+      "period": "gross / month",
+      "frame": "A fixed monthly subscription – regardless of the number of clients and bookings.",
+      "benefits_title": "What do you get with the subscription?",
+      "benefit_1": "Your own trainer profile visible to potential clients",
+      "benefit_2": "Calendar and client base management",
+      "benefit_3": "Booking calendar and availability management",
+      "benefit_4": "Offer sessions, services and events",
+      "benefit_5": "Promote free slots with Happy Hours",
+      "benefit_6": "Bookings and online payments",
+      "benefit_7": "Access to statistics and reports",
+      "benefit_8": "Set time off and breaks between sessions",
+      "trial": "You start with a free trial. After it ends, a fixed monthly subscription applies according to the price list.",
+      "try_free": "Try it for free"
+    },
+    "fees": {
+      "h2": "Online payment processing fees",
+      "lead": "The fee applies only to payments made online through the REDi FIT app. We don't charge a fee on cash payments.",
+      "col_type": "Payment type",
+      "col_fee": "Fee",
+      "online": "Online payments",
+      "online_fee": "{num:pricing.onlineFeePercent}% of the transaction value + PLN {num:pricing.onlineFeeFixed}",
+      "offline": "Cash or bank transfer outside the app",
+      "offline_fee": "free"
     },
     "pobierz": {
-      "h2": "You activate the subscription in the app",
-      "p": "First the account and profile, then the Stripe payout account and the subscription.",
-      "btn": "Get the app",
-      "img_alt": "Get it on Google Play",
-      "img_title": "[LINK: Google Play — placeholder]",
-      "img_alt_2": "Download on the App Store",
-      "img_title_2": "[LINK: App Store — placeholder]"
+      "h2": "Start growing your business with REDi FIT!",
+      "p": "Create a trainer account, complete your profile and use everything REDi FIT offers – completely free to start with!",
+      "try_free": "Try it for free"
     }
   },
   "faq": {
     "meta": {
-      "title": "Redifit — questions and answers",
-      "description": "Answers for clients and trainers before you download the Redifit app."
+      "title": "FAQ — frequently asked questions about REDi FIT",
+      "description": "Answers to the most common questions about REDi FIT: account, bookings, payments, events, and the subscription and work for trainers in the app."
     },
-    "page_hero": {
-      "eyebrow": "Questions",
-      "h1": "Answers before you download the app"
+    "hero": {
+      "eyebrow": "FAQ",
+      "h1": "Frequently asked questions",
+      "lead": "Learn how REDi FIT works, how to book sessions, use payments and manage your account. Here you'll find answers to the questions most often asked by both people who train and trainers.",
+      "tabs_label": "On this page",
+      "tab_client": "For people who train",
+      "tab_trainer": "For trainers"
     },
-    "pill_tabs": {
-      "pill_tabs_label": "On this page",
-      "a": "For clients",
-      "a_2": "For trainers"
+    "client": {
+      "title": "Questions most often asked by people who train",
+      "groups": {
+        "account": {
+          "title": "Account and the REDi FIT app",
+          "questions": {
+            "q1": {
+              "q": "Is REDi FIT free to use?",
+              "a": "Yes. The REDi FIT app is free for people who train. You only pay for the sessions and sports events you choose, at the prices set by the trainers."
+            },
+            "q2": {
+              "q": "Do I need an account to book a session?",
+              "a": "Yes. To book a session, download the REDi FIT app and register as a client. This way you can easily view your bookings and event sign-ups."
+            },
+            "q3": {
+              "q": "Can I use REDi FIT in different cities?",
+              "a": "Yes. You can search for trainers in any location you choose, wherever you are at the moment. The availability of services depends on trainers' offers in a given city."
+            },
+            "q4": {
+              "q": "What languages is the REDi FIT app available in?",
+              "a": "The app is available in Polish, English and Ukrainian. You can choose the language when you first open the app or change it later in the settings."
+            },
+            "q5": {
+              "q": "Which phones does REDi FIT work on?",
+              "a": "REDi FIT is a mobile app for Android and iOS devices. You can download it from Google Play or the App Store."
+            }
+          }
+        },
+        "trainers": {
+          "title": "Trainers and training",
+          "questions": {
+            "q6": {
+              "q": "How do I find a personal trainer or sports instructor?",
+              "a": "Choose the training category, location and time you're interested in. REDi FIT will show you available trainers, whom you can browse on a list or an interactive map."
+            },
+            "q7": {
+              "q": "How do I choose the right trainer?",
+              "a": "Check their specialisation, experience, qualifications, portfolio, client reviews and the services and prices they offer. This makes it easier to choose someone who matches your needs."
+            },
+            "q8": {
+              "q": "Can I find a trainer near me?",
+              "a": "Yes. In the “Nearby trainers” section you can search for trainers close to you. You set the search radius yourself."
+            },
+            "q9": {
+              "q": "Can I book a session for the same day?",
+              "a": "Yes, if the trainer has free slots. In the “Train today” section you'll find sessions you can still book for the same day."
+            },
+            "q10": {
+              "q": "Can a trainer come to my home or another location?",
+              "a": "Yes, if they offer mobile sessions. You'll find information about travel and the area covered in the trainer's offer."
+            },
+            "q11": {
+              "q": "Can I save my favourite trainers?",
+              "a": "Yes. You can add trainers to your favourites to easily return to their profiles and check available sessions."
+            }
+          }
+        },
+        "booking": {
+          "title": "Bookings and payments",
+          "questions": {
+            "q12": {
+              "q": "How do I book a session on REDi FIT?",
+              "a": "Choose a trainer, the service you're interested in and a convenient time. Then choose an available payment method and confirm the booking in the app."
+            },
+            "q13": {
+              "q": "How can I pay for a session?",
+              "a": "You can use the available online payment methods or pay in cash if the trainer offers this option. You'll see the available payment methods when booking."
+            },
+            "q14": {
+              "q": "Can I cancel or reschedule a session?",
+              "a": "Whether you can cancel or reschedule depends on the rules the trainer has set for a given service. Before booking, read the cancellation and refund terms."
+            },
+            "q15": {
+              "q": "Where can I find my training history?",
+              "a": "In the app you can view upcoming, completed and cancelled bookings, as well as the history of your sports event sign-ups."
+            },
+            "q16": {
+              "q": "Can I book another session with the same trainer?",
+              "a": "Yes. The “Book again” feature lets you quickly return to a chosen service and make another booking."
+            },
+            "q17": {
+              "q": "Do I have to pay extra for gym entry if the session takes place at a gym?",
+              "a": "It depends on the trainer's offer and the rules of the gym. In some cases gym entry is included in the price of the session; in others it may require an extra fee or a membership. Before booking, check the details of the offer or contact the trainer."
+            }
+          }
+        },
+        "events": {
+          "title": "Events and promotions",
+          "questions": {
+            "q18": {
+              "q": "Can I try a free trial session?",
+              "a": "Some trainers offer free trial sessions so you can get to know them and see whether their training style suits you. You can check whether such sessions are available in the chosen trainer's offer."
+            },
+            "q19": {
+              "q": "Can I sign up for sports events on REDi FIT?",
+              "a": "Yes! In the app you'll find sports events organised by trainers. You can check the date, location, price and available spots, and then sign up for the event you choose. Some events are free, so you can take part at no cost."
+            }
+          }
+        }
+      }
     },
-    "faq_klient": {
-      "h2": "Client — booking, payment, rescheduling",
-      "needs_block": "[NEEDS] pytania robocze, wywiedzione z aplikacji — zastąpić prawdziwymi pytaniami od użytkowników i supportu",
-      "summary": "Do I need an account to book?",
-      "p": "Yes. You create it in the app: email, first and last name, phone number and password, then confirm the number with an SMS code and accept the consents.",
-      "summary_2": "How do I pay for a session?",
-      "p_2": "The trainer sets the payment methods. You can pay by card or BLIK in the Stripe form, or — if the trainer offers it — in cash or by transfer.",
-      "summary_3": "Can I cancel or reschedule?",
-      "p_3": "Yes, in the app. Under the trainer's rules cancellation is possible at least 24 hours ahead, and a payment already taken may not be refunded.",
-      "summary_4": "How do I know a trainer is credible?",
-      "p_4": "Check the profile: education, completed courses, specialisations, portfolio and client reviews. Reviews are left by people after a completed booking.",
-      "summary_5": "Can a trainer come to me?",
-      "p_5": "Depends on the service. The trainer sets the location as in-person with a map pin, or mobile with a range in kilometres.",
-      "summary_6": "What languages does the app support?",
-      "p_6": "Polish, English and Ukrainian.",
-      "summary_7": "Which phones does Redifit run on?",
-      "p_7": "On Android and iOS. [NEEDS: minimum OS versions]",
-      "summary_8": "Is Redifit the REDi FIT gym app?",
-      "p_8": "Redifit is the app where clients book sessions with trainers. [NEEDS: clarify the relation to the REDi FIT gym]"
+    "trainer": {
+      "title": "Questions most often asked by trainers",
+      "groups": {
+        "account": {
+          "title": "Account and subscription",
+          "questions": {
+            "q1": {
+              "q": "Is REDi FIT free for trainers?",
+              "a": "Yes! To start with, you can use REDi FIT for free during a trial period. After it ends, you move to a paid subscription according to the current price list. You'll find the details on the <a href=\"{url:pricing}\">Pricing</a> page."
+            },
+            "q2": {
+              "q": "How much does REDi FIT cost after the free period?",
+              "a": "After the free period ends, a monthly subscription applies. You'll find the amount on the <a href=\"{url:pricing}\">Pricing</a> page. The fee is fixed and doesn't depend on the number of clients or booked sessions."
+            },
+            "q3": {
+              "q": "How do I create a trainer account on REDi FIT?",
+              "a": "Download the REDi FIT app from the App Store or Google Play and choose to register as a trainer. Then complete your profile, add the services you offer, set prices and availability, and set up your account to accept online payments."
+            },
+            "q4": {
+              "q": "Do I need to run a registered business to use REDi FIT?",
+              "a": "Not always. It's worth consulting an accountant or tax adviser to find out whether you are required to register a business in your situation."
+            },
+            "q5": {
+              "q": "How do I pay for the REDi FIT subscription?",
+              "a": "The subscription works as a recurring payment. Just link a payment card to your account and the fee will be charged automatically every month, with no need to make transfers."
+            }
+          }
+        },
+        "clients": {
+          "title": "Winning clients and your training offer",
+          "questions": {
+            "q6": {
+              "q": "How does REDi FIT help me win new clients?",
+              "a": "Your profile is visible in the trainer search, on the interactive map and in the “Nearby trainers” section. This way, people looking for training can find your offer, check available times and book a session.\n\nYou can also organise sports events, such as group sessions, to showcase your skills, reach more potential clients and encourage them to keep working with you."
+            },
+            "q7": {
+              "q": "Do I need to advertise my services separately?",
+              "a": "No. Your profile and training offer are available to REDi FIT app users."
+            },
+            "q8": {
+              "q": "Can I offer different types of training?",
+              "a": "Yes! You can add various sports services to your offer and set their length, price and location. This lets clients choose the session that best suits their needs."
+            },
+            "q9": {
+              "q": "Can I run sessions in different locations?",
+              "a": "Yes. You can offer sessions at a gym, a fitness studio, outdoors or at the client's place. You decide where you provide your services."
+            },
+            "q10": {
+              "q": "Can I offer free trial sessions?",
+              "a": "Yes! You can add a free trial session to your offer so new clients can get to know your training style. You can also organise a free sports event, such as a group session, to showcase your skills and reach more potential clients."
+            },
+            "q11": {
+              "q": "What are Happy Hours and how can I use them?",
+              "a": "Happy Hours let you offer sessions at discounted prices at selected times. With this feature you can encourage clients to book at times when you have fewer sessions and make better use of your calendar."
+            },
+            "q12": {
+              "q": "Can I use REDi FIT if I already have my own clients?",
+              "a": "Yes! You can use REDi FIT both to win new clients and to organise sessions with people you already work with. The booking calendar makes it easier to manage your schedule."
+            },
+            "q13": {
+              "q": "Can I set my own session prices?",
+              "a": "Yes. You set the prices of your services, session length and available times yourself. You can also use Happy Hours to offer selected sessions at discounted prices."
+            },
+            "q14": {
+              "q": "Can I change my offer after creating an account?",
+              "a": "Yes. You can update your profile, services, prices and availability so the information clients see reflects your current business."
+            },
+            "q15": {
+              "q": "Can I see clients' reviews of my sessions?",
+              "a": "Yes. Reviews left by clients are visible on your profile. They help build credibility and make it easier for new people to decide to book a session."
+            },
+            "q16": {
+              "q": "Can I use REDi FIT if I only train clients on the side, e.g. after work or at weekends?",
+              "a": "Yes! You don't have to train clients full time. You set your own availability, so you can offer sessions only on selected days or at selected times, fitting your schedule to what works for you."
+            }
+          }
+        },
+        "work": {
+          "title": "Bookings and organising your work",
+          "questions": {
+            "q17": {
+              "q": "Can I set my own working hours and available times?",
+              "a": "Yes. You manage your calendar yourself and set your working hours and the availability of individual services. Clients can only book sessions at the times you make available."
+            },
+            "q18": {
+              "q": "What if I go on holiday or stop training clients for a while?",
+              "a": "You can block selected days or periods in your calendar so clients can't book sessions while you're away."
+            },
+            "q19": {
+              "q": "Can I limit how far in advance clients can book?",
+              "a": "Yes. You can set your own booking rules, including how far in advance clients can sign up for sessions."
+            },
+            "q20": {
+              "q": "Can clients cancel or change bookings?",
+              "a": "Yes. As a trainer, you set your own cancellation rules – for example, you can decide that clients can cancel free of charge up to 24 hours before the session starts."
+            },
+            "q21": {
+              "q": "Can I contact my clients?",
+              "a": "Yes. On REDi FIT you have access to your client list and can contact clients by text messages sent from your phone. It's a convenient way to share information about sessions, schedule changes or available times."
+            },
+            "q22": {
+              "q": "Can I set a break between sessions?",
+              "a": "Yes! If you need time to travel to your next client, prepare equipment or rest between sessions, you can set breaks between bookings. This makes it easier to plan your day and avoid overlapping appointments."
+            },
+            "q23": {
+              "q": "Can I see who has signed up for my sessions?",
+              "a": "Yes. In the app you have access to bookings and your client list, so you can check scheduled sessions and manage your work."
+            }
+          }
+        },
+        "payments": {
+          "title": "Payments and settlements",
+          "questions": {
+            "q24": {
+              "q": "How do I get paid for sessions paid online?",
+              "a": "Online payments are handled by an external payment operator. Once you've set up your payout account, the money for paid sessions is transferred according to the operator's schedule and rules."
+            },
+            "q25": {
+              "q": "Can I accept cash payments?",
+              "a": "Yes. You can let clients pay in cash directly at the session. You decide which payment methods you offer for your services."
+            },
+            "q26": {
+              "q": "Do I have access to my payment history and financial reports?",
+              "a": "Yes. REDi FIT lets you view your payment history and reports that help you keep track of your income and manage settlements related to your sessions."
+            },
+            "q27": {
+              "q": "Does REDi FIT charge a commission on bookings?",
+              "a": "REDi FIT doesn't charge a commission on session bookings. As a trainer, you pay a fixed subscription according to the current price list, whether you have 5 or 20 clients.\n\nFor online payments, only a transaction processing fee applies, charged according to the current price list."
+            }
+          }
+        },
+        "events": {
+          "title": "Sports events and trainer responsibility",
+          "questions": {
+            "q28": {
+              "q": "Can I organise sports events through REDi FIT?",
+              "a": "Yes! You can create sports events such as group sessions, workshops or outdoor classes. You set their date, location, price and number of available spots. It's a great way to present your offer to more potential clients."
+            },
+            "q29": {
+              "q": "Can I organise free sports events?",
+              "a": "Yes. You can organise both paid and free sports events. A free group session can be a great opportunity to showcase your skills and connect with new clients."
+            },
+            "q30": {
+              "q": "Can I limit the number of event participants?",
+              "a": "Yes. When creating an event, you set the maximum number of participants. This lets you match the group size to the type of training and the space available."
+            },
+            "q31": {
+              "q": "Who is responsible for injuries that may happen during a session?",
+              "a": "The trainer who organises and delivers the service is responsible for running the session properly and safely. REDi FIT is a platform that connects trainers with clients and enables bookings; it is not the organiser or provider of the sports activities.\n\nIt's worth having appropriate third-party liability insurance for personal trainers or sports instructors, which can provide financial protection in case of claims related to participants' injuries."
+            },
+            "q32": {
+              "q": "Who is responsible for the legality of the place where I hold a session or sports event?",
+              "a": "The trainer organising the session or sports event is responsible for choosing a suitable place and following its rules.\n\nAs a trainer, you must follow the rules of gyms and fitness clubs and the regulations for using public spaces such as parks, squares and other outdoor areas. If running classes requires the consent of the owner or manager of the area, or a permit, you should obtain it before the session or event starts.\n\nREDi FIT provides tools for presenting your offer and handling bookings, but is not responsible for choosing locations or obtaining the required permissions."
+            }
+          }
+        }
+      }
     },
-    "faq_trener": {
-      "h2": "Trainer — account, subscription, payouts",
-      "needs_block": "[NEEDS] prawdziwe pytania od trenerów",
-      "summary": "How much does a trainer account cost?",
-      "p": "The REDi FIT Standard subscription costs PLN 100 per month. [NEEDS]",
-      "summary_2": "How do I get paid for sessions paid online?",
-      "p_2": "Online payments go to your Stripe payout account, which you connect in the app.",
-      "summary_3": "Can I take cash?",
-      "p_3": "Yes, if you tick it. You set payment methods in the service settings: cash, card, BLIK, transfer.",
-      "summary_4": "What if I am not running sessions for a while?",
-      "p_4": "Add time off in the service settings: a date range and a note.",
-      "summary_5": "Can clients reschedule?",
-      "p_5": "That is your call. You can allow rescheduling and set the minimum notice in hours.",
-      "summary_6": "What happens if a subscription payment fails?",
-      "p_6": "The app shows a \"Payment failed\" status and asks you to update the card. [NEEDS: effect on profile visibility]"
-    },
-    "faq_more": {
-      "h2": "Didn't find an answer to your question?",
-      "lead": "Write to us — the form is on the contact page. We reply to the email address you give.",
+    "more": {
+      "h2": "Didn't find your answer?",
+      "lead": "Write to us using the contact form. We'll reply to the email address you provide.",
       "btn": "Go to contact"
     },
     "pobierz": {
-      "h2": "Start by getting the app",
-      "p": "Find a trainer, pick a time, book it in the app.",
-      "btn": "Get the app",
-      "img_alt": "Get it on Google Play",
-      "img_title": "[LINK: Google Play — placeholder]",
-      "img_alt_2": "Download on the App Store",
-      "img_title_2": "[LINK: App Store — placeholder]"
+      "h2": "Train. Act. Grow with REDi FIT!",
+      "p": "Looking for a trainer or want to offer your services? Download the app and discover what REDi FIT can do."
     }
   },
   "contact": {
     "meta": {
-      "title": "Redifit — contact",
-      "description": "Write to us: contact form, email and phone for REDi FIT."
+      "title": "Contact — write to REDi FIT",
+      "description": "Questions about the REDi FIT app, bookings or working with us as a trainer? Write to us using the contact form or by email."
     },
-    "page_hero": {
+    "hero": {
       "eyebrow": "Contact",
       "h1": "Write to us",
-      "lead": "We reply to the email address given in the form. If your question is about a booking or an account, say whether you're a client or a trainer — it'll reach the right person faster."
+      "lead": "Do you have questions about the REDi FIT app, booking sessions or working with us as a trainer? Get in touch using the contact form. We're happy to help!"
     },
-    "contact_page_section": {
-      "h2": "Contact form",
-      "tag": "MOCK — nothing is actually sent",
-      "p": "Thank you",
-      "p_2": "Your message has been sent. We will reply to the email address you gave.",
-      "btn": "Send another message",
-      "label": "Full name",
-      "error": "This field is required",
-      "label_2": "Email address",
-      "error_2": "Enter a valid email address",
-      "label_3": "Who are you?",
-      "option": "…",
-      "option_2": "Client",
-      "option_3": "Trainer",
-      "option_4": "Other",
-      "error_3": "This field is required",
-      "label_4": "Subject",
-      "error_4": "This field is required",
-      "label_5": "Message",
-      "error_5": "This field is required",
-      "span": "I consent to my personal data being processed so that my enquiry can be answered. [NEEDS: legal]",
-      "span_2": "I accept the terms of service and the privacy policy. [NEEDS: legal]",
-      "error_6": "You must accept all required consents",
-      "btn_2": "Send message",
-      "h2_2": "Contact details",
-      "dt": "Email",
-      "dt_2": "Phone",
-      "dt_3": "Address",
-      "dd_3": "REDi FIT sp. z o.o.<br>ul. Kasprzaka 31/117<br>01-234 Warszawa",
-      "needs_block": "[NEEDS] confirm these details apply to the app — they come from redifit.pl/kontakt",
-      "h2_3": "Account and booking matters",
-      "p_3": "Registration, rescheduling, cancelling and service settings are handled in the app. The form is for questions the app and the FAQ don't answer.",
-      "btn_ghost_link": "See frequently asked questions →",
-      "label_6": "To implement",
-      "p_4": "[NEEDS] where submissions go: the biuro@redifit.pl inbox or a CRM — requirement S-016 “integration with a ticketing system” [NEEDS] anti-spam protection [NEEDS] whether a directions map is needed next to the address"
+    "form": {
+      "title": "Contact form",
+      "sub": "Fill in the form and we'll reply to the email address you provide.",
+      "name": "Full name",
+      "name_ph": "Enter your full name",
+      "email": "Email address",
+      "email_ph": "Enter your email address",
+      "role": "Who are you?",
+      "role_ph": "Choose an option",
+      "role_client": "Client",
+      "role_trainer": "Trainer",
+      "role_other": "Other",
+      "subject": "Subject",
+      "subject_ph": "What is your question about?",
+      "message": "Message",
+      "message_ph": "Tell us how we can help…",
+      "consent": "I have read the <a href=\"{url:privacy}\">Privacy policy</a>.",
+      "consent_error": "Please confirm you have read the privacy policy.",
+      "required": "This field is required",
+      "email_invalid": "Enter a valid email address",
+      "submit": "Send message →",
+      "success_title": "Thank you",
+      "success_text": "Your message has been sent. We will reply to the email address you gave.",
+      "success_again": "Send another message"
+    },
+    "info": {
+      "title": "Contact details",
+      "email": "Email",
+      "phone": "Phone",
+      "address": "Address",
+      "address_lines": "REDi FIT sp. z o.o.<br>ul. Kasprzaka 31/117<br>01-234 Warsaw, Poland"
+    },
+    "account": {
+      "title": "Account and booking matters",
+      "text": "Want to reschedule a session, cancel a booking or manage your account? You can sort out most things directly in the REDi FIT app.\n\nNeed help? Check the answers to frequently asked questions or write to us.",
+      "faq_link": "See frequently asked questions →"
     },
     "pobierz": {
       "h2": "Start by getting the app",
-      "p": "Find a trainer, pick a time, book it in the app.",
-      "btn": "Get the app",
-      "img_alt": "Get it on Google Play",
-      "img_title": "[LINK: Google Play — placeholder]",
-      "img_alt_2": "Download on the App Store",
-      "img_title_2": "[LINK: App Store — placeholder]"
+      "p": "Find a trainer, pick a time, book it in the app."
     }
   },
   "terms": {

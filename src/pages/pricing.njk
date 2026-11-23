@@ -2,80 +2,80 @@
 pageKey: pricing
 css: [pricing]
 ---
+{# Cennik. Numery #N = punkty z uwag klienta, docs/landing-zadania.md.
+   Kwoty (abonament, prowizja) są w site.json → pricing; w tekstach wstawia je {num:…}. #}
 <main>
-    <section class="page-hero" style="padding:72px 24px;">
+    {# #54 #}
+    <section class="page-hero">
         <div class="container">
-            <p class="page-hero__eyebrow">{% t "pricing.page_hero.eyebrow" %}</p>
-            <h1>{% t "pricing.page_hero.h1" %}</h1>
-            <p class="lead">{% t "pricing.page_hero.lead" %}</p>
+            <p class="page-hero__eyebrow">{% t "pricing.hero.eyebrow" %}</p>
+            <h1>{% t "pricing.hero.h1" %}</h1>
+            <p class="lead">{% t "pricing.hero.lead" %}</p>
+            <p class="hero__free">{% t "pricing.hero.free_for_clients" %}</p>
         </div>
     </section>
-    <section class="section">
+
+    {# #55 #}
+    <section class="section" id="abonament">
         <div class="container">
-            <div class="pricing-grid">
-                <div class="price-card">
-                    <div class="price-card__head">
-                        <p class="price-card__plan">{% t "pricing.section.plan" %}</p>
-                        <p class="price-card__amount">{% t "pricing.section.amount" %}</p>
-                        <p class="price-card__frame">{% t "pricing.section.frame" %}</p>
-                        <p class="needs-block" style="margin-top:4px;">{% t "pricing.section.needs_block" %}</p>
-                    </div>
-                    <ul class="price-card__incl">
-                        <li>{% t "pricing.section.li" %}</li>
-                        <li>{% t "pricing.section.li_2" %}</li>
-                        <li>{% t "pricing.section.li_3" %}</li>
-                        <li>{% t "pricing.section.li_4" %}</li>
-                    </ul>
-                    <dl class="price-card__meta">
-                        <div class="price-card__meta-row">
-                            <dt>{% t "pricing.section.dt" %}</dt>
-                            <dd>{% t "pricing.section.dd" %}</dd>
-                        </div>
-                        <div class="price-card__meta-row">
-                            <dt>{% t "pricing.section.dt_2" %}</dt>
-                            <dd style="font:500 11px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--color-gray);">
-                                {% t "pricing.section.dd_2" %}
-                            </dd>
-                        </div>
-                        <div class="price-card__meta-row">
-                            <dt>{% t "pricing.section.dt_3" %}</dt>
-                            <dd>{% t "pricing.section.dd_3" %}</dd>
-                        </div>
-                    </dl>
-                    <p class="price-card__manage">{% t "pricing.section.manage" %}</p>
-                    <a href="#pobierz" class="btn btn-primary" style="align-self:flex-start;">{% t "pricing.section.btn" %}</a>
+            <div class="price-card">
+                <div class="price-card__head">
+                    <p class="price-card__plan">{% t "pricing.plan.label" %}</p>
+                    <p class="price-card__amount">{% t "pricing.plan.amount" %} <span>{% t "pricing.plan.period" %}</span></p>
+                    <p class="price-card__frame">{% t "pricing.plan.frame" %}</p>
                 </div>
-                <div class="pricing-side">
-                    <div class="pricing-info-card pricing-info-card--muted">
-                        <p class="pricing-info-card__label">{% t "pricing.section.label" %}</p>
-                        <h2>{% t "pricing.section.h2" %}</h2>
-                        <p>{% t "pricing.section.p" %}</p>
-                        <p class="needs-block">{% t "pricing.section.needs_block_2" %}</p>
-                    </div>
-                    <div class="pricing-info-card pricing-info-card--white">
-                        <h2>{% t "pricing.section.h2_2" %}</h2>
-                        <p>{% t "pricing.section.p_2" %}</p>
-                        <a href="{% url "faq" %}" class="btn-ghost-link">{% t "pricing.section.btn_ghost_link" %}</a>
-                    </div>
-                    <div class="pricing-info-card pricing-info-card--dark">
-                        <h2>{% t "pricing.section.h2_3" %}</h2>
-                        <p>{% t "pricing.section.p_3" %}</p>
-                        <a href="{% url "contact" %}" class="btn btn-on-red" style="align-self:flex-start;">{% t "pricing.section.btn_2" %}</a>
-                    </div>
+                <div class="price-card__body">
+                    <h2 class="price-card__benefits-title">{% t "pricing.plan.benefits_title" %}</h2>
+                    <ul class="benefit-grid">
+                        {%- for i in range(1, 9) %}
+                        <li class="benefit-tile">{% t "pricing.plan.benefit_" + i %}</li>
+                        {%- endfor %}
+                    </ul>
+                </div>
+                <div class="price-card__foot">
+                    <p class="price-card__trial">{% t "pricing.plan.trial" %}</p>
+                    <a href="#pobierz" class="btn btn-lg btn-primary">{% t "pricing.plan.try_free" %}</a>
                 </div>
             </div>
         </div>
     </section>
-    <section id="pobierz" class="cta-banner" style="padding:64px 24px;">
+
+    {# #56 #}
+    <section class="section section-alt" id="prowizje">
         <div class="container">
-            <h2 style="font-size:clamp(22px,2.8vw,32px);">{% t "pricing.pobierz.h2" %}</h2>
+            <div class="intro">
+                <h2 class="h2">{% t "pricing.fees.h2" %}</h2>
+                <p class="lead">{% t "pricing.fees.lead" %}</p>
+            </div>
+            <table class="fee-table">
+                <thead>
+                    <tr>
+                        <th scope="col">{% t "pricing.fees.col_type" %}</th>
+                        <th scope="col">{% t "pricing.fees.col_fee" %}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">{% t "pricing.fees.online" %}</th>
+                        <td>{% t "pricing.fees.online_fee" %}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">{% t "pricing.fees.offline" %}</th>
+                        <td class="fee-table__free">{% t "pricing.fees.offline_fee" %}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    {# #57 #}
+    <section id="pobierz" class="cta-banner">
+        <div class="container">
+            <h2>{% t "pricing.pobierz.h2" %}</h2>
             <p>{% t "pricing.pobierz.p" %}</p>
+            <span class="btn btn-lg btn-on-red">{% t "pricing.pobierz.try_free" %}</span>
             <div class="hero__cta-row">
-                <span class="btn btn-lg btn-on-red">{% t "pricing.pobierz.btn" %}</span>
-                <div class="store-badges">
-                    <img src="{% asset "assets/google-play.png" %}" alt="{% ta "pricing.pobierz.img_alt" %}" title="{% ta "pricing.pobierz.img_title" %}" />
-                    <img src="{% asset "assets/app-store.svg" %}" alt="{% ta "pricing.pobierz.img_alt_2" %}" title="{% ta "pricing.pobierz.img_title_2" %}" />
-                </div>
+                {% include "partials/store-row.njk" %}
             </div>
         </div>
     </section>

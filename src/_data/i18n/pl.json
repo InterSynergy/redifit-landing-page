@@ -126,7 +126,11 @@
         "mobility": "Mobility",
         "martial": "Sporty walki",
         "stretching": "Stretching",
-        "pilates": "Pilates"
+        "pilates": "Pilates",
+        "hiit": "HIIT",
+        "crosstraining": "Cross training",
+        "bodyshaping": "Modelowanie sylwetki",
+        "yoga": "Joga"
       }
     },
     "gdzie": {
@@ -197,400 +201,585 @@
   },
   "find": {
     "meta": {
-      "title": "Redifit — jak to działa: znajdź, sprawdź, zarezerwuj",
-      "description": "Trzy kroki od wyszukiwania trenera do zarezerwowanego treningu — z ekranami aplikacji i zasadami płatności."
+      "title": "Szukam trenera — jak działa REDi FIT krok po kroku",
+      "description": "Znajdź trenera, sprawdź jego profil i opinie, zarezerwuj trening i zapłać w aplikacji. Zobacz, jak działa REDi FIT krok po kroku."
     },
-    "page_hero": {
-      "eyebrow": "Jak to działa",
-      "h1": "Od wyszukiwania do zarezerwowanego treningu",
-      "lead": "Trzy kroki, wszystkie w aplikacji. Poniżej każdy z nich z ekranem, na którym się dzieje, i z zasadami, które warto znać przed płatnością."
-    },
-    "pill_tabs": {
-      "pill_tabs_label": "Na tej stronie",
-      "a": "1. Znajdź",
-      "a_2": "2. Sprawdź",
-      "a_3": "3. Zarezerwuj",
-      "a_4": "Bezpieczeństwo"
+    "hero": {
+      "eyebrow": "Szukam trenera",
+      "h1": "Twój trening w trzech prostych krokach",
+      "lead": "Z REDi FIT znalezienie odpowiedniego trenera jest proste. Wybierz rodzaj treningu, sprawdź profile trenerów i zarezerwuj dogodny termin. Zobacz, jak to działa krok po kroku.",
+      "tabs_label": "Na tej stronie",
+      "tab_1": "1. Znajdź trenera",
+      "tab_2": "2. Sprawdź profil",
+      "tab_3": "3. Zarezerwuj trening"
     },
     "znajdz": {
       "eyebrow": "KROK 1",
       "h2": "Znajdź trenera po kategorii, miejscu i terminie",
-      "lead": "Wybierz kategorię treningu, wpisz adres i zaznacz, kiedy chcesz trenować. Wyniki zobaczysz na liście albo na mapie.",
-      "li": "<span><strong>Wolne terminy na dziś</strong> — sekcja „Trenuj dziś” na ekranie głównym.</span>",
-      "li_2": "<span><strong>Trenerzy w Twojej okolicy</strong> — do 15 km od Twojej lokalizacji, po włączeniu lokalizacji w telefonie.</span>",
-      "li_3": "<span><strong>Filtry i mapa</strong> — zawęź wyniki według kategorii, ceny i pory dnia (rano, popołudnie, wieczór), a na mapie zobacz liczbę trenerów w danym obszarze.</span>",
-      "li_4": "<span><strong>Ulubieni trenerzy</strong> — zapisz trenera i wróć do niego z ekranu głównego.</span>",
-      "tag": "C1",
-      "caption": "Ekran główny: kategorie, „Trenuj dziś”, trenerzy w okolicy",
-      "needs": "[NEEDS] screen",
-      "tag_2": "C2",
-      "caption_2": "Wyszukiwarka: Kiedy? Gdzie? Cena, filtry kategorii, wyniki + widok mapy",
-      "needs_2": "[NEEDS] screen"
+      "lead": "Wybierz rodzaj treningu, lokalizację i dogodny termin. REDi FIT pokaże Ci dostępnych trenerów, których możesz przeglądać na liście lub interaktywnej mapie.",
+      "today_title": "Trenuj dziś",
+      "today_text": "sprawdź trenerów z wolnymi terminami jeszcze tego samego dnia.",
+      "nearby_title": "Trenerzy w Twojej okolicy",
+      "nearby_text": "znajdź trenerów blisko siebie i samodzielnie ustaw promień wyszukiwania.",
+      "filters_title": "Filtry i mapa",
+      "filters_text": "wybieraj trenerów według kategorii, ceny, lokalizacji i dostępnych terminów. Sprawdzaj wyniki na mapie.",
+      "favs_title": "Ulubieni trenerzy",
+      "favs_text": "zapisuj wybranych trenerów, aby łatwo wrócić do ich profili.",
+      "screen_1": "Ekran główny aplikacji",
+      "screen_2": "Wyszukiwarka: lista i mapa"
     },
     "sprawdz": {
-      "tag": "C4",
-      "caption": "Profil trenera: zakładki Usługi / Opinie / Portfolio / Szczegóły",
-      "needs": "[NEEDS] screen z aplikacji albo Figma",
-      "label": "Miejsce na opinię",
-      "body": "[NEEDS: opinia użytkownika aplikacji — imię, rola, miasto; nie wymyślono]",
       "eyebrow": "KROK 2",
-      "h2": "Zanim zarezerwujesz, sprawdź, na kogo trafiasz",
-      "lead": "Profil trenera pokazuje to, co potrzebne do decyzji: kwalifikacje, specjalizacje, zdjęcia z portfolio i opinie klientów.",
-      "li": "<span><strong>Bio i kwalifikacje</strong> — wykształcenie, doświadczenie, ukończone kursy i szkolenia oraz specjalizacje.</span>",
-      "li_2": "<span><strong>Portfolio</strong> — zdjęcia, które trener dodał do swojego profilu.</span>",
-      "li_3": "<span><strong>Opinie z ocenami w gwiazdkach</strong> — sortuj od najnowszych, najstarszych, najlepiej albo najgorzej ocenianych, oceń przydatność opinii lub zgłoś nieodpowiednią. Trener może odpowiedzieć na opinię.</span>",
-      "li_4": "<span><strong>Usługi z cenami</strong> — przy każdej usłudze czas trwania, cena i lokalizacja.</span>",
-      "step_note": "Opinie wystawiają klienci po zakończonej rezerwacji. [NEEDS: potwierdzić z backendem]"
+      "h2": "Poznaj trenera, zanim zarezerwujesz trening",
+      "lead": "Sprawdź profil trenera, poznaj jego doświadczenie, specjalizację i ofertę. Przejrzyj zdjęcia oraz opinie innych klientów, aby wybrać osobę najlepiej dopasowaną do Twoich potrzeb.",
+      "bio_title": "Bio i kwalifikacje",
+      "bio_text": "sprawdź specjalizację, doświadczenie, wykształcenie i ukończone szkolenia trenera.",
+      "portfolio_title": "Portfolio",
+      "portfolio_text": "zobacz zdjęcia, które trener udostępnił na swoim profilu.",
+      "reviews_title": "Opinie klientów",
+      "reviews_text": "poznaj oceny i doświadczenia osób, które wcześniej trenowały z wybranym trenerem.",
+      "services_title": "Usługi i ceny",
+      "services_text": "porównaj dostępne treningi, ich ceny, czas trwania i lokalizację.",
+      "note": "Opinie pochodzą od klientów, którzy odbyli trening.",
+      "screen": "Profil trenera: zakładki z usługami, opiniami, portfolio i szczegółami"
     },
     "zarezerwuj": {
       "eyebrow": "KROK 3",
-      "h2": "Zarezerwuj i zarządzaj terminem w jednej aplikacji",
-      "lead": "Wybierz termin i formę płatności, potwierdź. Rezerwację znajdziesz w kalendarzu aplikacji, a stamtąd zmienisz ją, odwołasz albo dodasz do kalendarza w telefonie.",
-      "li": "<span><strong>Karta i BLIK w bezpiecznym formularzu Stripe</strong> — aplikacja nie przechowuje danych karty.</span>",
-      "li_2": "<span><strong>Gotówka lub przelew</strong> — jeśli trener je oferuje; formy płatności ustala trener.</span>",
-      "li_3": "<span><strong>Kalendarz rezerwacji</strong> — zakładki: nadchodzące, zrealizowane, anulowane; „Umów ponownie” jednym przyciskiem.</span>",
-      "li_4": "<span><strong>Termin w Twoim telefonie</strong> — dodaj go do kalendarza urządzenia albo zapisz jako plik .ics.</span>",
-      "li_5": "<span><strong>Powiadomienia o zmianie statusu</strong> — push, e-mail lub SMS, wybierasz w ustawieniach.</span>",
-      "title": "Zasady zmiany i anulowania",
-      "text": "Zgodnie z zasadami trenera anulowanie rezerwacji jest możliwe minimum 24 godziny wcześniej. Pobrana opłata może nie zostać zwrócona. [NEEDS: potwierdzić, czy 24 h obowiązuje zawsze]",
-      "tag": "C5",
-      "caption": "Podsumowanie rezerwacji z wyborem formy płatności (Gotówka / Karta / BLIK / Przelew)",
-      "needs": "[NEEDS] screen",
-      "tag_2": "C7",
-      "caption_2": "Kalendarz rezerwacji: Nadchodzące / Zrealizowane / Anulowane",
-      "needs_2": "[NEEDS] screen"
+      "h2": "Zarezerwuj trening i zarządzaj swoimi rezerwacjami",
+      "lead": "Wybierz dogodny termin i dostępną formę płatności, a następnie potwierdź rezerwację. Wszystkie swoje treningi znajdziesz w aplikacji, gdzie możesz sprawdzić ich szczegóły i zarządzać rezerwacjami.",
+      "online_title": "Płatności online",
+      "online_text": "płać szybko i bezpiecznie za treningi, korzystając z dostępnych metod płatności w aplikacji.",
+      "cash_title": "Płatność gotówką",
+      "cash_text": "zapłać za trening na miejscu, jeśli trener udostępnia taką możliwość.",
+      "bookings_title": "Twoje rezerwacje",
+      "bookings_text": "przeglądaj nadchodzące, zrealizowane i anulowane treningi oraz zapisy na wydarzenia sportowe.",
+      "rebook_title": "„Umów ponownie”",
+      "rebook_text": "szybko zarezerwuj kolejny trening u tego samego trenera.",
+      "calendar_title": "Termin w Twoim telefonie",
+      "calendar_text": "dodaj zarezerwowany trening do kalendarza w telefonie, aby nie zapomnieć o terminie.",
+      "notifications_title": "Powiadomienia",
+      "notifications_text": "otrzymuj informacje o rezerwacjach i zmianach ich statusu.",
+      "faq_link": "Najczęściej zadawane pytania →",
+      "screen_1": "Rezerwacja: termin i forma płatności",
+      "screen_2": "Twoje rezerwacje"
     },
-    "bezpieczenstwo": {
-      "h2": "Co nas pilnuje, gdy płacisz przez aplikację",
-      "lead": "Pięć mechanizmów, które działają zanim i po tym, jak zarezerwujesz trening.",
-      "h3": "Dane karty poza aplikacją",
-      "p": "Karta i BLIK obsługiwane w formularzu Stripe. Redifit nie przechowuje numerów kart.",
-      "h3_2": "Numer potwierdzony kodem SMS",
-      "p_2": "Przy rejestracji potwierdzasz telefon kodem, więc konta nie zakłada się na przypadkowy numer.",
-      "h3_3": "Opinie tylko po treningu",
-      "p_3": "Ocenę wystawia się po zakończonej rezerwacji. Nieodpowiednią opinię można zgłosić.",
-      "h3_4": "Wydarzenia po moderacji",
-      "p_4": "Wydarzenie trenera pojawia się w aplikacji po sprawdzeniu. <span class=\"tag--needs\">[NEEDS] zasady</span>",
-      "h3_5": "Zasada anulowania podana wprost",
-      "p_5": "Warunek 24 godzin i możliwy brak zwrotu opłaty piszemy na stronie, nie tylko w regulaminie.",
-      "btn": "Pobierz aplikację",
-      "btn_ghost_link": "Zobacz odpowiedzi na częste pytania →"
+    "styl": {
+      "h2": "Trenuj tak, jak lubisz",
+      "lead": "REDi FIT daje Ci swobodę wyboru. Dopasuj trening do swojego planu dnia, miejsca i preferencji.",
+      "place_title": "Gdzie Ci wygodnie",
+      "place_text": "Wybieraj treningi w siłowni, studiu, plenerze lub z dojazdem trenera.",
+      "time_title": "Kiedy masz czas",
+      "time_text": "Znajdź trening dopasowany do swojego grafiku, nawet na dziś.",
+      "group_title": "Samodzielnie lub w grupie",
+      "group_text": "Rezerwuj treningi indywidualne i zapisuj się na wydarzenia sportowe.",
+      "budget_title": "W swoim budżecie",
+      "budget_text": "Porównuj ceny treningów i korzystaj z ofert Happy Hours."
     },
     "pobierz": {
-      "h2": "Trzy kroki zaczynają się w aplikacji",
-      "p": "Znajdź trenera, wybierz termin, zarezerwuj.",
-      "btn": "Pobierz aplikację",
-      "img_alt": "Pobierz z Google Play",
-      "img_title": "[LINK: Google Play — placeholder]",
-      "img_alt_2": "Pobierz z App Store",
-      "img_title_2": "[LINK: App Store — placeholder]"
+      "h2": "Gotowy na kolejny trening?",
+      "p": "Pobierz REDi FIT i odkryj wygodny sposób na umawianie treningów. Korzystaj z aplikacji bezpłatnie!"
     }
   },
   "trainers": {
     "meta": {
-      "title": "Redifit dla trenerów — klienci, kalendarz i płatności",
-      "description": "Zdobywaj nowych klientów i prowadź treningi w jednej aplikacji: profil, kalendarz, klienci, płatności online i statystyki. Na Androida i iOS."
+      "title": "REDi FIT dla trenerów — zdobywaj klientów i zarządzaj treningami",
+      "description": "REDi FIT pomaga trenerom i specjalistom sportowym docierać do nowych klientów i zarządzać działalnością: usługi, rezerwacje, kalendarz i płatności w jednej aplikacji. Pierwsze 3 miesiące za darmo."
     },
-    "t_hero": {
-      "needs": "[NEEDS] zdjęcie hero ≥ 1920×1080 — trener przy pracy, przyciemnienie 40%",
-      "a": "Szukam trenera →",
-      "span": "Jestem trenerem",
-      "eyebrow": "DLA TRENERÓW",
-      "h1": "Zdobywaj nowych klientów. Prowadź treningi w jednej aplikacji.",
-      "sub": "Redifit daje trenerowi profil widoczny dla klientów, kalendarz rezerwacji, płatności online i statystyki. Konto trenera zakładasz w aplikacji.",
-      "btn": "Pobierz aplikację",
-      "img_alt": "Pobierz z Google Play",
-      "img_title": "[LINK: Google Play — placeholder]",
-      "img_alt_2": "Pobierz z App Store",
-      "img_title_2": "[LINK: App Store — placeholder]",
-      "note": "Rejestracja trenera odbywa się w aplikacji.",
-      "value": "250+",
-      "label": "trenerów w aplikacji",
-      "tag": "DANE PRÓBNE",
-      "value_2": "3 400",
-      "label_2": "rezerwacji miesięcznie",
-      "tag_2": "DANE PRÓBNE",
-      "tag_3": "T-A",
-      "caption": "Kalendarz trenera (miesiąc) + lista treningów wybranego dnia",
-      "needs_2": "[NEEDS] screen z aplikacji albo Figma"
+    "hero": {
+      "role_client": "Szukam trenera →",
+      "role_trainer": "Jestem trenerem",
+      "eyebrow": "Dla trenerów",
+      "h1": "Zdobywaj nowych klientów. Zarządzaj treningami w jednej aplikacji.",
+      "sub": "REDi FIT pomaga trenerom personalnym i specjalistom sportowym docierać do nowych klientów oraz wygodnie zarządzać swoją działalnością. Prezentuj swoje usługi, przyjmuj rezerwacje, zarządzaj kalendarzem i płatnościami – wszystko w jednym miejscu.",
+      "try_free": "Wypróbuj za darmo",
+      "trial": "Pierwsze 3 miesiące korzystania z REDi FIT za darmo!",
+      "screen_caption": "Kalendarz trenera i lista treningów na wybrany dzień",
+      "stats": {
+        "trainers_value": "250+",
+        "trainers_label": "trenerów w aplikacji",
+        "bookings_value": "3 400",
+        "bookings_label": "rezerwacji miesięcznie"
+      }
     },
-    "t_dlaczego": {
+    "dlaczego": {
       "h2": "Cała organizacja pracy w jednym miejscu",
-      "title": "Dziś",
-      "li": "<span>Klienci, wiadomości i terminy rozproszone po telefonie, notatkach i kalendarzach.</span>",
-      "li_2": "<span>Rozliczenia i podsumowania sprzedaży prowadzisz osobno.</span>",
-      "li_3": "<span>O nowych klientów musisz zadbać samodzielnie, poza treningami.</span>",
-      "title_2": "W Redifit",
-      "li_4": "<span>Rezerwacje, klienci i historia w jednym kalendarzu.</span>",
-      "li_5": "<span>Płatności online, portfel i raporty w tej samej aplikacji.</span>",
-      "li_6": "<span>Twój profil widzą klienci, którzy szukają trenera według kategorii i miejsca.</span>",
-      "needs_block": "[NEEDS: potwierdzić kolumnę „Dziś” rozmowami z trenerami]"
+      "without_title": "Bez REDi FIT",
+      "without_1": "Ustalanie terminów przez telefon, SMS-y i wiadomości.",
+      "without_2": "Ciągłe szukanie nowych klientów i reklamowanie się w mediach społecznościowych.",
+      "without_3": "Osobne narzędzia do płatności i rozliczeń.",
+      "without_4": "Ręczne zbieranie zapisów na wydarzenia sportowe.",
+      "without_5": "Oferta i cennik rozproszone na różnych stronach i profilach.",
+      "with_title": "Z REDi FIT",
+      "with_1": "Wszystkie rezerwacje i terminy w jednym kalendarzu.",
+      "with_2": "Twoja oferta widoczna dla osób szukających trenera.",
+      "with_3": "Płatności online i przejrzyste raporty finansowe.",
+      "with_4": "Łatwe tworzenie wydarzeń i przyjmowanie zapisów.",
+      "with_5": "Jeden profil z ofertą, cennikiem, kwalifikacjami i zdjęciami."
     },
-    "t_profil": {
+    "profil": {
       "h2": "Klienci szukają trenerów. Niech znajdą Ciebie",
-      "lead": "Twój profil to pierwsze, co klient widzi przed rezerwacją. Uzupełnij go w aplikacji.",
-      "li": "<span><strong>Bio i kwalifikacje</strong> — nazwa profilu, specjalizacja, wykształcenie, doświadczenie, ukończone kursy i szkolenia.</span>",
-      "li_2": "<span><strong>Portfolio</strong> — dodawaj zdjęcia z aparatu lub galerii i ustaw ich kolejność przeciąganiem.</span>",
-      "li_3": "<span><strong>Opinie</strong> — odpowiadaj na opinie klientów, a odpowiedź możesz później edytować.</span>",
-      "li_4": "<span><strong>Widoczność</strong> — klienci znajdą Cię w wyszukiwarce, na mapie i w sekcji „Trenerzy w Twojej okolicy”.</span>",
-      "step_note": "Ustawienia usług zapisują się na profilu, więc zacznij od uzupełnienia bio.",
-      "tag": "T-H",
-      "caption": "Bio i portfolio trenera",
-      "needs": "[NEEDS] screen z aplikacji albo Figma"
+      "lead": "Pokaż, kim jesteś i co oferujesz. Stwórz profil trenera w REDi FIT, zaprezentuj swoje doświadczenie i pozwól nowym klientom łatwiej Cię znaleźć.",
+      "bio_title": "Bio i kwalifikacje",
+      "bio_text": "przedstaw swoją specjalizację, doświadczenie, wykształcenie i ukończone szkolenia.",
+      "portfolio_title": "Portfolio",
+      "portfolio_text": "dodaj zdjęcia, które pokażą Ciebie i Twoją pracę.",
+      "reviews_title": "Opinie klientów",
+      "reviews_text": "buduj wiarygodność dzięki opiniom osób, które korzystały z Twoich usług.",
+      "visibility_title": "Widoczność",
+      "visibility_text": "daj się znaleźć w wyszukiwarce, na mapie i w sekcji „Trenerzy w Twojej okolicy”.",
+      "events_title": "Wydarzenia sportowe",
+      "events_text": "organizuj treningi grupowe i wydarzenia, docieraj do nowych uczestników i przyjmuj zapisy w aplikacji.",
+      "screen_caption": "Profil trenera"
     },
-    "t_zasady": {
-      "h2": "Usługi, ceny i dostępność ustawiasz samodzielnie",
-      "h3": "Usługa",
-      "p": "Nazwa, opis, kategoria, czas trwania, cena brutto i stawka VAT.",
-      "h3_2": "Miejsce",
-      "p_2": "Stacjonarnie z pinezką na mapie albo mobilnie z zasięgiem w kilometrach.",
-      "h3_3": "Dostępność",
-      "p_3": "Godziny pracy, przerwy, cykliczność i odstęp między rezerwacjami na dojazd lub przygotowanie.",
-      "h3_4": "Limity rezerwacji",
-      "p_4": "Jak daleko w przyszłość klienci mogą rezerwować, z jakim wyprzedzeniem i do kiedy mogą zmienić termin.",
-      "h3_5": "Urlopy",
-      "p_5": "Zakres dat z opisem; w tym czasie nie przyjmujesz rezerwacji. [NEEDS: potwierdzić skutek urlopu]",
-      "h3_6": "Happy hours",
-      "p_6": "Zniżka w wybranych godzinach, cyklicznie, ważna do wskazanej daty.",
-      "h3_7": "Formy płatności",
-      "p_7": "Zaznaczasz, które oferujesz: gotówka, karta, BLIK, przelew.",
-      "h3_8": "Wydarzenia",
-      "p_8": "Data, godziny, lokalizacja, zdjęcia, poziom, cena i limit uczestników. Wydarzenia przechodzą moderację. [NEEDS: zasady moderacji]",
-      "tag": "T-C",
-      "caption": "Formularz usługi (nazwa, kategoria, czas, cena brutto, VAT)",
-      "needs": "[NEEDS] screen"
+    "zasady": {
+      "h2": "Twoje usługi. Twoje ceny. Twój grafik.",
+      "services_title": "Usługi i ceny",
+      "services_text": "Dodawaj własne usługi, ustalaj ceny i czas trwania treningów.",
+      "place_title": "Miejsce treningów",
+      "place_text": "Oferuj treningi w wybranej lokalizacji lub z dojazdem do klienta.",
+      "availability_title": "Dostępność",
+      "availability_text": "Ustalaj godziny pracy, przerwy i terminy dostępne dla klientów.",
+      "rules_title": "Zasady rezerwacji",
+      "rules_text": "Decyduj, z jakim wyprzedzeniem klienci mogą rezerwować i zmieniać terminy.",
+      "timeoff_title": "Urlopy",
+      "timeoff_text": "Zaznaczaj dni wolne, w których nie przyjmujesz rezerwacji.",
+      "happy_title": "Happy Hours",
+      "happy_text": "Przyciągaj klientów promocjami na treningi w wybranych godzinach.",
+      "payments_title": "Formy płatności",
+      "payments_text": "Wybieraj dostępne sposoby płatności za swoje usługi.",
+      "events_title": "Wydarzenia sportowe",
+      "events_text": "Organizuj wydarzenia, ustalaj ceny i przyjmuj zapisy uczestników."
     },
-    "t_popyt": {
+    "popyt": {
       "eyebrow": "Kiedy kalendarz świeci pustkami",
-      "h2": "Cztery narzędzia, którymi sam napędzasz zapisy",
+      "h2": "Zapełniaj kalendarz. Zwiększaj przychody.",
       "lead": "Wszystkie są w aplikacji i nie wymagają dodatkowej reklamy.",
-      "h3": "Happy hours",
-      "p": "Obniż cenę w godzinach, które trudno zapełnić. Zniżka działa cyklicznie i wygasa w dniu, który wskażesz.",
-      "h3_2": "Wydarzenia grupowe",
-      "p_2": "Jeden termin, wielu uczestników. Ustawiasz poziom, cenę i limit miejsc, dodajesz galerię.",
-      "h3_3": "SMS do klientów",
-      "p_3": "Wiadomość do wszystkich albo wybranych osób z listy, do 200 znaków, wysyłana z Twojego telefonu.",
-      "h3_4": "„Umów ponownie”",
-      "p_4": "Z historii klienta jednym przyciskiem wracasz do tej samej usługi — dla obu stron."
+      "happy_title": "Happy Hours",
+      "happy_text": "Oferuj treningi w promocyjnych cenach w wybranych godzinach i zachęcaj klientów do rezerwacji wolnych terminów.",
+      "group_title": "Wydarzenia grupowe",
+      "group_text": "Organizuj treningi i wydarzenia dla większej liczby uczestników. Ustalaj terminy, ceny i przyjmuj zapisy w aplikacji.",
+      "sms_title": "SMS-y do klientów",
+      "sms_text": "Informuj klientów o nowych treningach, promocjach i wolnych terminach za pomocą wiadomości SMS.",
+      "rebook_title": "„Umów ponownie”",
+      "rebook_text": "Szybko umawiaj kolejne treningi ze stałymi klientami, bez ponownego wprowadzania wszystkich szczegółów."
     },
-    "t_praca": {
-      "tag": "T-A",
-      "caption": "Kalendarz trenera: miesiąc i lista treningów dnia",
-      "needs": "[NEEDS] screen",
-      "tag_2": "T-D",
-      "caption_2": "Klienci + „Wyślij wiadomość: do wszystkich / do wybranych”",
-      "needs_2": "[NEEDS] screen",
-      "h2": "Kalendarz, klienci i wiadomości w jednym miejscu",
-      "li": "<span><strong>Kalendarz</strong> — widok miesiąca i tygodnia oraz lista treningów wybranego dnia.</span>",
-      "li_2": "<span><strong>Rezerwacja</strong> — klient, telefon, notatka, koszt i forma płatności; edytuj, dodaj do kalendarza lub umów ponownie.</span>",
-      "li_3": "<span><strong>Klienci</strong> — lista z wyszukiwarką i historią rezerwacji każdego z nich.</span>",
-      "li_4": "<span><strong>Wiadomości</strong> — do wszystkich albo do wybranych klientów (do 200 znaków); wyślesz ją z aplikacji SMS w telefonie.</span>"
+    "praca": {
+      "h2": "Wszystkie rezerwacje i kontakty z klientami pod kontrolą",
+      "calendar_title": "Kalendarz",
+      "calendar_text": "sprawdzaj zaplanowane treningi i dostępne terminy w widoku dnia, tygodnia lub miesiąca.",
+      "bookings_title": "Rezerwacje",
+      "bookings_text": "przeglądaj szczegóły treningów, edytuj rezerwacje i dodawaj nowe terminy.",
+      "clients_title": "Klienci",
+      "clients_text": "miej pod ręką listę klientów, ich dane kontaktowe i historię treningów.",
+      "sms_title": "Wiadomości SMS",
+      "sms_text": "informuj wszystkich lub wybranych klientów o wolnych terminach, promocjach i nowych treningach.",
+      "screen_1": "Kalendarz trenera",
+      "screen_2": "Lista klientów i wiadomości SMS"
     },
-    "t_platnosci": {
-      "h2": "Płatności trafiają na Twoje konto, a liczby masz pod ręką",
-      "li": "<span><strong>Konto wypłat</strong> — połącz konto Stripe w aplikacji i sprawdzaj jego status.</span>",
-      "li_2": "<span><strong>Statystyki</strong> — trzy zakładki: rezerwacje, raporty, portfel.</span>",
-      "li_3": "<span><strong>Filtry</strong> — data, klient, rodzaj treningu, forma płatności, oceny, dni tygodnia, godziny i zniżki.</span>",
-      "li_4": "<span><strong>Raporty</strong> — przychód i sprzedaż, do pobrania z aplikacji. [NEEDS: formaty raportów]</span>",
-      "tag": "T-E",
-      "caption": "Statystyki: zakładka Raporty z filtrami",
-      "needs": "[NEEDS] screen",
-      "tag_2": "T-F",
-      "caption_2": "Konto wypłat Stripe i abonament",
-      "needs_2": "[NEEDS] screen"
+    "platnosci": {
+      "h2": "Przyjmuj płatności tak, jak lubisz. Analizuj swoje wyniki",
+      "methods_title": "Formy płatności",
+      "methods_text": "samodzielnie wybieraj, jak klienci płacą za treningi: gotówką lub online.",
+      "online_title": "Płatności online",
+      "online_text": "przyjmuj wygodnie i bezpiecznie płatności za treningi bezpośrednio przez aplikację REDi FIT.",
+      "stats_title": "Statystyki i raporty",
+      "stats_text": "sprawdzaj przychody, liczbę rezerwacji i wyniki sprzedaży w jednym miejscu.",
+      "history_title": "Historia transakcji",
+      "history_text": "przeglądaj płatności online, wypłaty i rozliczenia w aplikacji.",
+      "screen_1": "Raporty przychodów",
+      "screen_2": "Portfel"
     },
-    "t_start": {
+    "start": {
       "h2": "Start w czterech krokach",
-      "num": "1",
-      "p": "Pobierz aplikację i załóż konto trenera.",
-      "num_2": "2",
-      "p_2": "Uzupełnij bio.",
-      "num_3": "3",
-      "p_3": "Dodaj usługę: kategoria, czas, cena, miejsce i dostępność.",
-      "num_4": "4",
-      "p_4": "Połącz konto wypłat Stripe i aktywuj abonament.",
-      "needs_block": "[NEEDS: potwierdzić kolejność kroków i wymogi weryfikacji konta trenera]",
-      "btn": "Pobierz aplikację",
-      "btn_ghost_link": "Ile kosztuje konto trenera? →"
+      "step_1": "Pobierz aplikację i załóż konto trenera.",
+      "step_2": "Uzupełnij swój profil i kwalifikacje.",
+      "step_3": "Dodaj usługi, ustal ceny i dostępne terminy.",
+      "step_4": "Skonfiguruj płatności i zacznij przyjmować rezerwacje.",
+      "free": "Rozpocznij bez opłat – pierwsze 3 miesiące korzystania z aplikacji są bezpłatne.",
+      "pricing_link": "Sprawdź cennik →"
     },
     "pobierz": {
       "h2": "Zacznij od pobrania aplikacji",
       "p": "Załóż konto trenera, uzupełnij profil i dodaj pierwszą usługę.",
-      "btn": "Pobierz aplikację",
-      "img_alt": "Pobierz z Google Play",
-      "img_title": "[LINK: Google Play — placeholder]",
-      "img_alt_2": "Pobierz z App Store",
-      "img_title_2": "[LINK: App Store — placeholder]",
-      "note": "Rejestracja trenera odbywa się w aplikacji."
+      "try_free": "Wypróbuj za darmo"
     }
   },
   "pricing": {
     "meta": {
-      "title": "Redifit — cennik: 100 zł miesięcznie dla trenera",
-      "description": "Jeden abonament dla trenera, konto klienta bez abonamentu. Co obejmuje cena i jaka jest prowizja od płatności online."
+      "title": "Cennik REDi FIT — abonament dla trenerów",
+      "description": "Jeden stały abonament miesięczny dla trenerów, niezależnie od liczby klientów i rezerwacji. Pierwsze 3 miesiące za darmo. Dla osób trenujących aplikacja jest bezpłatna."
     },
-    "page_hero": {
+    "hero": {
       "eyebrow": "Cennik",
-      "h1": "Jeden abonament dla trenera. Konto klienta bez abonamentu.",
-      "lead": "Nie ma trzech planów do porównywania — jest jeden. Poniżej to, co obejmuje, i to, co dochodzi od płatności online."
+      "h1": "Prosty abonament. Więcej możliwości dla trenerów.",
+      "lead": "Jeden stały abonament miesięczny, niezależnie od liczby klientów i zarezerwowanych treningów. Zarządzaj grafikiem, przyjmuj rezerwacje i rozwijaj swoją bazę klientów.",
+      "free_for_clients": "Dla osób poszukujących trenerów i treningów korzystanie z aplikacji REDi FIT jest całkowicie bezpłatne."
     },
-    "section": {
-      "plan": "Konto trenera · REDi FIT Standard",
-      "amount": "100 zł / miesiąc",
-      "frame": "To około 3,30 zł na dzień.",
-      "needs_block": "[NEEDS: cena publiczna, netto/brutto]",
-      "li": "<span>Aktywne konto trenera z profilem widocznym dla klientów</span>",
-      "li_2": "<span>Kalendarz, klienci, statystyki i wiadomości</span>",
-      "li_3": "<span>Płatności online przez Stripe</span>",
-      "li_4": "<span>Usługi, dostępność, urlopy, happy hours i wydarzenia</span>",
-      "dt": "Prowizja od płatności online",
-      "dd": "5% [DANE PRÓBNE]",
-      "dt_2": "Okres próbny",
-      "dd_2": "[NEEDS: czy jest i na ile dni]",
-      "dt_3": "Gotówka i przelew",
-      "dd_3": "bez prowizji aplikacji",
-      "manage": "Abonamentem zarządzasz w aplikacji. Anulowany kończy się z końcem opłaconego okresu. [NEEDS: potwierdzić]",
-      "btn": "Pobierz aplikację",
-      "label": "Konto klienta",
-      "h2": "Płacisz za trening, nie za aplikację",
-      "p": "Rezerwujesz i płacisz trenerowi w wysokości, którą ustawił przy usłudze. Za samo korzystanie z aplikacji nie ma abonamentu.",
-      "needs_block_2": "[NEEDS] potwierdzić, że konto klienta jest bezpłatne — brief tego nie stwierdza wprost",
-      "h2_2": "Co, jeśli płatność za abonament się nie powiedzie?",
-      "p_2": "Aplikacja pokaże status „Płatność nie powiodła się” i poprosi o zaktualizowanie karty.",
-      "btn_ghost_link": "Więcej pytań trenerów →",
-      "h2_3": "Nie wiesz, czy to się spina?",
-      "p_3": "Napisz — odpowiemy, co konto trenera obejmuje w Twoim przypadku.",
-      "btn_2": "Zadaj pytanie"
+    "plan": {
+      "label": "Konto trenera · REDi FIT Standard",
+      "amount": "{num:pricing.subscriptionMonthly} zł",
+      "period": "brutto / miesiąc",
+      "frame": "Stały miesięczny abonament – niezależnie od liczby klientów i rezerwacji.",
+      "benefits_title": "Co zyskujesz w ramach abonamentu?",
+      "benefit_1": "Własny profil trenera widoczny dla potencjalnych klientów",
+      "benefit_2": "Zarządzanie kalendarzem i bazą klientów",
+      "benefit_3": "Kalendarz rezerwacji i zarządzanie dostępnością",
+      "benefit_4": "Możliwość oferowania treningów, usług i wydarzeń",
+      "benefit_5": "Promowanie wolnych terminów przez Happy Hours",
+      "benefit_6": "Obsługa rezerwacji i płatności online",
+      "benefit_7": "Dostęp do statystyk i raportów",
+      "benefit_8": "Możliwość ustawiania urlopów i przerw między treningami",
+      "trial": "Na początek korzystasz z bezpłatnego okresu próbnego. Po jego zakończeniu obowiązuje stały miesięczny abonament zgodnie z cennikiem.",
+      "try_free": "Wypróbuj za darmo"
+    },
+    "fees": {
+      "h2": "Opłaty za obsługę płatności online",
+      "lead": "Prowizja naliczana jest wyłącznie od płatności realizowanych online za pośrednictwem aplikacji REDi FIT. Za płatności gotówkowe nie pobieramy prowizji.",
+      "col_type": "Rodzaj płatności",
+      "col_fee": "Opłata",
+      "online": "Płatności online",
+      "online_fee": "{num:pricing.onlineFeePercent}% wartości transakcji + {num:pricing.onlineFeeFixed} zł",
+      "offline": "Płatności gotówką lub przelewem poza aplikacją",
+      "offline_fee": "za darmo"
     },
     "pobierz": {
-      "h2": "Abonament aktywujesz w aplikacji",
-      "p": "Najpierw konto i profil, potem konto wypłat Stripe i abonament.",
-      "btn": "Pobierz aplikację",
-      "img_alt": "Pobierz z Google Play",
-      "img_title": "[LINK: Google Play — placeholder]",
-      "img_alt_2": "Pobierz z App Store",
-      "img_title_2": "[LINK: App Store — placeholder]"
+      "h2": "Zacznij rozwijać swoją działalność z REDi FIT!",
+      "p": "Załóż konto trenera, uzupełnij profil i korzystaj z możliwości REDi FIT na początek całkowicie bezpłatnie!",
+      "try_free": "Wypróbuj za darmo"
     }
   },
   "faq": {
     "meta": {
-      "title": "Redifit — pytania i odpowiedzi",
-      "description": "Odpowiedzi dla klientów i trenerów zanim pobierzesz aplikację Redifit."
+      "title": "FAQ — najczęściej zadawane pytania o REDi FIT",
+      "description": "Odpowiedzi na najczęstsze pytania o REDi FIT: konto, rezerwacje, płatności, wydarzenia oraz abonament i praca trenera w aplikacji."
     },
-    "page_hero": {
-      "eyebrow": "Pytania",
-      "h1": "Odpowiedzi zanim pobierzesz aplikację"
+    "hero": {
+      "eyebrow": "FAQ",
+      "h1": "Najczęściej zadawane pytania",
+      "lead": "Dowiedz się, jak działa REDi FIT, jak rezerwować treningi, korzystać z płatności i zarządzać kontem. Znajdziesz tu odpowiedzi na najczęściej zadawane pytania zarówno przez osoby trenujące, jak i trenerów.",
+      "tabs_label": "Na tej stronie",
+      "tab_client": "Dla trenujących",
+      "tab_trainer": "Dla trenerów"
     },
-    "pill_tabs": {
-      "pill_tabs_label": "Na tej stronie",
-      "a": "Dla klientów",
-      "a_2": "Dla trenerów"
+    "client": {
+      "title": "Najczęściej zadawane pytania przez osoby trenujące",
+      "groups": {
+        "account": {
+          "title": "Konto i aplikacja REDi FIT",
+          "questions": {
+            "q1": {
+              "q": "Czy korzystanie z REDi FIT jest bezpłatne?",
+              "a": "Tak. Korzystanie z aplikacji REDi FIT jest bezpłatne dla osób trenujących. Płacisz jedynie za wybrane treningi i wydarzenia sportowe, zgodnie z cenami podanymi przez trenerów."
+            },
+            "q2": {
+              "q": "Czy muszę założyć konto, aby zarezerwować trening?",
+              "a": "Tak. Aby zarezerwować trening, pobierz aplikację REDi FIT i zarejestruj się jako klient. Dzięki temu możesz wygodnie przeglądać swoje rezerwacje i zapisy na wydarzenia."
+            },
+            "q3": {
+              "q": "Czy mogę korzystać z REDi FIT w różnych miastach?",
+              "a": "Tak. Możesz wyszukiwać trenerów według wybranej lokalizacji, niezależnie od miejsca, w którym aktualnie przebywasz. Dostępność usług zależy od ofert trenerów w danym mieście."
+            },
+            "q4": {
+              "q": "W jakich językach dostępna jest aplikacja REDi FIT?",
+              "a": "Aplikacja jest dostępna w języku polskim, angielskim i ukraińskim. Język możesz wybrać przy pierwszym uruchomieniu lub zmienić później w ustawieniach."
+            },
+            "q5": {
+              "q": "Na jakich telefonach działa REDi FIT?",
+              "a": "REDi FIT to aplikacja mobilna dostępna na urządzenia z systemami Android i iOS. Możesz pobrać ją z Google Play lub App Store."
+            }
+          }
+        },
+        "trainers": {
+          "title": "Trenerzy i treningi",
+          "questions": {
+            "q6": {
+              "q": "Jak znaleźć trenera personalnego lub instruktora sportowego?",
+              "a": "Wybierz interesującą Cię kategorię treningu, lokalizację i termin. REDi FIT pokaże dostępnych trenerów, których możesz przeglądać na liście lub interaktywnej mapie."
+            },
+            "q7": {
+              "q": "Jak wybrać odpowiedniego trenera?",
+              "a": "Sprawdź jego specjalizację, doświadczenie, kwalifikacje, portfolio, opinie klientów oraz oferowane usługi i ceny. Dzięki temu łatwiej wybierzesz osobę dopasowaną do swoich potrzeb."
+            },
+            "q8": {
+              "q": "Czy mogę znaleźć trenera w swojej okolicy?",
+              "a": "Tak. W sekcji „Trenerzy w Twojej okolicy” możesz wyszukiwać trenerów znajdujących się blisko Ciebie. Samodzielnie ustawiasz promień wyszukiwania."
+            },
+            "q9": {
+              "q": "Czy mogę zarezerwować trening jeszcze tego samego dnia?",
+              "a": "Tak, jeśli trener ma dostępne terminy. W sekcji „Trenuj dziś” znajdziesz treningi, na które możesz zapisać się jeszcze tego samego dnia."
+            },
+            "q10": {
+              "q": "Czy trener może przyjechać do mojego domu lub innej lokalizacji?",
+              "a": "Tak, jeśli oferuje treningi z dojazdem. Informacje o możliwości dojazdu i obsługiwanym obszarze znajdziesz w ofercie trenera."
+            },
+            "q11": {
+              "q": "Czy mogę zapisać ulubionych trenerów?",
+              "a": "Tak. Możesz dodawać trenerów do ulubionych, aby łatwo wracać do ich profili i sprawdzać dostępne treningi."
+            }
+          }
+        },
+        "booking": {
+          "title": "Rezerwacje i płatności",
+          "questions": {
+            "q12": {
+              "q": "Jak zarezerwować trening w REDi FIT?",
+              "a": "Wybierz trenera, interesującą Cię usługę i dogodny termin. Następnie wybierz dostępną formę płatności i potwierdź rezerwację w aplikacji."
+            },
+            "q13": {
+              "q": "Jak mogę zapłacić za trening?",
+              "a": "Możesz skorzystać z dostępnych metod płatności online lub zapłacić gotówką, jeśli trener oferuje taką możliwość. Dostępne formy płatności zobaczysz podczas rezerwacji."
+            },
+            "q14": {
+              "q": "Czy mogę anulować lub zmienić termin treningu?",
+              "a": "Możliwość anulowania lub zmiany terminu zależy od zasad obowiązujących dla danej usługi u danego trenera. Przed dokonaniem rezerwacji zapoznaj się z warunkami anulowania i ewentualnego zwrotu płatności."
+            },
+            "q15": {
+              "q": "Gdzie znajdę historię swoich treningów?",
+              "a": "W aplikacji możesz przeglądać nadchodzące, zrealizowane i anulowane rezerwacje oraz historię zapisów na wydarzenia sportowe."
+            },
+            "q16": {
+              "q": "Czy mogę ponownie zarezerwować trening u tego samego trenera?",
+              "a": "Tak. Funkcja „Umów ponownie” pozwala szybko wrócić do wybranej usługi i dokonać kolejnej rezerwacji."
+            },
+            "q17": {
+              "q": "Czy muszę dodatkowo płacić za wejście na siłownię, jeśli trening odbywa się na siłowni?",
+              "a": "To zależy od oferty trenera i zasad obowiązujących w danej siłowni. W niektórych przypadkach wejście na siłownię jest wliczone w cenę treningu, a w innych może wymagać dodatkowej opłaty lub posiadania karnetu. Przed rezerwacją sprawdź szczegóły oferty lub skontaktuj się z trenerem."
+            }
+          }
+        },
+        "events": {
+          "title": "Wydarzenia i promocje",
+          "questions": {
+            "q18": {
+              "q": "Czy mogę skorzystać z bezpłatnego treningu próbnego?",
+              "a": "Niektórzy trenerzy oferują bezpłatne treningi próbne, dzięki którym możesz poznać trenera i sprawdzić, czy odpowiada Ci jego sposób prowadzenia zajęć. Dostępność takich treningów sprawdzisz w ofercie wybranego trenera."
+            },
+            "q19": {
+              "q": "Czy w REDi FIT mogę zapisać się na wydarzenia sportowe?",
+              "a": "Tak! W aplikacji znajdziesz wydarzenia sportowe organizowane przez trenerów. Możesz sprawdzić ich termin, lokalizację, cenę i dostępność miejsc, a następnie zapisać się na wybrane wydarzenie. Niektóre wydarzenia są bezpłatne, dzięki czemu możesz uczestniczyć w nich bez ponoszenia kosztów."
+            }
+          }
+        }
+      }
     },
-    "faq_klient": {
-      "h2": "Klient — rezerwacja, płatność, zmiana terminu",
-      "needs_block": "[NEEDS] pytania robocze, wywiedzione z aplikacji — zastąpić prawdziwymi pytaniami od użytkowników i supportu",
-      "summary": "Czy muszę mieć konto, żeby rezerwować?",
-      "p": "Tak. Konto zakładasz w aplikacji: podajesz e-mail, imię, nazwisko, numer telefonu i hasło, potwierdzasz numer kodem SMS i akceptujesz zgody.",
-      "summary_2": "Jak zapłacę za trening?",
-      "p_2": "Formy płatności ustala trener. Możesz zapłacić kartą lub BLIK-iem w formularzu Stripe, a jeśli trener je oferuje — gotówką lub przelewem.",
-      "summary_3": "Czy mogę odwołać albo zmienić termin?",
-      "p_3": "Tak, w aplikacji. Zgodnie z zasadami trenera anulowanie jest możliwe minimum 24 godziny wcześniej, a pobrana opłata może nie zostać zwrócona.",
-      "summary_4": "Skąd mam wiedzieć, że trener jest wiarygodny?",
-      "p_4": "Sprawdź jego profil: wykształcenie, ukończone kursy, specjalizacje, portfolio i opinie klientów. Opinie wystawiają osoby po zakończonej rezerwacji.",
-      "summary_5": "Czy trener może przyjechać do mnie?",
-      "p_5": "Zależy od usługi. Trener ustawia miejsce jako stacjonarne z pinezką na mapie albo mobilne z zasięgiem w kilometrach.",
-      "summary_6": "W jakich językach działa aplikacja?",
-      "p_6": "Po polsku, angielsku i ukraińsku.",
-      "summary_7": "Na jakich telefonach działa Redifit?",
-      "p_7": "Na Androidzie i iOS. [NEEDS: minimalne wersje systemów]",
-      "summary_8": "Czy Redifit to aplikacja siłowni REDi FIT?",
-      "p_8": "Redifit to aplikacja, w której klienci umawiają treningi z trenerami. [NEEDS: doprecyzować relację z siłownią REDi FIT]"
+    "trainer": {
+      "title": "Najczęściej zadawane pytania przez trenerów",
+      "groups": {
+        "account": {
+          "title": "Konto i abonament",
+          "questions": {
+            "q1": {
+              "q": "Czy korzystanie z REDi FIT jest bezpłatne dla trenerów?",
+              "a": "Tak! Na początku możesz korzystać z REDi FIT bezpłatnie w ramach okresu próbnego. Po jego zakończeniu przechodzisz na płatny abonament zgodnie z aktualnym cennikiem. Szczegóły znajdziesz w zakładce <a href=\"{url:pricing}\">„Cennik”</a>."
+            },
+            "q2": {
+              "q": "Ile kosztuje korzystanie z REDi FIT po okresie bezpłatnym?",
+              "a": "Po zakończeniu okresu bezpłatnego obowiązuje miesięczny abonament. Jego wysokość znajdziesz w zakładce <a href=\"{url:pricing}\">„Cennik”</a>. Opłata jest stała i nie zależy od liczby klientów ani zarezerwowanych treningów."
+            },
+            "q3": {
+              "q": "Jak założyć konto trenera w REDi FIT?",
+              "a": "Pobierz aplikację REDi FIT z App Store lub Google Play i wybierz rejestrację jako trener. Następnie uzupełnij swój profil, dodaj oferowane usługi, ustal ceny i dostępność oraz skonfiguruj konto do przyjmowania płatności online."
+            },
+            "q4": {
+              "q": "Czy muszę prowadzić działalność gospodarczą, aby korzystać z REDi FIT?",
+              "a": "Nie zawsze jest to konieczne. Warto skonsultować się z księgową lub doradcą podatkowym, aby ustalić, czy w Twoim przypadku istnieje obowiązek prowadzenia działalności gospodarczej."
+            },
+            "q5": {
+              "q": "Jak opłacać abonament w REDi FIT?",
+              "a": "Abonament działa w formie subskrypcji. Wystarczy podpiąć kartę płatniczą do konta, a opłata będzie pobierana automatycznie co miesiąc, bez konieczności wykonywania przelewów."
+            }
+          }
+        },
+        "clients": {
+          "title": "Pozyskiwanie klientów i oferta treningów",
+          "questions": {
+            "q6": {
+              "q": "Jak REDi FIT pomaga mi zdobywać nowych klientów?",
+              "a": "Twój profil jest widoczny w wyszukiwarce trenerów, na interaktywnej mapie oraz w sekcji „Trenerzy w Twojej okolicy”. Dzięki temu osoby szukające treningów mogą znaleźć Twoją ofertę, sprawdzić dostępne terminy i zarezerwować trening.\n\nMożesz również organizować wydarzenia sportowe, np. treningi grupowe, aby zaprezentować swoje umiejętności, dotrzeć do większej liczby potencjalnych klientów i zachęcić ich do dalszej współpracy."
+            },
+            "q7": {
+              "q": "Czy muszę dodatkowo reklamować swoje usługi?",
+              "a": "Nie. Twój profil i oferta treningów są dostępne dla użytkowników aplikacji REDi FIT."
+            },
+            "q8": {
+              "q": "Czy mogę oferować różne rodzaje treningów?",
+              "a": "Tak! Możesz dodać do swojej oferty różne usługi sportowe, określić ich czas trwania, cenę oraz miejsce realizacji. Dzięki temu klienci mogą wybrać trening najlepiej dopasowany do swoich potrzeb."
+            },
+            "q9": {
+              "q": "Czy mogę prowadzić treningi w różnych lokalizacjach?",
+              "a": "Tak. Możesz oferować treningi w siłowni, studiu fitness, plenerze lub z dojazdem do klienta. Samodzielnie określasz miejsca, w których świadczysz swoje usługi."
+            },
+            "q10": {
+              "q": "Czy mogę oferować bezpłatne treningi próbne?",
+              "a": "Tak! Możesz dodać do swojej oferty bezpłatny trening próbny, aby umożliwić nowym klientom poznanie Twojego sposobu prowadzenia zajęć. Możesz również zorganizować bezpłatne wydarzenie sportowe, np. trening grupowy, aby zaprezentować swoje umiejętności i dotrzeć do większej liczby potencjalnych klientów."
+            },
+            "q11": {
+              "q": "Czym są Happy Hours i jak mogę z nich korzystać?",
+              "a": "Happy Hours to możliwość oferowania treningów w promocyjnych cenach w wybranych terminach. Dzięki tej funkcji możesz zachęcić klientów do rezerwacji w godzinach, w których masz mniej zajęć, i lepiej wykorzystać dostępność swojego kalendarza."
+            },
+            "q12": {
+              "q": "Czy mogę korzystać z REDi FIT, jeśli mam już swoich klientów?",
+              "a": "Tak! REDi FIT możesz wykorzystywać zarówno do pozyskiwania nowych klientów, jak i do organizacji treningów z osobami, z którymi już współpracujesz. Dzięki kalendarzowi rezerwacji możesz wygodniej zarządzać swoim grafikiem."
+            },
+            "q13": {
+              "q": "Czy mogę samodzielnie ustalać ceny treningów?",
+              "a": "Tak. Samodzielnie określasz ceny swoich usług, czas trwania treningów oraz dostępne terminy. Możesz również korzystać z funkcji Happy Hours, aby oferować wybrane treningi w promocyjnych cenach."
+            },
+            "q14": {
+              "q": "Czy mogę zmieniać swoją ofertę po utworzeniu konta?",
+              "a": "Tak. Możesz aktualizować swój profil, ofertę usług, ceny oraz dostępność, aby informacje widoczne dla klientów odpowiadały Twojej aktualnej działalności."
+            },
+            "q15": {
+              "q": "Czy mogę sprawdzić opinie klientów o moich treningach?",
+              "a": "Tak. Opinie wystawiane przez klientów są widoczne na Twoim profilu. Pomagają budować wiarygodność i ułatwiają nowym osobom podjęcie decyzji o rezerwacji treningu."
+            },
+            "q16": {
+              "q": "Czy mogę korzystać z REDi FIT, jeśli prowadzę treningi tylko dodatkowo, np. po pracy lub w weekendy?",
+              "a": "Tak! Nie musisz prowadzić treningów w pełnym wymiarze godzin. Samodzielnie ustalasz dostępność, dlatego możesz oferować zajęcia tylko w wybrane dni lub godziny, dopasowując grafik do swoich możliwości."
+            }
+          }
+        },
+        "work": {
+          "title": "Rezerwacje i organizacja pracy",
+          "questions": {
+            "q17": {
+              "q": "Czy mogę samodzielnie ustalać godziny pracy i dostępne terminy?",
+              "a": "Tak. Samodzielnie zarządzasz swoim kalendarzem, ustalasz godziny pracy i dostępność poszczególnych usług. Klienci mogą rezerwować treningi wyłącznie w udostępnionych przez Ciebie terminach."
+            },
+            "q18": {
+              "q": "Co zrobić, jeśli wyjeżdżam na urlop lub nie prowadzę treningów przez pewien czas?",
+              "a": "Możesz zablokować wybrane dni lub okresy w kalendarzu, aby klienci nie mogli rezerwować treningów podczas Twojej nieobecności."
+            },
+            "q19": {
+              "q": "Czy mogę ograniczyć, z jakim wyprzedzeniem klienci rezerwują treningi?",
+              "a": "Tak. Możesz samodzielnie ustalić zasady rezerwacji, w tym określić, z jakim wyprzedzeniem klienci mogą zapisywać się na treningi."
+            },
+            "q20": {
+              "q": "Czy klienci mogą anulować lub zmieniać rezerwacje?",
+              "a": "Tak. Jako trener samodzielnie ustalasz zasady anulowania rezerwacji, np. możesz określić, że klient ma możliwość bezpłatnego anulowania treningu najpóźniej 24 godziny przed jego rozpoczęciem."
+            },
+            "q21": {
+              "q": "Czy mogę kontaktować się ze swoimi klientami?",
+              "a": "Tak. W REDi FIT masz dostęp do listy swoich klientów i możesz kontaktować się z nimi za pomocą wiadomości SMS wysyłanych z Twojego telefonu. To wygodny sposób na przekazywanie informacji o treningach, zmianach w grafiku czy dostępnych terminach."
+            },
+            "q22": {
+              "q": "Czy mogę ustawić przerwę między kolejnymi treningami?",
+              "a": "Tak! Jeśli potrzebujesz czasu na dojazd do kolejnego klienta, przygotowanie sprzętu lub odpoczynek między treningami, możesz ustawić przerwy między rezerwacjami. Dzięki temu łatwiej zaplanujesz swój dzień i unikniesz nakładających się terminów."
+            },
+            "q23": {
+              "q": "Czy mogę sprawdzić, kto zapisał się na moje treningi?",
+              "a": "Tak. W aplikacji masz dostęp do rezerwacji i listy klientów, dzięki czemu możesz sprawdzać zaplanowane treningi oraz zarządzać swoją pracą."
+            }
+          }
+        },
+        "payments": {
+          "title": "Płatności i rozliczenia",
+          "questions": {
+            "q24": {
+              "q": "Jak otrzymam pieniądze za treningi opłacone online?",
+              "a": "Płatności online są obsługiwane przez zewnętrznego operatora płatności. Po skonfigurowaniu konta do wypłat środki za opłacone treningi są przekazywane zgodnie z harmonogramem i zasadami operatora."
+            },
+            "q25": {
+              "q": "Czy mogę przyjmować płatności gotówką?",
+              "a": "Tak. Możesz oferować klientom możliwość zapłaty gotówką bezpośrednio podczas treningu. Samodzielnie decydujesz, jakie dostępne formy płatności udostępniasz przy swoich usługach."
+            },
+            "q26": {
+              "q": "Czy mam dostęp do historii płatności i raportów finansowych?",
+              "a": "Tak. REDi FIT umożliwia przeglądanie historii płatności oraz raportów, które pomagają kontrolować przychody i zarządzać rozliczeniami związanymi z treningami."
+            },
+            "q27": {
+              "q": "Czy REDi FIT pobiera prowizję od rezerwacji?",
+              "a": "REDi FIT nie pobiera prowizji od rezerwacji treningów. Jako trener płacisz stały abonament, zgodnie z aktualnym cennikiem, niezależnie od tego, czy masz 5, czy 20 klientów.\n\nW przypadku płatności online obowiązuje jedynie prowizja za obsługę transakcji, naliczana zgodnie z aktualnym cennikiem."
+            }
+          }
+        },
+        "events": {
+          "title": "Wydarzenia sportowe i odpowiedzialność trenera",
+          "questions": {
+            "q28": {
+              "q": "Czy mogę organizować wydarzenia sportowe przez REDi FIT?",
+              "a": "Tak! Możesz tworzyć wydarzenia sportowe, takie jak treningi grupowe, warsztaty czy zajęcia plenerowe. Samodzielnie określasz ich termin, lokalizację, cenę oraz liczbę dostępnych miejsc. To doskonały sposób na zaprezentowanie swojej oferty większej liczbie potencjalnych klientów."
+            },
+            "q29": {
+              "q": "Czy mogę organizować bezpłatne wydarzenia sportowe?",
+              "a": "Tak. Możesz organizować zarówno płatne, jak i bezpłatne wydarzenia sportowe. Bezpłatny trening grupowy może być świetną okazją do zaprezentowania swoich umiejętności i nawiązania kontaktu z nowymi klientami."
+            },
+            "q30": {
+              "q": "Czy mogę ograniczyć liczbę uczestników wydarzenia?",
+              "a": "Tak. Podczas tworzenia wydarzenia samodzielnie określasz maksymalną liczbę uczestników. Dzięki temu możesz dopasować wielkość grupy do rodzaju treningu i dostępnej przestrzeni."
+            },
+            "q31": {
+              "q": "Kto odpowiada za urazy i kontuzje, które mogą wystąpić podczas treningu?",
+              "a": "Za prawidłowe i bezpieczne prowadzenie treningu odpowiada trener organizujący i realizujący usługę. REDi FIT pełni funkcję platformy umożliwiającej kontakt z klientami i rezerwację treningów, nie jest natomiast organizatorem ani podmiotem prowadzącym zajęcia sportowe.\n\nWarto zadbać o odpowiednie ubezpieczenie OC trenera personalnego lub instruktora sportowego, które może zapewnić ochronę finansową w przypadku roszczeń związanych z urazami lub kontuzjami uczestników."
+            },
+            "q32": {
+              "q": "Kto odpowiada za legalność miejsca, w którym organizuję trening lub wydarzenie sportowe?",
+              "a": "Za wybór odpowiedniego miejsca i przestrzeganie obowiązujących w nim zasad odpowiada trener organizujący trening lub wydarzenie sportowe.\n\nJako trener masz obowiązek przestrzegać regulaminów siłowni, klubów fitness oraz zasad korzystania z terenów publicznych, takich jak parki, skwery czy inne miejsca plenerowe. Jeśli organizacja zajęć wymaga zgody właściciela, zarządcy terenu lub odpowiedniego zezwolenia, powinieneś uzyskać je przed rozpoczęciem treningu lub wydarzenia.\n\nREDi FIT udostępnia narzędzia do prezentowania oferty i obsługi rezerwacji, ale nie odpowiada za wybór lokalizacji ani uzyskanie wymaganych zgód."
+            }
+          }
+        }
+      }
     },
-    "faq_trener": {
-      "h2": "Trener — konto, abonament, wypłaty",
-      "needs_block": "[NEEDS] prawdziwe pytania od trenerów",
-      "summary": "Ile kosztuje konto trenera?",
-      "p": "Abonament REDi FIT Standard kosztuje 100 zł miesięcznie. [NEEDS]",
-      "summary_2": "Jak dostanę pieniądze za treningi opłacone online?",
-      "p_2": "Płatności online trafiają na Twoje konto wypłat Stripe, które łączysz w aplikacji.",
-      "summary_3": "Czy mogę przyjmować gotówkę?",
-      "p_3": "Tak, jeśli ją zaznaczysz. Formy płatności ustawiasz w ustawieniach usług: gotówka, karta, BLIK, przelew.",
-      "summary_4": "Co, jeśli w danym okresie nie prowadzę zajęć?",
-      "p_4": "Dodaj urlop w ustawieniach usług: zakres dat i opis.",
-      "summary_5": "Czy klienci mogą zmieniać terminy?",
-      "p_5": "Decydujesz o tym Ty. Możesz zezwolić na zmianę terminu i ustawić minimalne wyprzedzenie w godzinach.",
-      "summary_6": "Co się stanie, jeśli płatność za abonament się nie powiedzie?",
-      "p_6": "Aplikacja pokaże status „Płatność nie powiodła się” i poprosi o zaktualizowanie karty. [NEEDS: skutki dla widoczności profilu]"
-    },
-    "faq_more": {
+    "more": {
       "h2": "Brak odpowiedzi na Twoje pytanie?",
-      "lead": "Napisz do nas — formularz jest na stronie kontaktowej. Odpowiadamy na podany adres e-mail.",
+      "lead": "Napisz do nas za pomocą formularza kontaktowego. Odpowiemy na podany przez Ciebie adres e-mail.",
       "btn": "Przejdź do kontaktu"
     },
     "pobierz": {
-      "h2": "Zacznij od pobrania aplikacji",
-      "p": "Znajdź trenera, wybierz termin, zarezerwuj w aplikacji.",
-      "btn": "Pobierz aplikację",
-      "img_alt": "Pobierz z Google Play",
-      "img_title": "[LINK: Google Play — placeholder]",
-      "img_alt_2": "Pobierz z App Store",
-      "img_title_2": "[LINK: App Store — placeholder]"
+      "h2": "Trenuj. Działaj. Rozwijaj się z REDi FIT!",
+      "p": "Szukasz trenera lub chcesz oferować swoje usługi? Pobierz aplikację i odkryj możliwości REDi FIT."
     }
   },
   "contact": {
     "meta": {
-      "title": "Redifit — kontakt",
-      "description": "Napisz do nas: formularz kontaktowy, e-mail i telefon do REDi FIT."
+      "title": "Kontakt — napisz do REDi FIT",
+      "description": "Masz pytania o aplikację REDi FIT, rezerwacje lub współpracę jako trener? Napisz do nas przez formularz kontaktowy lub e-mailem."
     },
-    "page_hero": {
+    "hero": {
       "eyebrow": "Kontakt",
       "h1": "Napisz do nas",
-      "lead": "Odpowiadamy na adres e-mail podany w formularzu. Jeśli pytanie dotyczy rezerwacji albo konta, napisz, czy jesteś klientem, czy trenerem — trafi szybciej do właściwej osoby."
+      "lead": "Masz pytania dotyczące aplikacji REDi FIT, rezerwacji treningów lub współpracy jako trener? Skontaktuj się z nami za pomocą formularza kontaktowego. Chętnie pomożemy!"
     },
-    "contact_page_section": {
-      "h2": "Formularz kontaktowy",
-      "tag": "MOCK — nic nie jest wysyłane",
-      "p": "Dziękujemy",
-      "p_2": "Twoja wiadomość została wysłana. Odpowiemy na podany adres e-mail.",
-      "btn": "Wyślij kolejną wiadomość",
-      "label": "Imię i nazwisko",
-      "error": "To pole jest wymagane",
-      "label_2": "Adres e-mail",
-      "error_2": "Wprowadź poprawny adres e-mail",
-      "label_3": "Kim jesteś?",
-      "option": "…",
-      "option_2": "Klient",
-      "option_3": "Trener",
-      "option_4": "Inne",
-      "error_3": "To pole jest wymagane",
-      "label_4": "Temat",
-      "error_4": "To pole jest wymagane",
-      "label_5": "Wiadomość",
-      "error_5": "To pole jest wymagane",
-      "span": "Wyrażam zgodę na przetwarzanie moich danych osobowych w celu udzielenia odpowiedzi na zapytanie. [NEEDS: prawnik]",
-      "span_2": "Akceptuję regulamin i politykę prywatności. [NEEDS: prawnik]",
-      "error_6": "Musisz zaakceptować wszystkie wymagane zgody",
-      "btn_2": "Wyślij wiadomość",
-      "h2_2": "Dane kontaktowe",
-      "dt": "E-mail",
-      "dt_2": "Telefon",
-      "dt_3": "Adres",
-      "dd_3": "REDi FIT sp. z o.o.<br>ul. Kasprzaka 31/117<br>01-234 Warszawa",
-      "needs_block": "[NEEDS] potwierdzić, że te dane obowiązują dla aplikacji — pochodzą z redifit.pl/kontakt",
-      "h2_3": "Sprawy konta i rezerwacji",
-      "p_3": "Rejestrację, zmianę terminu, anulowanie i ustawienia usług prowadzisz w aplikacji. Formularz służy do pytań, na które nie ma odpowiedzi w aplikacji ani w sekcji pytań.",
-      "btn_ghost_link": "Zobacz częste pytania →",
-      "label_6": "Do wdrożenia",
-      "p_4": "[NEEDS] gdzie trafiają zgłoszenia: e-mail biuro@redifit.pl czy CRM — wymóg S-016 „integracja z systemem zgłoszeń” [NEEDS] zabezpieczenie antyspamowe [NEEDS] czy potrzebna mapa dojazdu przy adresie"
+    "form": {
+      "title": "Formularz kontaktowy",
+      "sub": "Wypełnij formularz, a odpowiemy na podany adres e-mail.",
+      "name": "Imię i nazwisko",
+      "name_ph": "Wpisz imię i nazwisko",
+      "email": "Adres e-mail",
+      "email_ph": "Wpisz adres e-mail",
+      "role": "Kim jesteś?",
+      "role_ph": "Wybierz opcję",
+      "role_client": "Klient",
+      "role_trainer": "Trener",
+      "role_other": "Inne",
+      "subject": "Temat wiadomości",
+      "subject_ph": "Czego dotyczy Twoje pytanie?",
+      "message": "Wiadomość",
+      "message_ph": "Napisz, w czym możemy pomóc…",
+      "consent": "Zapoznałem(-am) się z <a href=\"{url:privacy}\">Polityką prywatności</a>.",
+      "consent_error": "Potwierdź zapoznanie się z polityką prywatności.",
+      "required": "To pole jest wymagane",
+      "email_invalid": "Wprowadź poprawny adres e-mail",
+      "submit": "Wyślij wiadomość →",
+      "success_title": "Dziękujemy",
+      "success_text": "Twoja wiadomość została wysłana. Odpowiemy na podany adres e-mail.",
+      "success_again": "Wyślij kolejną wiadomość"
+    },
+    "info": {
+      "title": "Dane kontaktowe",
+      "email": "E-mail",
+      "phone": "Telefon",
+      "address": "Adres",
+      "address_lines": "REDi FIT sp. z o.o.<br>ul. Kasprzaka 31/117<br>01-234 Warszawa"
+    },
+    "account": {
+      "title": "Sprawy konta i rezerwacji",
+      "text": "Chcesz zmienić termin treningu, anulować rezerwację lub zarządzać swoim kontem? Większość spraw załatwisz bezpośrednio w aplikacji REDi FIT.\n\nPotrzebujesz pomocy? Sprawdź odpowiedzi na najczęściej zadawane pytania lub napisz do nas.",
+      "faq_link": "Zobacz najczęściej zadawane pytania →"
     },
     "pobierz": {
       "h2": "Zacznij od pobrania aplikacji",
-      "p": "Znajdź trenera, wybierz termin, zarezerwuj w aplikacji.",
-      "btn": "Pobierz aplikację",
-      "img_alt": "Pobierz z Google Play",
-      "img_title": "[LINK: Google Play — placeholder]",
-      "img_alt_2": "Pobierz z App Store",
-      "img_title_2": "[LINK: App Store — placeholder]"
+      "p": "Znajdź trenera, wybierz termin, zarezerwuj w aplikacji."
     }
   },
   "terms": {

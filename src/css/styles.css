@@ -157,7 +157,7 @@ summary::-webkit-details-marker {
     font: 800 italic var(--fs-eyebrow)/1 var(--font-sans);
     text-transform: uppercase;
     letter-spacing: .15em;
-    color: var(--color-red);
+    color: var(--color-logo-red);
 }
 
 .h1 {
@@ -573,6 +573,7 @@ summary::-webkit-details-marker {
 
 .hero__free::before {
     content: "✓";
+    flex: 0 0 auto;
     display: grid;
     place-items: center;
     width: 24px;
@@ -957,6 +958,23 @@ summary::-webkit-details-marker {
     gap: 16px;
 }
 
+/* kafelki w 4 / 2 / 1 kolumnie (dla trenerów #35–#36, szukam trenera #46) */
+.feature-grid--4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+@media (max-width: 1000px) {
+    .feature-grid--4 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 560px) {
+    .feature-grid--4 {
+        grid-template-columns: 1fr;
+    }
+}
+
 .feature-card {
     background: #fff;
     border: 1px solid var(--color-border);
@@ -1063,10 +1081,34 @@ summary::-webkit-details-marker {
     content: "\2013";
 }
 
-.faq-item p {
+.faq-item summary {
+    cursor: pointer;
+    list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    color: var(--color-logo-red);
+}
+
+.faq-item__answer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
     padding: 0 24px 24px;
+}
+
+.faq-item p {
     font: 400 italic var(--fs-card-body)/1.65 var(--font-sans);
     color: var(--color-gray);
+}
+
+.faq-item p a {
+    color: var(--color-logo-red);
+    font-weight: 700;
 }
 
 /* Contact form */
@@ -1390,8 +1432,9 @@ summary::-webkit-details-marker {
 
 /* Sub-page hero (How / Pricing / FAQ / Contact) */
 
+/* Hero podstron: grafit z fakturą z logo, jak hero strony głównej (uwagi #54, #58) */
 .page-hero {
-    background: var(--color-dark);
+    background: var(--texture-graphite) 0 0 / 240px auto, var(--color-graphite);
     padding: 72px 24px;
 }
 
@@ -1405,8 +1448,11 @@ summary::-webkit-details-marker {
 .page-hero__eyebrow {
     font: 800 italic var(--fs-eyebrow)/1 var(--font-sans);
     text-transform: uppercase;
-    letter-spacing: .18em;
-    color: var(--color-red-light);
+    letter-spacing: .16em;
+    color: #fff;
+    background: var(--color-logo-red);
+    border-radius: 999px;
+    padding: 8px 14px;
 }
 
 .page-hero h1 {

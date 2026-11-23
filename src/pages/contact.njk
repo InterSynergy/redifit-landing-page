@@ -2,114 +2,128 @@
 pageKey: contact
 css: [contact]
 ---
+{# Kontakt. Numery #N = punkty z uwag klienta, docs/landing-zadania.md.
+   Układ wg docs/wzory/59-kontakt-uklad.png. E-mail i telefon: site.json → contact.
+   Formularz na razie nic nie wysyła (decyzja z 2026-11-23) — walidacja i komunikat w script.js. #}
+{% set icon = {
+    "mail": '<path d="M3 6.5h18v11H3z"/><path d="m3.5 7 8.5 6.5L20.5 7"/>',
+    "phone": '<path d="M6.6 3.5 9.4 7l-1.8 2.3a12 12 0 0 0 7.1 7.1L17 14.6l3.5 2.8-1.3 3a2 2 0 0 1-2.1 1.1C10.4 20.6 3.4 13.6 2.5 6.9a2 2 0 0 1 1.1-2.1z"/>',
+    "pin": '<path d="M12 21s-6.5-6.1-6.5-11a6.5 6.5 0 0 1 13 0c0 4.9-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/>',
+    "calendar": '<rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/>'
+} %}
+{% macro svg(paths) %}<svg class="contact-icon" viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true">{{ paths | safe }}</svg>{% endmacro %}
 <main>
-    <section class="page-hero" style="padding:72px 24px;">
+    {# #58 #}
+    <section class="page-hero">
         <div class="container">
-            <p class="page-hero__eyebrow">{% t "contact.page_hero.eyebrow" %}</p>
-            <h1>{% t "contact.page_hero.h1" %}</h1>
-            <p class="lead">{% t "contact.page_hero.lead" %}</p>
+            <p class="page-hero__eyebrow">{% t "contact.hero.eyebrow" %}</p>
+            <h1>{% t "contact.hero.h1" %}</h1>
+            <p class="lead">{% t "contact.hero.lead" %}</p>
         </div>
     </section>
+
+    {# #59, #60 #}
     <section class="contact-page-section">
         <div class="contact-page-grid">
             <div class="contact-card">
                 <div class="contact-card__head">
-                    <h2>{% t "contact.contact_page_section.h2" %}</h2>
-                    <span class="tag tag--mock">{% t "contact.contact_page_section.tag" %}</span>
+                    {{ svg(icon.mail) }}
+                    <div>
+                        <h2>{% t "contact.form.title" %}</h2>
+                        <p class="contact-card__sub">{% t "contact.form.sub" %}</p>
+                    </div>
                 </div>
                 <div class="form-success" id="k-success" data-mock-form-success="k" hidden role="status">
-                    <p>{% t "contact.contact_page_section.p" %}</p>
-                    <p>{% t "contact.contact_page_section.p_2" %}</p>
-                    <button type="button" class="btn btn-outline" data-mock-form-reset>{% t "contact.contact_page_section.btn" %}</button>
+                    <p>{% t "contact.form.success_title" %}</p>
+                    <p>{% t "contact.form.success_text" %}</p>
+                    <button type="button" class="btn btn-outline" data-mock-form-reset>{% t "contact.form.success_again" %}</button>
                 </div>
                 <form id="k" data-mock-form="k" novalidate>
-                    <div class="form-field">
-                        <label for="k-name">{% t "contact.contact_page_section.label" %}</label>
-                        <input id="k-name" name="name" type="text" required minlength="2" />
-                        <p class="form-field__error" id="k-name-error" hidden>{% t "contact.contact_page_section.error" %}</p>
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="k-name">{% t "contact.form.name" %} <span class="req" aria-hidden="true">*</span></label>
+                            <input id="k-name" name="name" type="text" required minlength="2" autocomplete="name" placeholder="{% ta 'contact.form.name_ph' %}"/>
+                            <p class="form-field__error" id="k-name-error" hidden>{% t "contact.form.required" %}</p>
+                        </div>
+                        <div class="form-field">
+                            <label for="k-email">{% t "contact.form.email" %} <span class="req" aria-hidden="true">*</span></label>
+                            <input id="k-email" name="email" type="email" required autocomplete="email" placeholder="{% ta 'contact.form.email_ph' %}"/>
+                            <p class="form-field__error" id="k-email-error" hidden>{% t "contact.form.email_invalid" %}</p>
+                        </div>
                     </div>
                     <div class="form-field">
-                        <label for="k-email">{% t "contact.contact_page_section.label_2" %}</label>
-                        <input id="k-email" name="email" type="email" required />
-                        <p class="form-field__error" id="k-email-error" hidden>{% t "contact.contact_page_section.error_2" %}</p>
-                    </div>
-                    <div class="form-field">
-                        <label for="k-role">{% t "contact.contact_page_section.label_3" %}</label>
+                        <label for="k-role">{% t "contact.form.role" %} <span class="req" aria-hidden="true">*</span></label>
                         <select id="k-role" name="role" required>
-                            <option value="" selected disabled>{% t "contact.contact_page_section.option" %}</option>
-                            <option value="klient">{% t "contact.contact_page_section.option_2" %}</option>
-                            <option value="trener">{% t "contact.contact_page_section.option_3" %}</option>
-                            <option value="inne">{% t "contact.contact_page_section.option_4" %}</option>
+                            <option value="" selected disabled>{% t "contact.form.role_ph" %}</option>
+                            <option value="klient">{% t "contact.form.role_client" %}</option>
+                            <option value="trener">{% t "contact.form.role_trainer" %}</option>
+                            <option value="inne">{% t "contact.form.role_other" %}</option>
                         </select>
-                        <p class="form-field__error" id="k-role-error" hidden>{% t "contact.contact_page_section.error_3" %}</p>
+                        <p class="form-field__error" id="k-role-error" hidden>{% t "contact.form.required" %}</p>
                     </div>
                     <div class="form-field">
-                        <label for="k-subject">{% t "contact.contact_page_section.label_4" %}</label>
-                        <input id="k-subject" name="subject" type="text" required />
-                        <p class="form-field__error" id="k-subject-error" hidden>{% t "contact.contact_page_section.error_4" %}</p>
+                        <label for="k-subject">{% t "contact.form.subject" %} <span class="req" aria-hidden="true">*</span></label>
+                        <input id="k-subject" name="subject" type="text" required placeholder="{% ta 'contact.form.subject_ph' %}"/>
+                        <p class="form-field__error" id="k-subject-error" hidden>{% t "contact.form.required" %}</p>
                     </div>
                     <div class="form-field">
-                        <label for="k-message">{% t "contact.contact_page_section.label_5" %}</label>
-                        <textarea id="k-message" name="message" rows="4" required maxlength="2000"></textarea>
-                        <p class="form-field__error" id="k-message-error" hidden>{% t "contact.contact_page_section.error_5" %}</p>
+                        <label for="k-message">{% t "contact.form.message" %} <span class="req" aria-hidden="true">*</span></label>
+                        <textarea id="k-message" name="message" rows="5" required maxlength="2000" placeholder="{% ta 'contact.form.message_ph' %}"></textarea>
+                        <p class="form-field__error" id="k-message-error" hidden>{% t "contact.form.required" %}</p>
                     </div>
                     <div class="consent-list">
                         <label class="consent-label">
-                            <input type="checkbox" data-consent required />
-                            <span>{% t "contact.contact_page_section.span" %}</span>
+                            <input type="checkbox" data-consent required/>
+                            <span>{% t "contact.form.consent" %} <span class="req" aria-hidden="true">*</span></span>
                         </label>
-                        <label class="consent-label">
-                            <input type="checkbox" data-consent required />
-                            <span>{% t "contact.contact_page_section.span_2" %}</span>
-                        </label>
-                        <p class="form-field__error" data-consent-error hidden>{% t "contact.contact_page_section.error_6" %}</p>
+                        <p class="form-field__error" data-consent-error hidden>{% t "contact.form.consent_error" %}</p>
                     </div>
-                    <button type="submit" class="btn btn-outline" style="align-self:flex-start;">{% t "contact.contact_page_section.btn_2" %}
-                    </button>
+                    <button type="submit" class="btn btn-primary contact-card__submit">{% t "contact.form.submit" %}</button>
                 </form>
-
             </div>
+
             <div class="contact-side">
                 <div class="contact-info-card">
-                    <h2>{% t "contact.contact_page_section.h2_2" %}</h2>
+                    <div class="contact-card__head">
+                        {{ svg(icon.phone) }}
+                        <h2>{% t "contact.info.title" %}</h2>
+                    </div>
                     <dl>
                         <div>
-                            <dt>{% t "contact.contact_page_section.dt" %}</dt>
+                            {{ svg(icon.mail) }}
+                            <dt>{% t "contact.info.email" %}</dt>
                             <dd><a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></dd>
                         </div>
                         <div>
-                            <dt>{% t "contact.contact_page_section.dt_2" %}</dt>
+                            {{ svg(icon.phone) }}
+                            <dt>{% t "contact.info.phone" %}</dt>
                             <dd><a href="tel:{{ site.contact.phoneHref }}">{{ site.contact.phone }}</a></dd>
                         </div>
                         <div>
-                            <dt>{% t "contact.contact_page_section.dt_3" %}</dt>
-                            <dd>{% t "contact.contact_page_section.dd_3" %}</dd>
+                            {{ svg(icon.pin) }}
+                            <dt>{% t "contact.info.address" %}</dt>
+                            <dd>{% t "contact.info.address_lines" %}</dd>
                         </div>
                     </dl>
-                    <p class="needs-block">{% t "contact.contact_page_section.needs_block" %}</p>
                 </div>
                 <div class="contact-note-card">
-                    <h2>{% t "contact.contact_page_section.h2_3" %}</h2>
-                    <p>{% t "contact.contact_page_section.p_3" %}</p>
-                    <a href="{% url "faq" %}" class="btn-ghost-link">{% t "contact.contact_page_section.btn_ghost_link" %}</a>
-                </div>
-                <div class="contact-todo">
-                    <p class="contact-todo__label">{% t "contact.contact_page_section.label_6" %}</p>
-                    <p>{% t "contact.contact_page_section.p_4" %}</p>
+                    <div class="contact-card__head">
+                        {{ svg(icon.calendar) }}
+                        <h2>{% t "contact.account.title" %}</h2>
+                    </div>
+                    {% tp "contact.account.text" %}
+                    <a href="{% url "faq" %}" class="btn btn-outline contact-note-card__btn">{% t "contact.account.faq_link" %}</a>
                 </div>
             </div>
         </div>
     </section>
-    <section id="pobierz" class="cta-banner" style="padding:64px 24px;">
+
+    <section id="pobierz" class="cta-banner">
         <div class="container">
-            <h2 style="font-size:clamp(22px,2.8vw,32px);">{% t "contact.pobierz.h2" %}</h2>
+            <h2>{% t "contact.pobierz.h2" %}</h2>
             <p>{% t "contact.pobierz.p" %}</p>
             <div class="hero__cta-row">
-                <span class="btn btn-lg btn-on-red">{% t "contact.pobierz.btn" %}</span>
-                <div class="store-badges">
-                    <img src="{% asset "assets/google-play.png" %}" alt="{% ta "contact.pobierz.img_alt" %}" title="{% ta "contact.pobierz.img_title" %}" />
-                    <img src="{% asset "assets/app-store.svg" %}" alt="{% ta "contact.pobierz.img_alt_2" %}" title="{% ta "contact.pobierz.img_title_2" %}" />
-                </div>
+                {% include "partials/store-row.njk" %}
             </div>
         </div>
     </section>

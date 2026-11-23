@@ -1,9 +1,10 @@
 {
   "_info": "Dane wspólne dla wszystkich języków. W tekstach tłumaczeń można się do nich odwołać przez {site:klucz}, np. {site:contact.email}.",
   "contact": {
-    "email": "biuro@redifit.pl",
+    "email": "kontakt@redifit.pl",
     "phone": "502 602 999",
-    "phoneHref": "+48502602999"
+    "phoneHref": "+48502602999",
+    "_info": "Dane kontaktowe (#59): e-mail i telefon w jednym miejscu dla wszystkich języków. Adres firmy jest w tłumaczeniach (contact.info.address_lines, common.footer.address), bo różni się zapisem."
   },
   "social": [
     {
@@ -32,56 +33,78 @@
   "categories": [
     {
       "id": "personal",
-      "image": ""
+      "image": "assets/categories/personal.webp"
     },
     {
       "id": "swimming",
-      "image": ""
+      "image": "assets/categories/swimming.webp"
     },
     {
       "id": "running",
-      "image": ""
+      "image": "assets/categories/running.webp"
     },
     {
       "id": "physio",
-      "image": ""
+      "image": "assets/categories/physio.webp"
     },
     {
       "id": "tennis",
-      "image": ""
+      "image": "assets/categories/tennis.webp"
     },
     {
       "id": "postnatal",
-      "image": ""
+      "image": "assets/categories/postnatal.webp"
     },
     {
       "id": "motor",
-      "image": ""
+      "image": "assets/categories/motor.webp"
     },
     {
       "id": "strength",
-      "image": ""
+      "image": "assets/categories/strength.webp"
     },
     {
       "id": "seniors",
-      "image": ""
+      "image": "assets/categories/seniors.webp"
     },
     {
       "id": "mobility",
-      "image": ""
+      "image": "assets/categories/mobility.webp"
     },
     {
       "id": "martial",
-      "image": ""
+      "image": "assets/categories/martial.webp"
     },
     {
       "id": "stretching",
-      "image": ""
+      "image": "assets/categories/stretching.webp"
     },
     {
       "id": "pilates",
-      "image": ""
+      "image": "assets/categories/pilates.webp"
+    },
+    {
+      "id": "hiit",
+      "image": "assets/categories/hiit.webp"
+    },
+    {
+      "id": "crosstraining",
+      "image": "assets/categories/crosstraining.webp"
+    },
+    {
+      "id": "bodyshaping",
+      "image": "assets/categories/bodyshaping.webp"
+    },
+    {
+      "id": "yoga",
+      "image": "assets/categories/yoga.webp"
     }
   ],
-  "_categories_info": "Kolejność kategorii w karuzeli na stronie głównej. image: ścieżka do zdjęcia, np. assets/categories/pilates.webp (puste = szare pole). Nazwy w i18n → home.kategorie.items."
+  "_categories_info": "Kolejność kategorii w karuzeli na stronie głównej. image: plik w src/assets/categories/ (WebP). Nazwy w i18n → home.kategorie.items.<id>. Nowa kategoria = wpis tutaj + nazwa w każdym pliku językowym.",
+  "pricing": {
+    "_info": "Cennik (#55, #56). Liczby, nie tekst: w tłumaczeniach wstawia je {num:pricing.…} w formacie danego języka. Kwota abonamentu brutto w zł.",
+    "subscriptionMonthly": 49,
+    "onlineFeePercent": 2,
+    "onlineFeeFixed": 0.49
+  }
 }

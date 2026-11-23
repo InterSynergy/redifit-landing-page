@@ -1,6 +1,6 @@
-/* Redifit landing — styles unique to the trainers page (dla-trenerow.html) */
+/* REDi FIT landing — style tylko strony „Dla trenerów”. Numery #N = uwagi klienta. */
 
-/* Hero proof numbers use an inline pair, not the dark proof bar from the home page */
+/* Liczby w hero (ukryte do czasu realnych danych, #32 — site.json → features.stats) */
 .hero-proof {
     display: flex;
     gap: 40px;
@@ -25,24 +25,26 @@
     color: rgba(255, 255, 255, .82);
 }
 
-/* T4 — rules grid: 2-column feature grid + phone mockup, same shape as the home trainer teaser */
-#t-zasady .container > div {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 24px;
-    align-items: start;
+/* #33, #35, #39 — sekcje z nagłówkiem nad treścią */
+#t-dlaczego .container,
+#t-zasady .container,
+#t-start .container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
-#t-zasady .feature-grid {
-    grid-column: span 2;
-    min-width: 0;
+#t-start .container {
+    align-items: flex-start;
+    gap: 32px;
 }
 
-#t-zasady .phone {
-    justify-self: center;
+#t-start .h2 {
+    max-width: none;
 }
 
-/* T-popyt — four demand-generating tools, reuses .feature-grid/.feature-card from styles.css */
+
+/* #36 */
 #t-popyt .container {
     display: flex;
     flex-direction: column;
@@ -54,4 +56,31 @@
     flex-direction: column;
     gap: 16px;
     max-width: 60ch;
+}
+
+/* #39 — „Rozpocznij bez opłat…” */
+.start-free {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font: 800 italic 18px/1.4 var(--font-sans);
+    color: var(--color-dark);
+}
+
+.start-free::before {
+    content: "✓";
+    display: grid;
+    place-items: center;
+    flex: 0 0 auto;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: var(--color-logo-red);
+    color: #fff;
+    font: 800 14px/1 var(--font-sans);
+}
+
+/* #40 — CTA: „Wypróbuj za darmo” nad badge'ami sklepów */
+#pobierz .btn-on-red {
+    pointer-events: none;
 }
