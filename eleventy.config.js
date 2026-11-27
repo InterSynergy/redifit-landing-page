@@ -115,6 +115,8 @@ function formatNumber(v, lang) {
 
 const escapeAttr = (s) => s.replace(/&(?![#\w]+;)/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;");
 
+const BUILD_VERSION = Date.now().toString(36);
+
 export default function (eleventyConfig) {
   eleventyConfig.on("eleventy.before", loadData);
   loadData();
@@ -159,8 +161,11 @@ export default function (eleventyConfig) {
   eleventyConfig.addShortcode("url", function (key, langCode) {
     return pageUrl(pageContext(this.page), key, langCode);
   });
+  // CSS i JS dostają ?v=<czas builda>: GitHub Pages pozwala je cache'ować 10 min, więc bez tego
+  // po wdrożeniu przeglądarka mogła łączyć nowy HTML ze starym CSS (np. rozjechane screeny).
   eleventyConfig.addShortcode("asset", function (p) {
-    return pageContext(this.page).base + p;
+    const url = pageContext(this.page).base + p;
+    return /\.(css|js)$/.test(p) ? `${url}?v=${BUILD_VERSION}` : url;
   });
 
   eleventyConfig.addPassthroughCopy({ [`${SRC}/css`]: "css", [`${SRC}/scripts`]: "scripts", [`${SRC}/assets`]: "assets" });
