@@ -154,11 +154,16 @@ css: [home]
                     {%- endfor %}
                 </ul>
             </div>
-            <div class="hero__media">
-                {# #22: duży screen z sekcjami „Wydarzenia” i „Trenuj dziś” #}
-                <figure class="phone">
+            {# #22: H2 (Trenuj dziś) + X2 (szczegóły wydarzenia) #}
+            <div class="phone-row">
+                <figure class="phone phone--sm">
                     <div class="phone__screen phone__screen--shot">
                         <img src="{% asset "assets/screens/H2_" + lang.code + ".webp" %}" alt="{% ta "home.wydarzenia.screen_caption" %}" width="720" height="1473" loading="lazy" decoding="async">
+                    </div>
+                </figure>
+                <figure class="phone phone--sm phone--raised">
+                    <div class="phone__screen phone__screen--shot">
+                        <img src="{% asset "assets/screens/X2_" + lang.code + ".webp" %}" alt="{% ta "home.wydarzenia.screen_2" %}" width="720" height="1473" loading="lazy" decoding="async">
                     </div>
                 </figure>
             </div>
@@ -183,27 +188,18 @@ css: [home]
         </div>
     </section>
 
-    {# #24: grafika wyboru języka wg docs/wzory/24-jezyk-dropdown.png; lista z languages.json #}
+    {# #24: screen X1 — wybór języka w aplikacji (zamiast grafiki wg docs/wzory/24-jezyk-dropdown.png) #}
     <section id="jezyki">
         <div class="container">
             <div class="intro">
                 <h2>{% t "home.jezyki.h2" %}</h2>
                 <p class="lead">{% t "home.jezyki.lead" %}</p>
             </div>
-            <div class="lang-picker" aria-hidden="true">
-                <img class="lang-picker__globe" src="{% asset 'assets/globe.webp' %}" alt="">
-                <p class="lang-picker__title">{% t "home.jezyki.picker_title" %}</p>
-                <div class="lang-picker__select">
-                    <span class="lang-picker__icon">文A</span>
-                    <span class="lang-picker__current">{{ lang.name }}</span>
-                    <span class="lang-picker__chevron">⌄</span>
+            <figure class="phone phone--sm">
+                <div class="phone__screen phone__screen--shot">
+                    <img src="{% asset "assets/screens/X1_" + lang.code + ".webp" %}" alt="{% ta "home.jezyki.screen_caption" %}" width="720" height="1473" loading="lazy" decoding="async">
                 </div>
-                <ul class="lang-picker__menu">
-                    {%- for l in languages %}
-                    <li{% if l.code == lang.code %} class="is-active"{% endif %}>{{ l.name }}</li>
-                    {%- endfor %}
-                </ul>
-            </div>
+            </figure>
         </div>
     </section>
 

@@ -158,7 +158,8 @@
       "today_text": "Got a spare moment? Check sessions available the same day and book a convenient time in the app.",
       "favs_title": "Favourite trainers – always at hand",
       "favs_text": "Save your favourite trainers to quickly return to their profiles, check available times and book your next sessions.",
-      "screen_caption": "App home screen: “Train today” and “Trainers near you” sections"
+      "screen_caption": "App home screen: “Train today” and “Trainers near you” sections",
+      "screen_2": "Sports event details"
     },
     "opinie": {
       "eyebrow": "Reviews",
@@ -169,7 +170,7 @@
     "jezyki": {
       "h2": "REDi FIT speaks your language",
       "lead": "Use REDi FIT in the language you prefer. Set it when you first open the app and change it at any time in the settings.",
-      "picker_title": "Choose the app language"
+      "screen_caption": "Choosing the app language: Polish, English, Ukrainian"
     },
     "sciezki": {
       "h2": "One app. Two ways to use it.",
@@ -361,7 +362,8 @@
       "sms_title": "Text messages to clients",
       "sms_text": "Tell clients about new sessions, promotions and free slots by text message.",
       "rebook_title": "“Rebook”",
-      "rebook_text": "Quickly book the next session with regular clients without re-entering all the details."
+      "rebook_text": "Quickly book the next session with regular clients without re-entering all the details.",
+      "screen_caption": "Happy Hours settings for a service: hours, days and discount"
     },
     "praca": {
       "h2": "All your bookings and client contacts under control",

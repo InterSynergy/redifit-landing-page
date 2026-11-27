@@ -158,7 +158,8 @@
       "today_text": "Masz wolną chwilę? Sprawdź treningi dostępne jeszcze tego samego dnia i zarezerwuj dogodny termin w aplikacji.",
       "favs_title": "Ulubieni trenerzy – zawsze pod ręką",
       "favs_text": "Zapisuj ulubionych trenerów, aby szybko wracać do ich profili, sprawdzać dostępne terminy i rezerwować kolejne treningi.",
-      "screen_caption": "Ekran główny aplikacji: sekcje „Trenuj dziś” i „Trenerzy w Twojej okolicy”"
+      "screen_caption": "Ekran główny aplikacji: sekcje „Trenuj dziś” i „Trenerzy w Twojej okolicy”",
+      "screen_2": "Szczegóły wydarzenia sportowego"
     },
     "opinie": {
       "eyebrow": "Opinie",
@@ -169,7 +170,7 @@
     "jezyki": {
       "h2": "REDi FIT mówi Twoim językiem",
       "lead": "Korzystaj z REDi FIT w wybranym języku. Ustaw go przy pierwszym uruchomieniu aplikacji i zmień w dowolnym momencie w ustawieniach.",
-      "picker_title": "Wybierz język aplikacji"
+      "screen_caption": "Wybór języka w aplikacji: polski, angielski, ukraiński"
     },
     "sciezki": {
       "h2": "Jedna aplikacja. Dwie możliwości.",
@@ -361,7 +362,8 @@
       "sms_title": "SMS-y do klientów",
       "sms_text": "Informuj klientów o nowych treningach, promocjach i wolnych terminach za pomocą wiadomości SMS.",
       "rebook_title": "„Umów ponownie”",
-      "rebook_text": "Szybko umawiaj kolejne treningi ze stałymi klientami, bez ponownego wprowadzania wszystkich szczegółów."
+      "rebook_text": "Szybko umawiaj kolejne treningi ze stałymi klientami, bez ponownego wprowadzania wszystkich szczegółów.",
+      "screen_caption": "Ustawienia Happy Hours dla usługi: godziny, dni i zniżka"
     },
     "praca": {
       "h2": "Wszystkie rezerwacje i kontakty z klientami pod kontrolą",

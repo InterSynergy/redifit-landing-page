@@ -976,6 +976,17 @@ summary::-webkit-details-marker {
     gap: 16px;
 }
 
+/* kafelki w 2 / 1 kolumnie obok telefonu (dla trenerów #t-popyt) */
+.feature-grid--2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (max-width: 560px) {
+    .feature-grid--2 {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* kafelki w 4 / 2 / 1 kolumnie (dla trenerów #35–#36, szukam trenera #46) */
 .feature-grid--4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));

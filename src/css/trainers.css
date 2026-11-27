@@ -45,17 +45,9 @@
 
 
 /* #36 */
-#t-popyt .container {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-}
-
-#t-popyt .intro {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    max-width: 60ch;
+/* #t-popyt: tekst + kafelki 2×2 obok screena X3 (Happy Hours); układ z .step-section */
+#t-popyt .feature-grid {
+    margin-top: 12px;
 }
 
 /* #39 — „Rozpocznij bez opłat…” */

@@ -109,20 +109,28 @@ css: [trainers]
     </section>
 
     {# #36 #}
-    <section id="t-popyt" class="section section-alt">
+    <section id="t-popyt" class="section section-alt step-section">
         <div class="container">
-            <div class="intro">
+            <div class="step-section__copy">
                 <p class="eyebrow">{% t "trainers.popyt.eyebrow" %}</p>
                 <h2 class="h2">{% t "trainers.popyt.h2" %}</h2>
                 <p class="lead">{% t "trainers.popyt.lead" %}</p>
-            </div>
-            <div class="feature-grid feature-grid--4">
-                {%- for key in ['happy', 'group', 'sms', 'rebook'] %}
-                <div class="feature-card">
-                    <h3>{% t "trainers.popyt." + key + "_title" %}</h3>
-                    <p>{% t "trainers.popyt." + key + "_text" %}</p>
+                <div class="feature-grid feature-grid--2">
+                    {%- for key in ['happy', 'group', 'sms', 'rebook'] %}
+                    <div class="feature-card">
+                        <h3>{% t "trainers.popyt." + key + "_title" %}</h3>
+                        <p>{% t "trainers.popyt." + key + "_text" %}</p>
+                    </div>
+                    {%- endfor %}
                 </div>
-                {%- endfor %}
+            </div>
+            <div class="hero__media">
+                {# X3: Happy Hours #}
+                <figure class="phone">
+                    <div class="phone__screen phone__screen--shot">
+                        <img src="{% asset "assets/screens/X3_" + lang.code + ".webp" %}" alt="{% ta "trainers.popyt.screen_caption" %}" width="720" height="1473" loading="lazy" decoding="async">
+                    </div>
+                </figure>
             </div>
         </div>
     </section>
