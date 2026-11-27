@@ -707,6 +707,23 @@ summary::-webkit-details-marker {
     gap: 11px;
 }
 
+/* makieta z prawdziwym zrzutem z aplikacji (docs/screeny → assets/screens) */
+.phone__screen--shot,
+.phone--sm .phone__screen--shot,
+.phone--md .phone__screen--shot {
+    aspect-ratio: auto;
+    padding: 0;
+    background: #fff;
+    overflow: hidden;
+    display: block;
+}
+
+.phone__screen--shot img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .phone__tag {
     font: 800 italic 13px/1 var(--font-sans);
     letter-spacing: .14em;
@@ -736,6 +753,7 @@ summary::-webkit-details-marker {
     gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 /* Proof bar */

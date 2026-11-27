@@ -27,10 +27,10 @@ css: [home]
                 <a href="{% url "trainers" %}" class="hero__switch-link">{% t "home.hero.switch_link" %}</a>
             </div>
             <div class="hero__media">
-                {# #3: tu wchodzi screen ekranu głównego aplikacji (wyszukiwarka + kategorie) #}
+                {# #3: screen H1 — ekran główny aplikacji (wyszukiwarka + kategorie) #}
                 <figure class="phone phone--tilt-l">
-                    <div class="phone__screen">
-                        <figcaption class="phone__caption">{% t "home.hero.screen_caption" %}</figcaption>
+                    <div class="phone__screen phone__screen--shot">
+                        <img src="{% asset "assets/screens/H1_" + lang.code + ".webp" %}" alt="{% ta "home.hero.screen_caption" %}" width="720" height="1473" fetchpriority="high" decoding="async">
                     </div>
                 </figure>
             </div>
@@ -157,8 +157,8 @@ css: [home]
             <div class="hero__media">
                 {# #22: duży screen z sekcjami „Wydarzenia” i „Trenuj dziś” #}
                 <figure class="phone">
-                    <div class="phone__screen">
-                        <figcaption class="phone__caption">{% t "home.wydarzenia.screen_caption" %}</figcaption>
+                    <div class="phone__screen phone__screen--shot">
+                        <img src="{% asset "assets/screens/H2_" + lang.code + ".webp" %}" alt="{% ta "home.wydarzenia.screen_caption" %}" width="720" height="1473" loading="lazy" decoding="async">
                     </div>
                 </figure>
             </div>
@@ -170,8 +170,8 @@ css: [home]
         <div class="container">
             <div class="hero__media">
                 <figure class="phone">
-                    <div class="phone__screen">
-                        <figcaption class="phone__caption">{% t "home.opinie.screen_caption" %}</figcaption>
+                    <div class="phone__screen phone__screen--shot">
+                        <img src="{% asset "assets/screens/H3_" + lang.code + ".webp" %}" alt="{% ta "home.opinie.screen_caption" %}" width="720" height="1473" loading="lazy" decoding="async">
                     </div>
                 </figure>
             </div>
